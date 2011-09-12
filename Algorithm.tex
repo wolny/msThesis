@@ -3,23 +3,53 @@
 \label{Algorithm}
 
 \section{A Hybrid Approach}
-TODO: algorithm description, pseudo-code
-description of the remaining chapters
 
-\section{Pseudocode}
+Our deterioration algorithm may be easily incorporated in existing optimization
+methods. This can be expressed as a general hybrid approach to global
+optimization in which we do not change the implementation of the used EA
+but treat it as an integral element of our iterative process.
+This can be visualized by the following pseudo code:
 
-\begin{algorithmic}
-\WHILE{$i < getIterationCount()$} 
+
+
+
+\begin{algorithmic}[1]
+\WHILE{$i < getIterationCount()$}
 	\STATE {$execute(evolutionaryAlgorithm)$}
 	\STATE {$population=getPopulation(evolutionaryAlgorithm)$}
 	\STATE {$clusters=cluster(population)$}
-	\STATE {$detFitness=performCrunching(clusters,currentFitness)$}
-	\IF{$detFitness = null$}
+	\IF{$clusters.isEmpty()$}
 		\STATE {$break$}
 	\ENDIF
+	\STATE {$detFitness=performCrunching(clusters,currentFitness)$}
 	\STATE {$saveClusters(clusters)$}
 	\STATE {$updateFitness(detFitness)$}
 \ENDWHILE
 \STATE {$execute(evolutionaryAlgorithm)$}
 \STATE {$extractBestClusters()$}
 \end{algorithmic}
+
+
+
+
+The condition in while statement should be treated as control statement rather
+than the real termination criterion. It may be useful in cases where the
+clustering algorithm is misconfigured and always returns some clusters in which
+case the condition would prevent our algorithm to run endlessly.
+Our actual stop criterion is based on the condition inside the loop (line 5): if the clustering algorithm did not find any group of similar individuals or the group has low quality measures it jumps out
+of the loop and then we perform the last invocation of the EA in order to
+increase the probability of finding the local optimum which has not been explored during iterations.
+
+Using this general scheme has one important advantage: we do not have to change
+existing implementation of a given EA in contrast to standard niching
+methods which must be incorporated directly in the evolutionary algorithm. But
+what is more important, it provides a reasonable stop criterion which in this case is based 
+on the quality of clusters returned by the clustering algorithm.
+ 
+In the subsequent chapters we will describe components  of the general
+algorithm in more details.
+In chapter 3 we will discuss the clustering method used in our algorithm and 
+how does it influence the deterioration process. Chapter 4 describes
+deterioration algorithm in more detail and chapter 5 shows the results 
+of the tests.
+
