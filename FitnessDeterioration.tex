@@ -128,16 +128,16 @@ characteristics.
 
 \section{Fitness deterioration and clustering}
 
-To increase teh accuracy of the fitness deterioration process 
+To increase the accuracy of the fitness deterioration process 
 we want to use the maximum amount of information provided by the clustering
 algorithm. As we mentioned earlier (see the definition of \textit{Fitness
 deterioration}) we crate one crunching function per cluster which, depending
 on the shape of the cluster may not be very accurate. To increase that accuracy
 we use the following property of the \textit{OPTICS ordering}:
 \begin{quotation}
-While creating the object ordering, OPTICS constructs density-based clusters
+While creating the \textit{ordering} OPTICS constructs density-based clusters
 with respect to different densities simultaneously. \textit{OPTICS ordering}
-actually contains the information about the intristic clustering structure of
+actually contains the information about the intrinsic clustering structure of
 the input data set (up to the generating distance $\epsilon$) \cite{optics}.
 \end{quotation}
 
@@ -146,7 +146,7 @@ TODO: plot
 Having the \textit{OPTICS ordering} of the population returned by the EA our
 method iteratively extract clusters with higher densities by decreasing 
 the \textit{neighborhood radius ($\epsilon$)}, construct crunching functions
-for exctracted clusters and check if the resulting crunching functions 
+for extracted clusters and check if the resulting crunching functions 
 is more accurate than the best found in previous iterations. 
 
 \begin{algorithmic}[1]
@@ -191,7 +191,7 @@ so called \textit(kernel functions) \cite{kernel}. Examples of kernels are:
 From the above list we choose Gaussian kernel which meets all requirements and 
 has one great advantage over the other kernels which is the fact that
 Gaussain function may be defined on the whole domain, whereas the rest
-kernels are defined on some finite intervales, which makes them computationally
+kernels are defined on some finite intervals, which makes them computationally
 inefficient in high-dimensional spaces).
 
 \section{Basic Scheme}
@@ -212,25 +212,65 @@ Fitness function in $k+1$th iteration is of the form:
  F_{k+1}=F_k + \sum_{i=1}^M g_i
 \end{equation}
 where M is the number of generated Gaussian functions. In this case all
-$\alpha$-coefficients from equation 4.1 are equals $1$.
+$\alpha$-coefficients from equation 4.1 are equal $1$.
 
 This version of the algorithm cause strong degradation of the fitness function
 in the neighborhood of the solution, so there is a risk that deterioration of
 one solution affect others which are close to it. To overcome this issue we
-developed so called \textit{adaptive scheme} described in the next section.
-Disadvantages of the adaptive approach is that it may take a long time
-to find new solutions, because of the slow degradation prcess. 
+developed so called \textit{weighted scheme} described in the next section.
+Disadvantages of the weighted approach is that it may take a long time
+to find new solutions, because of the slow degradation process. 
 
-\section{Adaptive Scheme}
-TODO: describe in detail
+\section{Weighted Scheme}
 
-detailed description of adaptive scheme deterioration
+This type of fitness deterioration is more accurate and may produce more 
+stable fitness (\textit{Basic scheme} may produce some sharp peaks in 
+fitness landscape, because of very aggressive fitness degeneration) than the 
+\textit{Basic scheme}. Is also more complex as it is resulting in
+slightly more computionally intensive fitness functions.
+
+Initial steps are the same as in \textit{Basic scheme} (we create 
+multi-dimensional Gaussian function for each cluster). What is different
+is how we compute the deteriorated fitness for a given individual $x$:
+\begin{equation}
+F_{k+1}(x)=F_k(x) + \sum_{i=1}^M \alpha_i(x) g_i(x)
+\end{equation}
+where the $\alpha$-coefficients are given by the following equations:
+\begin{equation}
+	\alpha_1 + \ldots + \alpha_M = 1
+\end{equation}
+\begin{equation}
+	\alpha_i = \xi\frac{1}{r_i}
+\end{equation}
+which gives:
+\begin{equation}
+\frac{1}{\xi}=\frac{1}{r_1} + \ldots + \frac{1}{r_M}
+\end{equation}
+where $r_i$ is the distance from the center of cluster $i$. This coefficients
+are computed separately for each new individual and this is why this method is
+more costly than the previous one.
+\begin{figure}
+  \centering
+  \fbox{
+    \includegraphics[scale=0.5]{AdaptiveScheme.png}
+  }
+  \caption{The coefficient $\alpha_i$ is inversely proportional to the
+  distance from the centers of clusters ($C_1, C_2, C_3$). $\alpha_i$ may be
+  seen as the impact $C_i$ has on $x$}
+  \label{det1}
+\end{figure}
+
+
+The \textit{Weighted Scheme} is more smooth and gentle and more costly.
+It should do better than \textit{Basic scheme} for problems with many local
+solutions. 
 
 \section{Covariance Matrix Adjustment}
 Because of the fast convergence of populations
-generated by the EA algorithm to the local solutions, clusters sometimes becomes
-very dense in areas of local optimas, therefore Gaussians created for such
-clusters does not approximate a basin of attraction well, speaking informaly:
+generated by the EA algorithm to the local solutions and the algorithm we use
+to increase accuracy of the deterioration process (see section 4.1),
+clusters sometimes becomes very dense in areas of local optima, therefore Gaussians created for such
+clusters does not approximate a basin of attraction well, speaking informally:
 Gaussian functions created for such clusters consist of high and thin peaks
 which deteriorate only the area inside the cluster, not the basin of attraction
 in which the cluster resides (see Figure 4.3 and 4.4).
@@ -239,10 +279,28 @@ Adjustment (CMA)} algorithm described below.
 
 We use sample covariance matrix as an estimator \cite{covariance}, which is 
 extremely sensitive to outliers. However we may take this property as our
-advantage and incorporate it CMA algotithm. 
+advantage and incorporate it CMA algorithm. 
 Having given a cluster of points the CMA algorithms works as follows:
 
-TODO
+\begin{itemize}
+  \item we create covariance matrix using \textit{sample covariance matrix}
+  \cite{covariance} and perform eigenvalue decomposition, which gives use the
+  $d$ orthogonal directions (eigenvectors), which define the orientation of the 
+  Gaussian 'bell' ($d$ is the dimension of the problem space)
+  \item for each eigenvector $v_i$ we generate two points (so called
+  \textit{outliers})
+  \begin{equation}
+  	p_{i1} = \overline{m} + \sqrt{\lambda_i}\overline{v_i}, 
+  	p_{i2} = \overline{m} - \sqrt{\lambda_i}\overline{v_i}
+  \end{equation} 
+  where $\overline{m}$ is the center of the cluster (mean value), $\lambda_i$ is
+  an eigenvalue of the eigenvector $v_i$
+  \item then we add these $2d$ generated \textit{outliers} to the initial
+  population which constitute a cluster, and compute new covariance matrix.
+  \item because \textit{sample convariance matrix} is very sensitive to outliers
+  the resulting covariance matrix produces a Gaussian function whose 'bell
+  curve' is more stretched in directions of eigenvectors.
+  \end{itemize}
 
 \subsection{Results}
 
