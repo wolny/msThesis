@@ -8,23 +8,23 @@
 \contentsline {section}{\numberline {3.2}Clustering as a Stop Criterion}{12}
 \contentsline {section}{\numberline {3.3}OPTICS}{13}
 \contentsline {chapter}{\numberline {4}Fitness Deterioration}{16}
-\contentsline {section}{\numberline {4.1}Sequential niching}{16}
-\contentsline {subsection}{\numberline {4.1.1}Crunching functions}{16}
-\contentsline {section}{\numberline {4.2}Basic Scheme}{17}
-\contentsline {section}{\numberline {4.3}Adaptive Scheme}{17}
-\contentsline {section}{\numberline {4.4}Covariance Matrix Adjustment}{17}
-\contentsline {section}{\numberline {4.5}Results}{17}
-\contentsline {chapter}{\numberline {5}Tested Algorithms}{22}
-\contentsline {section}{\numberline {5.1}HGS}{22}
-\contentsline {section}{\numberline {5.2}Tests}{22}
-\contentsline {subsection}{\numberline {5.2.1}Benchmark functions}{22}
-\contentsline {subsection}{\numberline {5.2.2}Accuracy measures}{22}
-\contentsline {subsection}{\numberline {5.2.3}Efficiency measures}{22}
-\contentsline {chapter}{\numberline {6}Implementation}{23}
-\contentsline {section}{\numberline {6.1}Architecture}{23}
-\contentsline {section}{\numberline {6.2}Implementation in Java}{23}
-\contentsline {subsection}{\numberline {6.2.1}Technologies}{23}
-\contentsline {subsection}{\numberline {6.2.2}Diagrams}{23}
-\contentsline {chapter}{\numberline {7}Conclusions}{30}
-\contentsline {section}{\numberline {7.1}Summary}{30}
-\contentsline {section}{\numberline {7.2}Future Research}{30}
+\contentsline {section}{\numberline {4.1}Fitness deterioration and clustering}{18}
+\contentsline {subsection}{\numberline {4.1.1}Crunching functions}{18}
+\contentsline {section}{\numberline {4.2}Basic Scheme}{19}
+\contentsline {section}{\numberline {4.3}Adaptive Scheme}{20}
+\contentsline {section}{\numberline {4.4}Covariance Matrix Adjustment}{20}
+\contentsline {subsection}{\numberline {4.4.1}Results}{20}
+\contentsline {chapter}{\numberline {5}Tested Algorithms}{24}
+\contentsline {section}{\numberline {5.1}HGS}{24}
+\contentsline {section}{\numberline {5.2}Tests}{24}
+\contentsline {subsection}{\numberline {5.2.1}Benchmark functions}{24}
+\contentsline {subsection}{\numberline {5.2.2}Accuracy measures}{24}
+\contentsline {subsection}{\numberline {5.2.3}Efficiency measures}{24}
+\contentsline {chapter}{\numberline {6}Implementation}{25}
+\contentsline {section}{\numberline {6.1}Architecture}{25}
+\contentsline {section}{\numberline {6.2}Implementation in Java}{27}
+\contentsline {subsection}{\numberline {6.2.1}Technologies}{27}
+\contentsline {subsection}{\numberline {6.2.2}Diagrams}{27}
+\contentsline {chapter}{\numberline {7}Conclusions}{34}
+\contentsline {section}{\numberline {7.1}Summary}{34}
+\contentsline {section}{\numberline {7.2}Future Research}{34}
