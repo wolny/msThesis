@@ -1,19 +1,45 @@
 
 
 \chapter{Implementation}
-
 \label{Implementation}
+To verify our algorithm we have created a simple, global optimization framework
+which enabled us to execute and test all of the algorithms descirbe throughout
+this article.
+
+We decided to use Java \cite{java} as a programming language and runtime
+environment for this project. 
+
+Using the framework we can find optima of real, mulimodal, multidimensional and
+continuous functions. We just need to provide the framework with the concrete
+fitness function implementation, domain and by specifing the problem domain.
+
+The framework principle is to separate the interfaces from implementation.
+Our API provides interfaces for evolutionary algorithms, fitness assignment
+and fitness deterioration, genetic oprators like selection and reproducion,
+phenotype, clustering algorithms and many more. This makes it compact,
+extensible and easy to indroduce new implementations.
+For the detailed description of the classes and interfaces see subsection
+'Implementation in Java'.  
 
 \section{Architecture}
 
-TODO: architecture details, sample of spring application context,
-description of a problem domain and fitness function
-
-\lstinputlisting{test-context.xml}
+The project consists of six main packages, which communicates with the
+others through clearly specified interfaces and together constitute a
+complete, lightweight framework for testing and execution of the global 
+optimization algorithms especially the evolutionary algorithms.
+\begin{itemize}
+  \item \textit{Algorithm module}
+  \item \textit{Clustering module}
+  \item \textit{Fitness deterioration module}
+  \item \textit{Evolutionary Algorithms module}
+  \item \textit{Printing Modul}
+  \item \textit{Statistics Utils}
+\end{itemize}
 
 \section{Implementation in Java}
 clean structure, good test coverage, 
 modular architercture, extensible,
+\lstinputlisting{test-context.xml}
 
 \subsection{Technologies}
 \begin{itemize}

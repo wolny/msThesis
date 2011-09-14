@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  13 SEP 2011 17:44
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  13 SEP 2011 21:44
 entering extended mode
 **document.tex
 (C:\Users\slo\workspace\masterThesis\document.tex
@@ -548,7 +548,7 @@ LaTeX Warning: Unused global option(s):
 (C:\Users\slo\workspace\masterThesis\Clustering.aux)
 (C:\Users\slo\workspace\masterThesis\FitnessDeterioration.aux
 
-LaTeX Warning: Label `det1' multiply defined.
+LaTeX Warning: Label `clusters' multiply defined.
 
 
 LaTeX Warning: Label `det3' multiply defined.
@@ -917,14 +917,25 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[17]
+[17] <./img/clusters/cluster1.png, id=75, 681.29532pt x 372.64218pt>
+File: ./img/clusters/cluster1.png Graphic file (type png)
+
+<use ./img/clusters/cluster1.png>
+<./img/clusters/cluster2.png, id=77, 663.22781pt x 369.63094pt>
+File: ./img/clusters/cluster2.png Graphic file (type png)
+
+<use ./img/clusters/cluster2.png>
+<./img/clusters/cluster3.png, id=78, 642.14906pt x 364.36125pt>
+File: ./img/clusters/cluster3.png Graphic file (type png)
+
+<use ./img/clusters/cluster3.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 166.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 183.
 
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.185   \item T
+l.202   \item T
                riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -935,7 +946,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.185   \item T
+l.202   \item T
                riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -947,7 +958,32 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.237 \end{equation}
+l.202   \item T
+               riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.202   \item T
+               riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[19 <C:/Users/slo/workspace/masterThesis/img/clusters/cluster1.png> <C:/Users/s
+lo/workspace/masterThesis/img/clusters/cluster2.png> <C:/Users/slo/workspace/ma
+sterThesis/img/clusters/cluster3.png>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.254 \end{equation}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -958,7 +994,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.237 \end{equation}
+l.254 \end{equation}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -966,14 +1002,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[19] <./img/AdaptiveScheme.png, id=83, 383.93437pt x 211.54031pt>
+[20] <./img/AdaptiveScheme.png, id=93, 383.93437pt x 211.54031pt>
 File: ./img/AdaptiveScheme.png Graphic file (type png)
 
 <use ./img/AdaptiveScheme.png>
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.290   \item f
+l.307   \item f
                or each eigenvector $v_i$ we generate two points (so called
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -984,7 +1020,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.290   \item f
+l.307   \item f
                or each eigenvector $v_i$ we generate two points (so called
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -992,28 +1028,28 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[20 <C:/Users/slo/workspace/masterThesis/img/AdaptiveScheme.png (PNG copy)>]
-<./img/deterioration1/fitnessLand.png, id=87, 642.4pt x 481.8pt>
+[21 <C:/Users/slo/workspace/masterThesis/img/AdaptiveScheme.png (PNG copy)>]
+<./img/deterioration1/fitnessLand.png, id=98, 642.4pt x 481.8pt>
 File: ./img/deterioration1/fitnessLand.png Graphic file (type png)
 
 <use ./img/deterioration1/fitnessLand.png>
-<./img/deterioration1/deterioratedLandscape.png, id=88, 642.4pt x 481.8pt>
+<./img/deterioration1/deterioratedLandscape.png, id=99, 642.4pt x 481.8pt>
 File: ./img/deterioration1/deterioratedLandscape.png Graphic file (type png)
 
 <use ./img/deterioration1/deterioratedLandscape.png>
-<./img/deterioration3/fitnessLand.png, id=89, 642.4pt x 481.8pt>
+<./img/deterioration3/fitnessLand.png, id=100, 642.4pt x 481.8pt>
 File: ./img/deterioration3/fitnessLand.png Graphic file (type png)
 
 <use ./img/deterioration3/fitnessLand.png>
-<./img/deterioration3/deterioratedFitness.png, id=90, 642.4pt x 481.8pt>
+<./img/deterioration3/deterioratedFitness.png, id=101, 642.4pt x 481.8pt>
 File: ./img/deterioration3/deterioratedFitness.png Graphic file (type png)
 
 <use ./img/deterioration3/deterioratedFitness.png>
-<./img/deterioration4/result1_noCMA.png, id=91, 642.4pt x 481.8pt>
+<./img/deterioration4/result1_noCMA.png, id=102, 642.4pt x 481.8pt>
 File: ./img/deterioration4/result1_noCMA.png Graphic file (type png)
 
 <use ./img/deterioration4/result1_noCMA.png>
-<./img/deterioration4/result2_noCMA.png, id=92, 642.4pt x 481.8pt>
+<./img/deterioration4/result2_noCMA.png, id=103, 642.4pt x 481.8pt>
 File: ./img/deterioration4/result2_noCMA.png Graphic file (type png)
 
 <use ./img/deterioration4/result2_noCMA.png>)
@@ -1039,7 +1075,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[21]
+[22]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1062,7 +1098,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[22 <C:/Users/slo/workspace/masterThesis/img/deterioration1/fitnessLand.png (PN
+[23 <C:/Users/slo/workspace/masterThesis/img/deterioration1/fitnessLand.png (PN
 G copy)> <C:/Users/slo/workspace/masterThesis/img/deterioration1/deterioratedLa
 ndscape.png (PNG copy)>]
 ! Undefined control sequence.
@@ -1087,7 +1123,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[23 <C:/Users/slo/workspace/masterThesis/img/deterioration3/fitnessLand.png (PN
+[24 <C:/Users/slo/workspace/masterThesis/img/deterioration3/fitnessLand.png (PN
 G copy)> <C:/Users/slo/workspace/masterThesis/img/deterioration3/deterioratedFi
 tness.png (PNG copy)>]
 ! Undefined control sequence.
@@ -1112,17 +1148,21 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[24 <C:/Users/slo/workspace/masterThesis/img/deterioration4/result1_noCMA.png (
+[25 <C:/Users/slo/workspace/masterThesis/img/deterioration4/result1_noCMA.png (
 PNG copy)> <C:/Users/slo/workspace/masterThesis/img/deterioration4/result2_noCM
 A.png (PNG copy)>] (C:\Users\slo\workspace\masterThesis\TestedAlgorithms.tex
 Chapter 5.
-) [25
+) [26
 
 
 
 ] (C:\Users\slo\workspace\masterThesis\Implementation.tex
 Chapter 6.
-(C:\Users\slo\workspace\masterThesis\test-context.xml
+(C:\Users\slo\workspace\masterThesis\test-context.xml [27
+
+
+
+]
 Overfull \hbox (412.0029pt too wide) in paragraph at lines 4--6
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1142,23 +1182,9 @@ Overfull \hbox (63.79008pt too wide) in paragraph at lines 12--13
 [][][][][][][][][][][][][][][] 
  []
 
-[26
 
-
-
-]
 Overfull \hbox (37.50987pt too wide) in paragraph at lines 41--42
 [][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (30.93982pt too wide) in paragraph at lines 46--48
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.22003pt too wide) in paragraph at lines 68--69
-[][][][][][][][][][][][][][][][][] 
  []
 
 
@@ -1168,8 +1194,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.69     </p
-            roperty>
+l.42         <p
+               roperty name="minimization" value="false" />
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1179,35 +1205,68 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.69     </p
-            roperty>
+l.42         <p
+               roperty name="minimization" value="false" />
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[27]) <./img/ClassDiagrams/algorithm.jpg, id=121, 698.61pt x 397.485pt>
+[28]
+Overfull \hbox (30.93982pt too wide) in paragraph at lines 46--48
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.22003pt too wide) in paragraph at lines 68--69
+[][][][][][][][][][][][][][][][][] 
+ []
+
+)
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.49   \item J
+              AMA \cite{jama} - linear algebra package
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.49   \item J
+              AMA \cite{jama} - linear algebra package
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[29] <./img/ClassDiagrams/algorithm.jpg, id=134, 698.61pt x 397.485pt>
 File: ./img/ClassDiagrams/algorithm.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/algorithm.jpg>
-<./img/ClassDiagrams/EA.jpg, id=122, 2184.16pt x 748.7975pt>
+<./img/ClassDiagrams/EA.jpg, id=135, 2184.16pt x 748.7975pt>
 File: ./img/ClassDiagrams/EA.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/EA.jpg>
-<./img/ClassDiagrams/clustering.jpg, id=123, 1250.6725pt x 905.3825pt>
+<./img/ClassDiagrams/clustering.jpg, id=136, 1250.6725pt x 905.3825pt>
 File: ./img/ClassDiagrams/clustering.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/clustering.jpg>
-<./img/ClassDiagrams/deterioration.jpg, id=124, 1411.2725pt x 839.135pt>
+<./img/ClassDiagrams/deterioration.jpg, id=137, 1411.2725pt x 839.135pt>
 File: ./img/ClassDiagrams/deterioration.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/deterioration.jpg>
-<./img/ClassDiagrams/fitness.jpg, id=125, 1862.96pt x 608.2725pt>
+<./img/ClassDiagrams/fitness.jpg, id=138, 1862.96pt x 608.2725pt>
 File: ./img/ClassDiagrams/fitness.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/fitness.jpg>
-<./img/ClassDiagrams/population.jpg, id=126, 1411.2725pt x 718.685pt>
+<./img/ClassDiagrams/population.jpg, id=139, 1411.2725pt x 718.685pt>
 File: ./img/ClassDiagrams/population.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/population.jpg>)
@@ -1233,7 +1292,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[28]
+[30 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/algorithm.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1256,7 +1315,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[29 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/algorithm.jpg>]
+[31 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/EA.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1279,7 +1338,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[30 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/EA.jpg>]
+[32 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/clustering.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1302,7 +1361,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[31 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/clustering.jpg>]
+[33 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/deterioration.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1325,7 +1384,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[32 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/deterioration.jpg>]
+[34 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/fitness.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1348,33 +1407,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[33 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/fitness.jpg>]
-! Undefined control sequence.
-\f@ncyolf ->\small \@shortauthor 
-                                 \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \@shorttitlePL 
-                               
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[34 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/population.jpg>]
+[35 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/population.jpg>]
 (C:\Users\slo\workspace\masterThesis\Conclusions.tex
 Chapter 7.
-) [35
+) [36
 
 
 
@@ -1387,12 +1423,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 Schaefer and Joanna Ko³
+l.161 Schaefer and Joanna Ko³
                              odziej
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[36
+[37
 
 
 ] (C:\Users\slo\workspace\masterThesis\document.aux
@@ -1408,10 +1444,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5936 strings out of 494053
- 79639 string characters out of 3148609
- 166140 words of memory out of 3000000
- 9018 multiletter control sequences out of 15000+200000
+ 5955 strings out of 494053
+ 80102 string characters out of 3148609
+ 169155 words of memory out of 3000000
+ 9032 multiletter control sequences out of 15000+200000
  83297 words of font info for 79 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,12n,45p,722b,1652s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1430,9 +1466,9 @@ s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (34 pages, 4479270 bytes).
+Output written on document.pdf (35 pages, 4831242 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

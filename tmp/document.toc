@@ -10,21 +10,21 @@
 \contentsline {chapter}{\numberline {4}Fitness Deterioration}{16}
 \contentsline {section}{\numberline {4.1}Fitness deterioration and clustering}{18}
 \contentsline {subsection}{\numberline {4.1.1}Crunching functions}{18}
-\contentsline {section}{\numberline {4.2}Basic Scheme}{19}
-\contentsline {section}{\numberline {4.3}Weighted Scheme}{19}
-\contentsline {section}{\numberline {4.4}Covariance Matrix Adjustment}{20}
-\contentsline {subsection}{\numberline {4.4.1}Results}{21}
-\contentsline {chapter}{\numberline {5}Tested Algorithms}{25}
-\contentsline {section}{\numberline {5.1}HGS}{25}
-\contentsline {section}{\numberline {5.2}Tests}{25}
-\contentsline {subsection}{\numberline {5.2.1}Benchmark functions}{25}
-\contentsline {subsection}{\numberline {5.2.2}Accuracy measures}{25}
-\contentsline {subsection}{\numberline {5.2.3}Efficiency measures}{25}
-\contentsline {chapter}{\numberline {6}Implementation}{26}
-\contentsline {section}{\numberline {6.1}Architecture}{26}
-\contentsline {section}{\numberline {6.2}Implementation in Java}{28}
-\contentsline {subsection}{\numberline {6.2.1}Technologies}{28}
-\contentsline {subsection}{\numberline {6.2.2}Diagrams}{28}
-\contentsline {chapter}{\numberline {7}Conclusions}{35}
-\contentsline {section}{\numberline {7.1}Summary}{35}
-\contentsline {section}{\numberline {7.2}Future Research}{35}
+\contentsline {section}{\numberline {4.2}Basic Scheme}{20}
+\contentsline {section}{\numberline {4.3}Weighted Scheme}{20}
+\contentsline {section}{\numberline {4.4}Covariance Matrix Adjustment}{21}
+\contentsline {subsection}{\numberline {4.4.1}Results}{22}
+\contentsline {chapter}{\numberline {5}Tested Algorithms}{26}
+\contentsline {section}{\numberline {5.1}HGS}{26}
+\contentsline {section}{\numberline {5.2}Tests}{26}
+\contentsline {subsection}{\numberline {5.2.1}Benchmark functions}{26}
+\contentsline {subsection}{\numberline {5.2.2}Accuracy measures}{26}
+\contentsline {subsection}{\numberline {5.2.3}Efficiency measures}{26}
+\contentsline {chapter}{\numberline {6}Implementation}{27}
+\contentsline {section}{\numberline {6.1}Architecture}{27}
+\contentsline {section}{\numberline {6.2}Implementation in Java}{27}
+\contentsline {subsection}{\numberline {6.2.1}Technologies}{29}
+\contentsline {subsection}{\numberline {6.2.2}Diagrams}{30}
+\contentsline {chapter}{\numberline {7}Conclusions}{36}
+\contentsline {section}{\numberline {7.1}Summary}{36}
+\contentsline {section}{\numberline {7.2}Future Research}{36}

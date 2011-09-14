@@ -134,6 +134,25 @@ algorithm. As we mentioned earlier (see the definition of \textit{Fitness
 deterioration}) we crate one crunching function per cluster which, depending
 on the shape of the cluster may not be very accurate. To increase that accuracy
 we use the following property of the \textit{OPTICS ordering}:
+
+\begin{figure}
+  \centering
+  \fbox{
+    \includegraphics[scale=0.4]{clusters/cluster1.png}
+  }
+  \fbox{
+    \includegraphics[scale=0.4]{clusters/cluster2.png}
+  }
+  \fbox{
+    \includegraphics[scale=0.4]{clusters/cluster3.png}
+  }
+  \caption{The result of extracting clusters with different densities from a
+  given random data set. OPITCS ordering paraters: $\epsilon=1.0$ $minPts=15$.
+  The values of densities are: $\epsilon=0.5$, $\epsilon=0.25$, $\epsilon=0.1$
+  respectively (the second picture in each plot shows extracted clusters).}
+  \label{clusters}
+\end{figure}
+
 \begin{quotation}
 While creating the \textit{ordering} OPTICS constructs density-based clusters
 with respect to different densities simultaneously. \textit{OPTICS ordering}
@@ -141,12 +160,10 @@ actually contains the information about the intrinsic clustering structure of
 the input data set (up to the generating distance $\epsilon$) \cite{optics}.
 \end{quotation}
 
-TODO: plot
-
 Having the \textit{OPTICS ordering} of the population returned by the EA our
 method iteratively extract clusters with higher densities by decreasing 
-the \textit{neighborhood radius ($\epsilon$)}, construct crunching functions
-for extracted clusters and check if the resulting crunching functions 
+the \textit{neighborhood radius ($\epsilon$)} (see Figure 4.1), construct
+crunching functions for extracted clusters and check if the resulting crunching functions 
 is more accurate than the best found in previous iterations. 
 
 \begin{algorithmic}[1]
@@ -257,7 +274,7 @@ more costly than the previous one.
   \caption{The coefficient $\alpha_i$ is inversely proportional to the
   distance from the centers of clusters ($C_1, C_2, C_3$). $\alpha_i$ may be
   seen as the impact $C_i$ has on $x$}
-  \label{det1}
+  \label{weightedScheme}
 \end{figure}
 
 
