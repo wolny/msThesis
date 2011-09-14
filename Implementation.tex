@@ -28,18 +28,37 @@ others through clearly specified interfaces and together constitute a
 complete, lightweight framework for testing and execution of the global 
 optimization algorithms especially the evolutionary algorithms.
 \begin{itemize}
-  \item \textit{Algorithm module}
-  \item \textit{Clustering module}
-  \item \textit{Fitness deterioration module}
-  \item \textit{Evolutionary Algorithms module}
-  \item \textit{Printing Modul}
-  \item \textit{Statistics Utils}
+  \item \textit{Algorithm module} - central module of the framework. Contains
+  classes responsible for the main alogirthm as desribed in chapter 2.
+  The main class in the module is:
+  \textit{ki.edu.agh.algorithm.SequentialDeteriorationEAWithOpticsClustering}
+  \item \textit{Clustering module} - contains interfaces for clustering
+  algorithms and implementation of OPTICS.
+  \item \textit{Fitness deterioration module} - contains implementation of
+  \textit{FitnessDeterioration} interface. Most important are:
+  \textit{ki.edu.agh.deterioration.SimpleGaussianFitnessDeterioration} and 
+  \textit{ki.edu.agh.deterioration.WeightedGaussianDeterioratedFitness}.
+  \item \textit{Evolutionary Algorithms module} - contains all the necessary
+  interfaces for EA, selection and reproduction operators, individuals and
+  phenotypes. Implementations of SGA and Evolution Strategy. 
+  \item \textit{Printing Modul} - used to print populations and fitness
+  landscape during the program execution
+  \item \textit{Statistics Utils} - based on JAMA \cite{jama}. This package
+  contains many useful statistical functions, e.g. CMA algorithm, covariance
+  matrix estimation, multidimensional Gaussian function, fitness deterioration
+  utils.
 \end{itemize}
 
 \section{Implementation in Java}
-clean structure, good test coverage, 
-modular architercture, extensible,
-\lstinputlisting{test-context.xml}
+The framework was written to be elegant and extensible. The system's 
+modules are loosely coupled and each of system's components has little knowledge of the definitions 
+of other separate components (see previous secition). This allows for
+extensibility in further design. To implement the system we used Spring
+\cite{spring} as an application framework, Maven \cite{maven} for project
+management and build automation, JUnit \cite{junit} and Mockito \cite{mockito}
+for testing and Git \cite{git} as revision control system. 
+The source code, configuration files and sample results may be found at 
+GitHub \cite{github}: https://github.com/wolny/Fitness-Deterioration
 
 \subsection{Technologies}
 \begin{itemize}
@@ -48,10 +67,8 @@ modular architercture, extensible,
   \item Mockito \cite{mockito} - testing framework 
   \item JAMA \cite{jama} - linear algebra package
 \end{itemize}
-Spring, Maven, JUnit, Mockito, JAMA, TDD approach
 
 \subsection{Diagrams}
-class diagrams, sequence diagrams
 
 Below you may find class diagrams for each of the module implemented in our
 framework. It shows a general overview of the structure of a system: used

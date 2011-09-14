@@ -1,0 +1,32 @@
+\chapter{Installation and Configuration}
+\label{Installation and Configuration}
+
+\section{Installation and Execution Instructions}
+
+\begin{itemize}
+  \item Configuration file: \textit{application-context.xml} - here you specify
+  used algorithms, problem domain, fitness function and other aspects
+  of the system (see sample configuration below)
+  \item To build the project invoke: \textit{mvn clean install}. 
+  \item Program execution: \textit{mvn exec:java} By default the main class of
+  the project is:
+  \textit{ki.edu.agh.algorithm.SequentialDeteriorationEAWithOpticsClustering}
+  (see \textit{pom.xml} for more details)
+\end{itemize}
+
+\section{Program Results}
+Program saves the results in 'diagrams' catalog:
+\begin{itemize}
+ \item cluster's members are stored in files of the name 'clusterN', where N is
+ the number of cluster 
+ \item populations for each run are stored in files
+ 'populationN', where N is the number of EA run 
+ \item fitness landscape is stored in file 'originalFitnessLand'
+ \item reachablity plot for OPTICS algorithm is stored in ''reachabilityPlot'
+ \item fitness landscape after each run is stored in 'fintessLand\_iterN' where
+ N is the number of EA run
+\end{itemize}
+
+
+\section{Sample Spring configuration}
+\lstinputlisting{test-context.xml}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  13 SEP 2011 21:44
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  14 SEP 2011 22:31
 entering extended mode
 **document.tex
 (C:\Users\slo\workspace\masterThesis\document.tex
@@ -561,7 +561,8 @@ LaTeX Warning: Label `ea' multiply defined.
 
 LaTeX Warning: Label `ea' multiply defined.
 
-) (C:\Users\slo\workspace\masterThesis\Conclusions.aux))
+) (C:\Users\slo\workspace\masterThesis\Conclusions.aux)
+(C:\Users\slo\workspace\masterThesis\Configuration.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
@@ -726,7 +727,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.79 \include{Introduction}
+l.80 \include{Introduction}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -737,7 +738,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.79 \include{Introduction}
+l.80 \include{Introduction}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -758,7 +759,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.81 \include{Algorithm}
+l.82 \include{Algorithm}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -769,7 +770,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.81 \include{Algorithm}
+l.82 \include{Algorithm}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -830,7 +831,7 @@ LaTeX Warning: Float too large for page by 12.81744pt on input line 159.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -841,7 +842,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -854,7 +855,7 @@ slo/workspace/masterThesis/img/clusters.png (PNG copy)>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -865,7 +866,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1056,7 +1057,7 @@ File: ./img/deterioration4/result2_noCMA.png Graphic file (type png)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1067,7 +1068,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1079,7 +1080,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1090,7 +1091,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1104,7 +1105,7 @@ ndscape.png (PNG copy)>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1115,7 +1116,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1129,7 +1130,7 @@ tness.png (PNG copy)>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1140,7 +1141,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1158,11 +1159,242 @@ Chapter 5.
 
 ] (C:\Users\slo\workspace\masterThesis\Implementation.tex
 Chapter 6.
-(C:\Users\slo\workspace\masterThesis\test-context.xml [27
+
+Underfull \hbox (badness 2103) in paragraph at lines 31--35
+[][]\T1/ptm/m/it/10.95 Algorithm mod-ule \T1/ptm/m/n/10.95 - cen-tral mod-ule o
+f the frame-work. Con-tains classes re-spon-si-ble for
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 31--35
+\T1/ptm/m/n/10.95 the main alo-girthm as desribed in chap-ter 2. The main class
+ in the mod-ule is:
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 37--41
+[][]\T1/ptm/m/it/10.95 Fitness de-te-ri-o-ra-tion mod-ule \T1/ptm/m/n/10.95 - c
+on-tains im-ple-men-ta-tion of \T1/ptm/m/it/10.95 Fit-ness-De-te-ri-o-ra-tion \
+T1/ptm/m/n/10.95 in-ter-
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 37--41
+\T1/ptm/m/n/10.95 face. Most im-por-tant are: \T1/ptm/m/it/10.95 ki.edu.agh.det
+erioration.SimpleGaussianFitnessDeterioration \T1/ptm/m/n/10.95 and
+ []
+
+[27
 
 
 
-]
+] <./img/ClassDiagrams/algorithm.jpg, id=128, 698.61pt x 397.485pt>
+File: ./img/ClassDiagrams/algorithm.jpg Graphic file (type jpg)
+
+<use ./img/ClassDiagrams/algorithm.jpg>
+<./img/ClassDiagrams/EA.jpg, id=129, 2184.16pt x 748.7975pt>
+File: ./img/ClassDiagrams/EA.jpg Graphic file (type jpg)
+
+<use ./img/ClassDiagrams/EA.jpg>
+<./img/ClassDiagrams/clustering.jpg, id=130, 1250.6725pt x 905.3825pt>
+File: ./img/ClassDiagrams/clustering.jpg Graphic file (type jpg)
+
+<use ./img/ClassDiagrams/clustering.jpg>
+<./img/ClassDiagrams/deterioration.jpg, id=131, 1411.2725pt x 839.135pt>
+File: ./img/ClassDiagrams/deterioration.jpg Graphic file (type jpg)
+
+<use ./img/ClassDiagrams/deterioration.jpg>
+<./img/ClassDiagrams/fitness.jpg, id=132, 1862.96pt x 608.2725pt>
+File: ./img/ClassDiagrams/fitness.jpg Graphic file (type jpg)
+
+<use ./img/ClassDiagrams/fitness.jpg>
+<./img/ClassDiagrams/population.jpg, id=133, 1411.2725pt x 718.685pt>
+File: ./img/ClassDiagrams/population.jpg Graphic file (type jpg)
+
+<use ./img/ClassDiagrams/population.jpg>)
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[28]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[29 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/algorithm.jpg>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[30 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/EA.jpg>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[31 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/clustering.jpg>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[32 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/deterioration.jpg>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[33 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/fitness.jpg>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.90 \include{Implementation}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[34 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/population.jpg>]
+(C:\Users\slo\workspace\masterThesis\Conclusions.tex
+Chapter 7.
+) [35
+
+
+
+] (C:\Users\slo\workspace\masterThesis\Configuration.tex
+Appendix A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+[][]\T1/ptm/m/n/10.95 Program ex-e-cu-tion: \T1/ptm/m/it/10.95 mvn exec:java \T
+1/ptm/m/n/10.95 By de-fault the main class of the project is:
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 11--15
+\T1/ptm/m/it/10.95 ki.edu.agh.algorithm.SequentialDeteriorationEAWithOpticsClus
+tering \T1/ptm/m/n/10.95 (see \T1/ptm/m/it/10.95 pom.xml \T1/ptm/m/n/10.95 for 
+more
+ []
+
+(C:\Users\slo\workspace\masterThesis\test-context.xml
 Overfull \hbox (412.0029pt too wide) in paragraph at lines 4--6
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1177,7 +1409,11 @@ Overfull \hbox (17.79971pt too wide) in paragraph at lines 8--9
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
+[36
 
+
+
+]
 Overfull \hbox (63.79008pt too wide) in paragraph at lines 12--13
 [][][][][][][][][][][][][][][] 
  []
@@ -1188,14 +1424,19 @@ Overfull \hbox (37.50987pt too wide) in paragraph at lines 41--42
  []
 
 
+Overfull \hbox (30.93982pt too wide) in paragraph at lines 46--48
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.42         <p
-               roperty name="minimization" value="false" />
+l.49     <p
+           roperty name="clusteringAlgorithm">
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1205,30 +1446,25 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.42         <p
-               roperty name="minimization" value="false" />
+l.49     <p
+           roperty name="clusteringAlgorithm">
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[28]
-Overfull \hbox (30.93982pt too wide) in paragraph at lines 46--48
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
+[37]
 Overfull \hbox (57.22003pt too wide) in paragraph at lines 68--69
 [][][][][][][][][][][][][][][][][] 
  []
 
-)
+))
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.49   \item J
-              AMA \cite{jama} - linear algebra package
+l.95 \include{Configuration}
+                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1238,183 +1474,15 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.49   \item J
-              AMA \cite{jama} - linear algebra package
+l.95 \include{Configuration}
+                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[29] <./img/ClassDiagrams/algorithm.jpg, id=134, 698.61pt x 397.485pt>
-File: ./img/ClassDiagrams/algorithm.jpg Graphic file (type jpg)
-
-<use ./img/ClassDiagrams/algorithm.jpg>
-<./img/ClassDiagrams/EA.jpg, id=135, 2184.16pt x 748.7975pt>
-File: ./img/ClassDiagrams/EA.jpg Graphic file (type jpg)
-
-<use ./img/ClassDiagrams/EA.jpg>
-<./img/ClassDiagrams/clustering.jpg, id=136, 1250.6725pt x 905.3825pt>
-File: ./img/ClassDiagrams/clustering.jpg Graphic file (type jpg)
-
-<use ./img/ClassDiagrams/clustering.jpg>
-<./img/ClassDiagrams/deterioration.jpg, id=137, 1411.2725pt x 839.135pt>
-File: ./img/ClassDiagrams/deterioration.jpg Graphic file (type jpg)
-
-<use ./img/ClassDiagrams/deterioration.jpg>
-<./img/ClassDiagrams/fitness.jpg, id=138, 1862.96pt x 608.2725pt>
-File: ./img/ClassDiagrams/fitness.jpg Graphic file (type jpg)
-
-<use ./img/ClassDiagrams/fitness.jpg>
-<./img/ClassDiagrams/population.jpg, id=139, 1411.2725pt x 718.685pt>
-File: ./img/ClassDiagrams/population.jpg Graphic file (type jpg)
-
-<use ./img/ClassDiagrams/population.jpg>)
-! Undefined control sequence.
-\f@ncyolf ->\small \@shortauthor 
-                                 \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \@shorttitlePL 
-                               
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[30 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/algorithm.jpg>]
-! Undefined control sequence.
-\f@ncyolf ->\small \@shortauthor 
-                                 \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \@shorttitlePL 
-                               
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[31 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/EA.jpg>]
-! Undefined control sequence.
-\f@ncyolf ->\small \@shortauthor 
-                                 \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \@shorttitlePL 
-                               
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[32 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/clustering.jpg>]
-! Undefined control sequence.
-\f@ncyolf ->\small \@shortauthor 
-                                 \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \@shorttitlePL 
-                               
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[33 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/deterioration.jpg>]
-! Undefined control sequence.
-\f@ncyolf ->\small \@shortauthor 
-                                 \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \@shorttitlePL 
-                               
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[34 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/fitness.jpg>]
-! Undefined control sequence.
-\f@ncyolf ->\small \@shortauthor 
-                                 \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \@shorttitlePL 
-                               
-l.89 \include{Implementation}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[35 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/population.jpg>]
-(C:\Users\slo\workspace\masterThesis\Conclusions.tex
-Chapter 7.
-) [36
-
-
-
-]
+[38]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `utf8'.
@@ -1423,34 +1491,58 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161 Schaefer and Joanna Ko³
+l.172 Schaefer and Joanna Ko³
                              odziej
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[37
+[39
 
 
-] (C:\Users\slo\workspace\masterThesis\document.aux
+]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.176 \end{document}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.176 \end{document}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[40] (C:\Users\slo\workspace\masterThesis\document.aux
 (C:\Users\slo\workspace\masterThesis\Introduction.aux)
 (C:\Users\slo\workspace\masterThesis\Algorithm.aux)
 (C:\Users\slo\workspace\masterThesis\Clustering.aux)
 (C:\Users\slo\workspace\masterThesis\FitnessDeterioration.aux)
 (C:\Users\slo\workspace\masterThesis\TestedAlgorithms.aux)
 (C:\Users\slo\workspace\masterThesis\Implementation.aux)
-(C:\Users\slo\workspace\masterThesis\Conclusions.aux))
+(C:\Users\slo\workspace\masterThesis\Conclusions.aux)
+(C:\Users\slo\workspace\masterThesis\Configuration.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5955 strings out of 494053
- 80102 string characters out of 3148609
- 169155 words of memory out of 3000000
- 9032 multiletter control sequences out of 15000+200000
+ 5967 strings out of 494053
+ 80501 string characters out of 3148609
+ 167607 words of memory out of 3000000
+ 9037 multiletter control sequences out of 15000+200000
  83297 words of font info for 79 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,12n,45p,722b,1652s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,12n,45p,722b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -1466,9 +1558,9 @@ s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (35 pages, 4831242 bytes).
+Output written on document.pdf (38 pages, 4836733 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

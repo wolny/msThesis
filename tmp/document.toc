@@ -22,9 +22,13 @@
 \contentsline {subsection}{\numberline {5.2.3}Efficiency measures}{26}
 \contentsline {chapter}{\numberline {6}Implementation}{27}
 \contentsline {section}{\numberline {6.1}Architecture}{27}
-\contentsline {section}{\numberline {6.2}Implementation in Java}{27}
-\contentsline {subsection}{\numberline {6.2.1}Technologies}{29}
-\contentsline {subsection}{\numberline {6.2.2}Diagrams}{30}
-\contentsline {chapter}{\numberline {7}Conclusions}{36}
-\contentsline {section}{\numberline {7.1}Summary}{36}
-\contentsline {section}{\numberline {7.2}Future Research}{36}
+\contentsline {section}{\numberline {6.2}Implementation in Java}{28}
+\contentsline {subsection}{\numberline {6.2.1}Technologies}{28}
+\contentsline {subsection}{\numberline {6.2.2}Diagrams}{28}
+\contentsline {chapter}{\numberline {7}Conclusions}{35}
+\contentsline {section}{\numberline {7.1}Summary}{35}
+\contentsline {section}{\numberline {7.2}Future Research}{35}
+\contentsline {chapter}{\numberline {A}Installation and Configuration}{36}
+\contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{36}
+\contentsline {section}{\numberline {A.2}Program Results}{36}
+\contentsline {section}{\numberline {A.3}Sample Spring configuration}{36}
