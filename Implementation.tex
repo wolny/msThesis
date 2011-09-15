@@ -3,7 +3,7 @@
 \chapter{Implementation}
 \label{Implementation}
 To verify our algorithm we have created a simple, global optimization framework
-which enabled us to execute and test all of the algorithms descirbe throughout
+which enabled us to execute and test all of the algorithms described throughout
 this article.
 
 We decided to use Java \cite{java} as a programming language and runtime
@@ -11,13 +11,13 @@ environment for this project.
 
 Using the framework we can find optima of real, mulimodal, multidimensional and
 continuous functions. We just need to provide the framework with the concrete
-fitness function implementation, domain and by specifing the problem domain.
+fitness function implementation, domain and by specifying the problem domain.
 
 The framework principle is to separate the interfaces from implementation.
 Our API provides interfaces for evolutionary algorithms, fitness assignment
-and fitness deterioration, genetic oprators like selection and reproducion,
+and fitness deterioration, genetic operators like selection and reproduction,
 phenotype, clustering algorithms and many more. This makes it compact,
-extensible and easy to indroduce new implementations.
+extensible and easy to introduce new implementations.
 For the detailed description of the classes and interfaces see subsection
 'Implementation in Java'.  
 
@@ -29,7 +29,7 @@ complete, lightweight framework for testing and execution of the global
 optimization algorithms especially the evolutionary algorithms.
 \begin{itemize}
   \item \textit{Algorithm module} - central module of the framework. Contains
-  classes responsible for the main alogirthm as desribed in chapter 2.
+  classes responsible for the main algorithm as described in chapter 2.
   The main class in the module is:
   \textit{ki.edu.agh.algorithm.SequentialDeteriorationEAWithOpticsClustering}
   \item \textit{Clustering module} - contains interfaces for clustering
@@ -46,13 +46,13 @@ optimization algorithms especially the evolutionary algorithms.
   \item \textit{Statistics Utils} - based on JAMA \cite{jama}. This package
   contains many useful statistical functions, e.g. CMA algorithm, covariance
   matrix estimation, multidimensional Gaussian function, fitness deterioration
-  utils.
+  untilities.
 \end{itemize}
 
 \section{Implementation in Java}
 The framework was written to be elegant and extensible. The system's 
 modules are loosely coupled and each of system's components has little knowledge of the definitions 
-of other separate components (see previous secition). This allows for
+of other separate components (see previous section). This allows for
 extensibility in further design. To implement the system we used Spring
 \cite{spring} as an application framework, Maven \cite{maven} for project
 management and build automation, JUnit \cite{junit} and Mockito \cite{mockito}
