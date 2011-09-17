@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  15 SEP 2011 07:08
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  17 SEP 2011 09:58
 entering extended mode
 **document.tex
 (C:\Users\slo\workspace\masterThesis\document.tex
@@ -931,12 +931,12 @@ File: ./img/clusters/cluster3.png Graphic file (type png)
 
 <use ./img/clusters/cluster3.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 183.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 187.
 
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.202   \item T
+l.206   \item T
                riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -947,7 +947,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.202   \item T
+l.206   \item T
                riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -959,7 +959,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.202   \item T
+l.206   \item T
                riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -970,7 +970,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.202   \item T
+l.206   \item T
                riangular 	$K(u) = (1-|u|) \,\mathbf{1}_{\{|u|\leq1\}}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -984,7 +984,7 @@ sterThesis/img/clusters/cluster3.png>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.254 \end{equation}
+l.260 \end{equation}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -995,7 +995,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.254 \end{equation}
+l.260 \end{equation}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1010,8 +1010,8 @@ File: ./img/AdaptiveScheme.png Graphic file (type png)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.307   \item f
-               or each eigenvector $v_i$ we generate two points (so called
+l.311 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1021,8 +1021,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.307   \item f
-               or each eigenvector $v_i$ we generate two points (so called
+l.311 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1558,7 +1558,7 @@ s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (38 pages, 4836677 bytes).
+Output written on document.pdf (38 pages, 4840470 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

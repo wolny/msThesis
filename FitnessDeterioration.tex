@@ -147,9 +147,13 @@ we use the following property of the \textit{OPTICS ordering}:
     \includegraphics[scale=0.4]{clusters/cluster3.png}
   }
   \caption{The result of extracting clusters with different densities from a
-  given random data set. OPITCS ordering paraters: $\epsilon=1.0$ $minPts=15$.
-  The values of densities are: $\epsilon=0.5$, $\epsilon=0.25$, $\epsilon=0.1$
-  respectively (the second picture in each plot shows extracted clusters).}
+  random data set. OPITCS ordering parameters: $\epsilon=1.0$ $minPts=15$.
+  The values of density radius are: $\epsilon=0.5$, $\epsilon=0.25$,
+  $\epsilon=0.1$ respectively (the second picture in each plot shows extracted clusters).
+  Assuming that clusters are dense in basins of attraction, it would be very
+  inaccurate to create Gaussian \textit{crunching function} for clusters
+  from the first diagram (bear in mind that we create one \textit{crunching
+  function} per cluster)}
   \label{clusters}
 \end{figure}
 
@@ -231,24 +235,26 @@ Fitness function in $k+1$th iteration is of the form:
 where M is the number of generated Gaussian functions. In this case all
 $\alpha$-coefficients from equation 4.1 are equal $1$.
 
-This version of the algorithm cause strong degradation of the fitness function
-in the neighborhood of the solution, so there is a risk that deterioration of
-one solution affect others which are close to it. To overcome this issue we
+The greate advantage of this algorithm are it's simplicity and it's speed.
+Howerver, this version of the algorithm may cause strong deformation of the
+fitness landscape in areas which are distant from the already found clusters,
+which is unacceptable. To overcome this issue we
 developed so called \textit{weighted scheme} described in the next section.
-Disadvantages of the weighted approach is that it may take a long time
-to find new solutions, because of the slow degradation process. 
+Disadvantages of the weighted approach is that it is a great deal slower
+than the \textit{Basic scheme}. 
 
 \section{Weighted Scheme}
 
-This type of fitness deterioration is more accurate and may produce more 
-stable fitness (\textit{Basic scheme} may produce some sharp peaks in 
-fitness landscape, because of very aggressive fitness degeneration) than the 
-\textit{Basic scheme}. Is also more complex as it is resulting in
-slightly more computionally intensive fitness functions.
+This type of fitness deterioration is more accurate and is likely to produce
+more stable fitness that \textit{Basic scheme}, cause the latter, as we
+mentioned in the previous section, may produce sharp peaks in the fitness
+landscape, because of the very aggressive fitness degeneration.
+\textit{Weighted Scheme} is also more complex couse it generates
+more computionally intensive fitness functions.
 
 Initial steps are the same as in \textit{Basic scheme} (we create 
 multi-dimensional Gaussian function for each cluster). What is different
-is how we compute the deteriorated fitness for a given individual $x$:
+is how we compute the new (deteriorated) fitness for a given individual $x$:
 \begin{equation}
 F_{k+1}(x)=F_k(x) + \sum_{i=1}^M \alpha_i(x) g_i(x)
 \end{equation}
@@ -257,30 +263,39 @@ where the $\alpha$-coefficients are given by the following equations:
 	\alpha_1 + \ldots + \alpha_M = 1
 \end{equation}
 \begin{equation}
-	\alpha_i = \xi\frac{1}{r_i}
+	\alpha_i = \xi(\frac{1}{r_i})^p
 \end{equation}
 which gives:
 \begin{equation}
-\frac{1}{\xi}=\frac{1}{r_1} + \ldots + \frac{1}{r_M}
+\frac{1}{\xi}=\frac{1}{r_1^p} + \ldots + \frac{1}{r_M^p}
 \end{equation}
-where $r_i$ is the distance from the center of cluster $i$. This coefficients
-are computed separately for each new individual and this is why this method is
-more costly than the previous one.
+where $r_i$ is the distance between $x$ and the center of cluster $i$ and $p$
+is a power to which the distance is rised. Parameter $p$ is used when an
+individual finds themselves near one cluster to strengthen the impact of this
+cluster and to weaken the impact of other clusters. So to compute fitness for a 
+given individual $x$ we have to compute distances between $x$ and clusters. 
+Then we compute $\xi$, which is just a proportionality
+factor, from the equation $(4.9)$ and lastly we compute $\alpha$-coefficients
+from $(4.8)$ and the fitness value. Experiments show that values $p \in [1;1.5)$
+yield good results. $\alpha$-coefficients are computed separately for each new 
+individual and this is why this method is more costly than the previous one.
 \begin{figure}
   \centering
   \fbox{
     \includegraphics[scale=0.5]{AdaptiveScheme.png}
   }
-  \caption{The coefficient $\alpha_i$ is inversely proportional to the
-  distance from the centers of clusters ($C_1, C_2, C_3$). $\alpha_i$ may be
-  seen as the impact $C_i$ has on $x$}
+  \caption{The coefficient $\alpha_i$ is inversely proportional to the (a power
+  of) distance from the center of cluster $C_i$ to the $x$. $\alpha_i$ may
+  be seen as the impact $C_i$ has on $x$}
   \label{weightedScheme}
 \end{figure}
 
-
-The \textit{Weighted Scheme} is more smooth and gentle and more costly.
-It should do better than \textit{Basic scheme} for problems with many local
-solutions. 
+If we look at the equation $(4.6)$ it is clear that regions of domain
+which are distant from clusters found in previous iterations of the algorithm
+are very little affected by the crunching functions which is a big advantage
+over the \textit{Basic scheme}. 
+The \textit{Weighted Scheme} is more smooth and precise, but on the other hand
+more costly. In general it should do better than \textit{Basic scheme}.
 
 \section{Covariance Matrix Adjustment}
 Because of the fast convergence of populations
@@ -307,7 +322,9 @@ Having given a cluster of points the CMA algorithms works as follows:
   \item for each eigenvector $v_i$ we generate two points (so called
   \textit{outliers})
   \begin{equation}
-  	p_{i1} = \overline{m} + \sqrt{\lambda_i}\overline{v_i}, 
+  	p_{i1} = \overline{m} + \sqrt{\lambda_i}\overline{v_i}
+  \end{equation} 
+  \begin{equation}
   	p_{i2} = \overline{m} - \sqrt{\lambda_i}\overline{v_i}
   \end{equation} 
   where $\overline{m}$ is the center of the cluster (mean value), $\lambda_i$ is

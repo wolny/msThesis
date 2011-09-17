@@ -3,5 +3,36 @@
 \label{Conclusions}
 
 \section{Summary}
+TODO: what did I do
 
 \section{Future Research}
+
+This work focuses mainly on the \textit{Fitness Deterioration} algorithm and
+shows the result of Basic and Weighted variants of the algorithm applied to
+simple multimodal functions (see chapter 4). Given the \textit{Sequential
+niching} algorithm described at the beginning of this paper (chapter 2), the main
+direction of the future research should be to test this algorithm using many 
+different evolutionary algorithms and evolution strategy.
+The most promising algorithm to choose would be \textit{Hierarchical Genetic
+Strategy} (HGS) \cite{hgs}.
+
+The Hierarchical Genetic Strategy (HGS) performs efficient concurrent
+search in the optimization landscape by many small populations. The creation of
+these populations is governed by dependent genetic processes with low complexity
+\cite{hgs}. HGS is an example of parallel genetic algorithms and it performs
+very well especially in case of problems with many local extrema.
+Taking into account the fact that HGS is likely to find many solutions in a
+single run of the algorithm and that the hierarchy of populations generated
+by the algorithm are rapidly convergent it would be very efficient 
+from the standpoint of the deterioration process.
+
+There are many aspects of the implementation of \textit{Sequential
+niching} algorithm, described in chapter 6, which can be improved as well. 
+The framework uses very simple concurrency model which may be further
+developed to improve the overall performance of the algorithm.
+The most costly stages of the algorithm include: fitness function computations
+during EA algorithm and creation of \textit{OPTICS ordering} \cite{optics}.
+The former problem might be solved by introducing some of the known
+parallel genetic algorithms and the latter might be tackled by proper
+domain decomposition. If we want to introduce a highly concurrent EA model
+again it would be best to use HGS because of its natural concurrent character.
