@@ -3,7 +3,53 @@
 \label{Conclusions}
 
 \section{Summary}
-TODO: what did I do
+The aim of my Master Thesis was to find an effective fitness deterioration
+algorithm as defined in chapter 4, which minimizes the chance of multiple
+exploration of the same solution during the course of the \textit{Sequential
+niching} algorithm. Taking into account the results of tests described in
+chapter 5 we may come to the conclusion that the goal was reached. However,
+tests was performed only for simple
+multimodal problems in which the obtained clusters were convex and provides 
+a lot of information about underlying basins of attraction. Applying the
+algorithm for more demanding functions should be the next step in the further
+development of the algorithm.  
+
+The assumption that distribution of individuals inside a cluster provides
+information about its shape oversimplifies the real nature of the evolutionary
+algorithms, where the population distribution inside basins of attraction is 
+very hard to predict and depends on many factors, including recombination versus
+mutation rate, selection algorithm, definition of genetic operators such as
+mutation and crossover. We can expect satisfactory results when
+choosing proportionate selection and genetic operators which are based on normal
+distribution. \textit{Fitness Proportionate Selection} usually causes faster
+convergence to local solutions and normal distribution based reproduction operators tends 
+to produce populations with useful information about fitness landscape.
+
+Choosing weighted crunching functions for \textit{Fitness deterioration}
+(as described in section 4.3) is always more accurate than the
+\textit{Basic scheme} described in section 4.2. 
+You can sacrifice accuracy for speed when fitness function
+evaluation is very costly by using the \textit{Basic scheme}.
+
+The most valuable outcomes of this work are:
+\begin{itemize}
+  \item definition and implementation of a hybrid metaheuristic called \textit{Sequential
+  niching} which may be used for solving multimodal optimization problems.
+  \item applying clustering algorithms as a reasonable stop criterion for
+  real-valued evolutionary algorithms
+  \item using properties of \textit{OPTICS ordering} \cite{optics} to improve
+  the deterioration process
+  \item definition and implementation of two variants of the fitness
+  deterioration algorithm which might be used in different scenarios depending
+  on the expected speed and accuracy of the global optimization
+  \item definition and implementation of the \textit{Covariance Matrix
+  Adaptation} algorithm which improves the efficiency of the fitness
+  deterioration
+  \item creation of an extensible, lightweight framework which implements all of
+  the algorithms and ideas presented in this work and which can be used for
+  further research
+\end{itemize}
+
 
 \section{Future Research}
 

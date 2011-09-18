@@ -23,7 +23,7 @@ Evolutionary algorithms have the tendency to lose diversity within their
 population of feasible solutions and to converge into a single solution.
 However, there are domains where the global solution may not suffice. 
 Such problems require the location and maintenance of multiple robust local
-solutions, i.e local solutions whose basins of attraction areproperly wide and deep.
+solutions, i.e. local solutions whose basins of attraction are properly wide and deep.
 
 The most common technique in evolutionary algorithm which is
 used to achieve this goal is to incorporate some sort of niching method
@@ -31,7 +31,7 @@ like crowding or fitness sharing which promote diversity of population,
 which in turn delay premature convergence and likely enable the algorithm to
 find multiple optimal solutions in single population.
  
-Standard niching methods are often inefective and hard to introduce 
+Standard niching methods are often ineffective and hard to introduce 
 in existing evolutionary algorithms. In this paper we adopt a
 different approach to multimodal function optimization. Instead of
 embedding a niching method in the evolutionary algorithm itself we
@@ -65,24 +65,26 @@ best accuracy of fitness deterioration process.
 \section{Related Work}
 
 As mentioned before this work focus on finding solutions for multi-modal
-optimization tasks. There are many publications which decsribes how to extend
+optimization tasks. There are many publications which describes how to extend
 EAs to multi-modal optimization. Most of them focuses on 
 \textit{Niching methods} \cite{niching,sharing,dynsharing} which address this
-issue by maintaining a population of diverse solutions througout the time and this way they allow
+issue by maintaining a population of diverse solutions throughout the time and this way they allow
 parallel convergence into multiple good solutions in multimodal domains.
 
-Our solution works by iterating a simple GA and maintaining the best solution of
-each run off-line, by detection of basins of attraction and degeneration of
-fitness landscape. We may consider our algorihtm as a variant of
-\textit{Sequential niching} approach (throughout this paper we use terms 
-\textit{Sequential niching} and \textit{Fitness deterioration} interchangeably).
+Our solution works by running an evolutionary algorithm (here we may choose
+SGA, Evolution Strategy, etc.) multiple times and after each run it tries
+to detect basins of attraction where local extremum reside and 
+degenerates the fitness landscape. This process is what we call
+\textit{Sequential niching} algorithm. The rest of this paper describes 
+the \textit{Sequential niching} algorithm in a top-down manner, starting
+from the high-level description of the algorithm in chapter 2.   
 
 At this point it is worth mentioning some of the works of Prof. A. Obuchowicz 
 especially the publication \cite{esss} which is the only one I found which 
 use the term \textit{fitness deterioration} explicitly.
 In \cite{esss} he describes ESSS-DOF algorithm (Evolutionary Search with Soft
 Selection with Deterioration of Objective Function) as an extension to the ESSS
-method which maintaing population diversity by the following schema:
+method which maintaining population diversity by the following schema:
 \begin{quotation}
 When the population converges to local optimum we degenerate the objective 
 function which cause the rapid migration of individuals and enable the 
@@ -95,7 +97,7 @@ described in detail in chapter 4 uses Gaussian functions as well
 (Gaussian function has got many useful properties which makes it well-suited
 to the fitness deterioration. We describe these characteristics in chapter 4).
 
-Mentined methods are incorporated directly into the basic cycle of evolutionary
+Mentioned methods are incorporated directly into the basic cycle of evolutionary
 algorithm which differs from our \textit{Sequential niching} technique. 
 The sequential niching approach has several advantages:
 

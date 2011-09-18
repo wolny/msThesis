@@ -1,17 +1,20 @@
 
-\chapter{Algorithm}
-\label{Algorithm}
+\chapter{Sequential niching algorithm}
+\label{Sequential niching algorithm}
 
-\section{A Hybrid Approach}
+\begin{definition}\label{def:sequential-niching}
+\textbf{Sequential niching} - the process of iterative degradation of fitness
+landscape in the areas occupied by clusters of individuals which are assumed
+to agglomerate inside basins of attraction.
+\end{definition}
 
+\section{Hybrid Approach}
 Our deterioration algorithm may be easily incorporated in existing optimization
 methods. This can be expressed as a general hybrid approach to global
 optimization in which we do not change the implementation of the used EA
-but treat it as an integral element of our iterative process.
-This can be visualized by the following pseudo code:
-
-
-
+but treat it as an integral element of our \textit{sequential niching} process.
+The following pseudo code shows the general idea behind the \textit{sequential
+niching}:
 
 \begin{algorithmic}[1]
 \WHILE{$i < getIterationCount()$}
@@ -30,8 +33,6 @@ This can be visualized by the following pseudo code:
 \end{algorithmic}
 
 
-
-
 The condition in while statement should be treated as control statement rather
 than the real termination criterion. It may be useful in cases where the
 clustering algorithm is misconfigured and always returns some clusters in which
@@ -46,10 +47,10 @@ methods which must be incorporated directly in the evolutionary algorithm. But
 what is more important, it provides a reasonable stop criterion which in this case is based 
 on the quality of clusters returned by the clustering algorithm.
  
-In the subsequent chapters we will describe components  of the general
-algorithm in more details.
+In the subsequent chapters we will describe components  of the
+\textit{sequential niching} algorithm in more details.
 In chapter 3 we will discuss the clustering method used in our algorithm and 
-how does it influence the deterioration process. Chapter 4 describes
+how does it influence the deterioration process. Chapter 4 describes the
 deterioration algorithm in more detail and chapter 5 shows the results 
-of the tests.
+of the algorithm applied to simple multimodal problems.
 

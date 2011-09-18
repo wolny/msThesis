@@ -1,8 +1,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{7}
 \contentsline {section}{\numberline {1.1}A statement of a problem}{7}
 \contentsline {section}{\numberline {1.2}Related Work}{8}
-\contentsline {chapter}{\numberline {2}Algorithm}{10}
-\contentsline {section}{\numberline {2.1}A Hybrid Approach}{10}
+\contentsline {chapter}{\numberline {2}Sequential niching algorithm}{10}
+\contentsline {section}{\numberline {2.1}Hybrid Approach}{10}
 \contentsline {chapter}{\numberline {3}Clustering}{12}
 \contentsline {section}{\numberline {3.1}Cluster Extension}{12}
 \contentsline {section}{\numberline {3.2}Clustering as a Stop Criterion}{12}
@@ -27,8 +27,8 @@
 \contentsline {subsection}{\numberline {6.2.2}Diagrams}{28}
 \contentsline {chapter}{\numberline {7}Conclusions}{35}
 \contentsline {section}{\numberline {7.1}Summary}{35}
-\contentsline {section}{\numberline {7.2}Future Research}{35}
-\contentsline {chapter}{\numberline {A}Installation and Configuration}{36}
-\contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{36}
-\contentsline {section}{\numberline {A.2}Program Results}{36}
-\contentsline {section}{\numberline {A.3}Sample Spring configuration}{36}
+\contentsline {section}{\numberline {7.2}Future Research}{36}
+\contentsline {chapter}{\numberline {A}Installation and Configuration}{37}
+\contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{37}
+\contentsline {section}{\numberline {A.2}Program Results}{37}
+\contentsline {section}{\numberline {A.3}Sample Spring configuration}{37}
