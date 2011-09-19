@@ -11,7 +11,7 @@ environment for this project.
 
 Using the framework we can find optima of real, mulimodal, multidimensional and
 continuous functions. We just need to provide the framework with the concrete
-fitness function implementation, domain and by specifying the problem domain.
+fitness function implementation, and by specifying the problem domain.
 
 The framework principle is to separate the interfaces from implementation.
 Our API provides interfaces for evolutionary algorithms, fitness assignment
@@ -29,15 +29,16 @@ complete, lightweight framework for testing and execution of the global
 optimization algorithms especially the evolutionary algorithms.
 \begin{itemize}
   \item \textit{Algorithm module} - central module of the framework. Contains
-  classes responsible for the main algorithm as described in chapter 2.
-  The main class in the module is:
-  \textit{ki.edu.agh.algorithm.SequentialDeteriorationEAWithOpticsClustering}
+  implementation of the \textit{Sequential Niching} algorithm as described in
+  chapter 2. The main class in the module
+  \textit{ki.edu.agh.algorithm.SequentialNichingWithOpticsClustering} is
+  responsible for creation of the Spring context and execution of the algorithm. 
   \item \textit{Clustering module} - contains interfaces for clustering
   algorithms and implementation of OPTICS.
   \item \textit{Fitness deterioration module} - contains implementation of
   \textit{FitnessDeterioration} interface. Most important are:
   \textit{ki.edu.agh.deterioration.SimpleGaussianFitnessDeterioration} and 
-  \textit{ki.edu.agh.deterioration.WeightedGaussianDeterioratedFitness}.
+  \textit{ki.edu.agh.deterioration.WeightedGaussianFitnessDeterioration}.
   \item \textit{Evolutionary Algorithms module} - contains all the necessary
   interfaces for EA, selection and reproduction operators, individuals and
   phenotypes. Implementations of SGA and Evolution Strategy. 

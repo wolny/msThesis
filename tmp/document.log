@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  18 SEP 2011 21:27
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  19 SEP 2011 09:45
 entering extended mode
 **document.tex
 (C:\Users\slo\workspace\masterThesis\document.tex
@@ -727,7 +727,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.79 \include{Introduction}
+l.80 \include{Introduction}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -738,7 +738,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.79 \include{Introduction}
+l.80 \include{Introduction}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -756,7 +756,7 @@ Chapter 2.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.81 \include{Algorithm}
+l.82 \include{Algorithm}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -767,7 +767,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.81 \include{Algorithm}
+l.82 \include{Algorithm}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -828,7 +828,7 @@ LaTeX Warning: Float too large for page by 12.81744pt on input line 159.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -839,7 +839,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -852,7 +852,7 @@ slo/workspace/masterThesis/img/clusters.png (PNG copy)>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -863,7 +863,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.83 \include{Clustering}
+l.84 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1054,7 +1054,7 @@ File: ./img/deterioration4/result2_noCMA.png Graphic file (type png)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1065,7 +1065,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1077,7 +1077,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1088,7 +1088,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1102,7 +1102,7 @@ ndscape.png (PNG copy)>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1113,7 +1113,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1127,7 +1127,7 @@ tness.png (PNG copy)>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1138,7 +1138,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.85 \include{FitnessDeterioration}
+l.86 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1157,26 +1157,20 @@ Chapter 5.
 ] (C:\Users\slo\workspace\masterThesis\Implementation.tex
 Chapter 6.
 
-Underfull \hbox (badness 2103) in paragraph at lines 31--35
-[][]\T1/ptm/m/it/10.95 Algorithm mod-ule \T1/ptm/m/n/10.95 - cen-tral mod-ule o
-f the frame-work. Con-tains classes re-spon-si-ble for
+Underfull \hbox (badness 2726) in paragraph at lines 31--36
+\T1/ptm/m/it/10.95 quen-tial Nich-ing \T1/ptm/m/n/10.95 al-go-rithm as de-scrib
+ed in chap-ter 2. The main class in the mod-ule
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 31--35
-\T1/ptm/m/n/10.95 the main al-go-rithm as de-scribed in chap-ter 2. The main cl
-ass in the mod-ule is:
- []
-
-
-Underfull \hbox (badness 6284) in paragraph at lines 37--41
+Underfull \hbox (badness 6284) in paragraph at lines 38--42
 [][]\T1/ptm/m/it/10.95 Fitness de-te-ri-o-ra-tion mod-ule \T1/ptm/m/n/10.95 - c
 on-tains im-ple-men-ta-tion of \T1/ptm/m/it/10.95 Fit-ness-De-te-ri-o-ra-tion \
 T1/ptm/m/n/10.95 in-ter-
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 37--41
+Underfull \hbox (badness 2818) in paragraph at lines 38--42
 \T1/ptm/m/n/10.95 face. Most im-por-tant are: \T1/ptm/m/it/10.95 ki.edu.agh.det
 erioration.SimpleGaussianFitnessDeterioration \T1/ptm/m/n/10.95 and
  []
@@ -1212,7 +1206,7 @@ File: ./img/ClassDiagrams/population.jpg Graphic file (type jpg)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1223,7 +1217,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1235,7 +1229,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1246,7 +1240,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1258,7 +1252,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1269,7 +1263,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1281,7 +1275,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1292,7 +1286,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1304,7 +1298,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1315,7 +1309,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1327,7 +1321,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1338,7 +1332,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1350,7 +1344,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1361,7 +1355,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.89 \include{Implementation}
+l.90 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1380,7 +1374,7 @@ Chapter 7.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.91 \include{Conclusions}
+l.92 \include{Conclusions}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1391,7 +1385,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.91 \include{Conclusions}
+l.92 \include{Conclusions}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1434,7 +1428,7 @@ Overfull \hbox (17.79971pt too wide) in paragraph at lines 8--9
 
 
 ]
-Overfull \hbox (63.79008pt too wide) in paragraph at lines 12--13
+Overfull \hbox (11.22966pt too wide) in paragraph at lines 12--13
 [][][][][][][][][][][][][][][] 
  []
 
@@ -1483,7 +1477,7 @@ Overfull \hbox (57.22003pt too wide) in paragraph at lines 68--69
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.94 \include{Configuration}
+l.95 \include{Configuration}
                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1494,7 +1488,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.94 \include{Configuration}
+l.95 \include{Configuration}
                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1511,7 +1505,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 Schaefer and Joanna Ko³
+l.172 Schaefer and Joanna Ko³
                              odziej
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1523,7 +1517,7 @@ or \DeclareInputMath before using this key.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.175 \end{document}
+l.176 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1534,7 +1528,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.175 \end{document}
+l.176 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1578,7 +1572,7 @@ s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (39 pages, 4843541 bytes).
+Output written on document.pdf (39 pages, 4843578 bytes).
 PDF statistics:
  231 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
