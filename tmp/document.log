@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  19 SEP 2011 09:45
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.6.29)  20 SEP 2011 14:08
 entering extended mode
 **document.tex
 (C:\Users\slo\workspace\masterThesis\document.tex
@@ -1007,8 +1007,8 @@ File: ./img/AdaptiveScheme.png Graphic file (type png)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.311 
-      
+l.308 W
+       e use sample covariance matrix as an estimator \cite{covariance}, whi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1018,8 +1018,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.311 
-      
+l.308 W
+       e use sample covariance matrix as an estimator \cite{covariance}, whi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1150,11 +1150,142 @@ and I'll forget about whatever was undefined.
 PNG copy)> <C:/Users/slo/workspace/masterThesis/img/deterioration4/result2_noCM
 A.png (PNG copy)>] (C:\Users\slo\workspace\masterThesis\TestedAlgorithms.tex
 Chapter 5.
-) [26
+<./img/weighted_1_0/ofl1.png, id=121, 1233.60875pt x 598.235pt>
+File: ./img/weighted_1_0/ofl1.png Graphic file (type png)
+
+<use ./img/weighted_1_0/ofl1.png>
+<./img/weighted_1_0/iter11.png, id=122, 1274.7625pt x 664.4825pt>
+File: ./img/weighted_1_0/iter11.png Graphic file (type png)
+
+<use ./img/weighted_1_0/iter11.png>
+<./img/weighted_1_0/iter12.png, id=123, 1282.7925pt x 673.51625pt>
+File: ./img/weighted_1_0/iter12.png Graphic file (type png)
+
+<use ./img/weighted_1_0/iter12.png>
+<./img/weighted_1_0/iter13.png, id=124, 1274.7625pt x 646.415pt>
+File: ./img/weighted_1_0/iter13.png Graphic file (type png)
+
+<use ./img/weighted_1_0/iter13.png>
+Underfull \hbox (badness 3199) in paragraph at lines 35--35
+[][]\T1/ptm/m/n/10.95 Figure 5.1: The re-sult of se-quen-tial nich-ing al-go-ri
+thm ap-plied for the func-tion: $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/
+cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 ) =
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 35--35
+\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 + 1\OML/cmm/m/it
+/10.95 :\OT1/cmr/m/n/10.95 5\OML/cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 + 4\OML/
+cmm/m/it/10.95 e[]$\T1/ptm/m/n/10.95 . OP-TICS pa-ram-e-ters: $\OML/cmm/m/it/10
+.95  \OT1/cmr/m/n/10.95 =
+ []
+
+<./img/weighted_1_0/pop_pm3d11.png, id=125, 642.4pt x 481.8pt>
+File: ./img/weighted_1_0/pop_pm3d11.png Graphic file (type png)
+
+<use ./img/weighted_1_0/pop_pm3d11.png>
+<./img/weighted_1_0/pop_pm3d12.png, id=126, 642.4pt x 481.8pt>
+File: ./img/weighted_1_0/pop_pm3d12.png Graphic file (type png)
+
+<use ./img/weighted_1_0/pop_pm3d12.png>
+<./img/weighted_1_0/pop_pm3d13.png, id=127, 642.4pt x 481.8pt>
+File: ./img/weighted_1_0/pop_pm3d13.png Graphic file (type png)
+
+<use ./img/weighted_1_0/pop_pm3d13.png>
+<./img/simple1/pop_pm3d11.png, id=128, 642.4pt x 481.8pt>
+File: ./img/simple1/pop_pm3d11.png Graphic file (type png)
+
+<use ./img/simple1/pop_pm3d11.png>
+<./img/simple1/pop_pm3d12.png, id=129, 642.4pt x 481.8pt>
+File: ./img/simple1/pop_pm3d12.png Graphic file (type png)
+
+<use ./img/simple1/pop_pm3d12.png>
+<./img/simple1/pop_pm3d13.png, id=130, 642.4pt x 481.8pt>
+File: ./img/simple1/pop_pm3d13.png Graphic file (type png)
+
+<use ./img/simple1/pop_pm3d13.png>) [26
 
 
 
-] (C:\Users\slo\workspace\masterThesis\Implementation.tex
+]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.88 \include{TestedAlgorithms}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.88 \include{TestedAlgorithms}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[27 <C:/Users/slo/workspace/masterThesis/img/weighted_1_0/ofl1.png (PNG copy)> 
+<C:/Users/slo/workspace/masterThesis/img/weighted_1_0/iter11.png (PNG copy)> <C
+:/Users/slo/workspace/masterThesis/img/weighted_1_0/iter12.png (PNG copy)> <C:/
+Users/slo/workspace/masterThesis/img/weighted_1_0/iter13.png (PNG copy)>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.88 \include{TestedAlgorithms}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.88 \include{TestedAlgorithms}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[28 <C:/Users/slo/workspace/masterThesis/img/weighted_1_0/pop_pm3d11.png (PNG c
+opy)> <C:/Users/slo/workspace/masterThesis/img/weighted_1_0/pop_pm3d12.png (PNG
+ copy)> <C:/Users/slo/workspace/masterThesis/img/weighted_1_0/pop_pm3d13.png (P
+NG copy)>]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.88 \include{TestedAlgorithms}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.88 \include{TestedAlgorithms}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[29 <C:/Users/slo/workspace/masterThesis/img/simple1/pop_pm3d11.png (PNG copy)>
+ <C:/Users/slo/workspace/masterThesis/img/simple1/pop_pm3d12.png (PNG copy)> <C
+:/Users/slo/workspace/masterThesis/img/simple1/pop_pm3d13.png (PNG copy)>]
+(C:\Users\slo\workspace\masterThesis\Implementation.tex
 Chapter 6.
 
 Underfull \hbox (badness 2726) in paragraph at lines 31--36
@@ -1175,31 +1306,31 @@ Underfull \hbox (badness 2818) in paragraph at lines 38--42
 erioration.SimpleGaussianFitnessDeterioration \T1/ptm/m/n/10.95 and
  []
 
-[27
+[30
 
 
 
-] <./img/ClassDiagrams/algorithm.jpg, id=128, 698.61pt x 397.485pt>
+] <./img/ClassDiagrams/algorithm.jpg, id=153, 698.61pt x 397.485pt>
 File: ./img/ClassDiagrams/algorithm.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/algorithm.jpg>
-<./img/ClassDiagrams/EA.jpg, id=129, 2184.16pt x 748.7975pt>
+<./img/ClassDiagrams/EA.jpg, id=154, 2184.16pt x 748.7975pt>
 File: ./img/ClassDiagrams/EA.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/EA.jpg>
-<./img/ClassDiagrams/clustering.jpg, id=130, 1250.6725pt x 905.3825pt>
+<./img/ClassDiagrams/clustering.jpg, id=155, 1250.6725pt x 905.3825pt>
 File: ./img/ClassDiagrams/clustering.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/clustering.jpg>
-<./img/ClassDiagrams/deterioration.jpg, id=131, 1411.2725pt x 839.135pt>
+<./img/ClassDiagrams/deterioration.jpg, id=156, 1411.2725pt x 839.135pt>
 File: ./img/ClassDiagrams/deterioration.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/deterioration.jpg>
-<./img/ClassDiagrams/fitness.jpg, id=132, 1862.96pt x 608.2725pt>
+<./img/ClassDiagrams/fitness.jpg, id=157, 1862.96pt x 608.2725pt>
 File: ./img/ClassDiagrams/fitness.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/fitness.jpg>
-<./img/ClassDiagrams/population.jpg, id=133, 1411.2725pt x 718.685pt>
+<./img/ClassDiagrams/population.jpg, id=158, 1411.2725pt x 718.685pt>
 File: ./img/ClassDiagrams/population.jpg Graphic file (type jpg)
 
 <use ./img/ClassDiagrams/population.jpg>)
@@ -1225,7 +1356,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[28]
+[31]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1248,7 +1379,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[29 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/algorithm.jpg>]
+[32 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/algorithm.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1271,7 +1402,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[30 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/EA.jpg>]
+[33 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/EA.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1294,7 +1425,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[31 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/clustering.jpg>]
+[34 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/clustering.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1317,7 +1448,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[32 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/deterioration.jpg>]
+[35 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/deterioration.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1340,7 +1471,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[33 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/fitness.jpg>]
+[36 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/fitness.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1363,10 +1494,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[34 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/population.jpg>]
+[37 <C:/Users/slo/workspace/masterThesis/img/ClassDiagrams/population.jpg>]
 (C:\Users\slo\workspace\masterThesis\Conclusions.tex
 Chapter 7.
-[35
+! Undefined control sequence.
+l.31 same results as \texit
+                           {Weighted crunching functions}. The latter are more
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[38
 
 
 
@@ -1393,7 +1533,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[36] (C:\Users\slo\workspace\masterThesis\Configuration.tex
+[39] (C:\Users\slo\workspace\masterThesis\Configuration.tex
 Appendix A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--15
@@ -1423,7 +1563,7 @@ Overfull \hbox (17.79971pt too wide) in paragraph at lines 8--9
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[37
+[40
 
 
 
@@ -1468,7 +1608,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[38]
+[41]
 Overfull \hbox (57.22003pt too wide) in paragraph at lines 68--69
 [][][][][][][][][][][][][][][][][] 
  []
@@ -1496,7 +1636,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[39]
+[42]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `utf8'.
@@ -1510,7 +1650,7 @@ l.172 Schaefer and Joanna Ko³
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[40
+[43
 
 
 ]
@@ -1536,7 +1676,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[41] (C:\Users\slo\workspace\masterThesis\document.aux
+[44] (C:\Users\slo\workspace\masterThesis\document.aux
 (C:\Users\slo\workspace\masterThesis\Introduction.aux)
 (C:\Users\slo\workspace\masterThesis\Algorithm.aux)
 (C:\Users\slo\workspace\masterThesis\Clustering.aux)
@@ -1550,10 +1690,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5968 strings out of 494053
- 80544 string characters out of 3148609
- 167616 words of memory out of 3000000
- 9038 multiletter control sequences out of 15000+200000
+ 6021 strings out of 494053
+ 82096 string characters out of 3148609
+ 167627 words of memory out of 3000000
+ 9080 multiletter control sequences out of 15000+200000
  83297 words of font info for 79 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,12n,45p,722b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1572,9 +1712,9 @@ s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (39 pages, 4843578 bytes).
+Output written on document.pdf (42 pages, 5615356 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

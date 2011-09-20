@@ -25,11 +25,13 @@ distribution. \textit{Fitness Proportionate Selection} usually causes faster
 convergence to local solutions and normal distribution based reproduction operators tends 
 to produce populations with useful information about fitness landscape.
 
-Choosing weighted crunching functions for \textit{Fitness deterioration}
-(as described in section 4.3) is always more accurate than the
-\textit{Basic scheme} described in section 4.2. 
-You can sacrifice accuracy for speed when fitness function
-evaluation is very costly by using the \textit{Basic scheme}.
+Based on the results from chapter 5 we recommend to use \textit{Basic scheme}
+(section 4.2) of the fitness deterioration, cause it is a great deal cheaper
+than \textit{Weighted scheme} (section 4.3) and yields practically the
+same results as \texit{Weighted crunching functions}. The latter are more
+accurate only for problems with many local solutions but even for such problems it is reasonable to use \textit{Basic scheme}
+because it outperforms \textit{Weighted scheme} in terms of efficiency. 
+
 
 The most valuable outcomes of this work are:
 \begin{itemize}
@@ -42,8 +44,8 @@ The most valuable outcomes of this work are:
   \item definition and implementation of two variants of the fitness
   deterioration algorithm which might be used in different scenarios depending
   on the expected speed and accuracy of the global optimization
-  \item definition and implementation of the \textit{Covariance Matrix
-  Adaptation} algorithm which improves the efficiency of the fitness
+  \item definition and implementation of the \textit{Crunching function
+  adjustment} algorithm which improves the efficiency of the fitness
   deterioration
   \item creation of an extensible, lightweight framework which implements all of
   the algorithms and ideas presented in this work and which can be used for
