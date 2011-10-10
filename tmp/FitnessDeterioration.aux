@@ -3,36 +3,40 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{FitnessDeterioration}{{4}{16}}
-\newlabel{def:fitness-deterioration}{{4}{16}}
-\newlabel{def:crunching-function}{{4}{16}}
+\newlabel{def:fitness-deterioration}{{5}{16}}
+\newlabel{def:crunching-function}{{6}{16}}
 \citation{globalOpt}
-\newlabel{completeness}{{4}{17}}
-\newlabel{premature-convergence}{{4}{17}}
+\newlabel{completeness}{{7}{17}}
+\newlabel{premature-convergence}{{8}{17}}
 \citation{optics}
-\citation{kernel}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of two clusters returned by the \textit  {OPTICS} algorithm for and corresponding Gaussian \textit  {crunching functions} which degrade areas distant from clusters.}}{18}}
+\newlabel{clusterDensity}{{4.1}{18}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Fitness deterioration and clustering}{18}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Crunching functions}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The result of extracting clusters with different densities from a random data set. OPITCS ordering parameters: $\epsilon =1.0$ $minPts=15$. The values of density radius are: $\epsilon =0.5$, $\epsilon =0.25$, $\epsilon =0.1$ respectively (the second picture in each plot shows extracted clusters). Assuming that clusters are dense in basins of attraction, it would be very inaccurate to create Gaussian \textit  {crunching function} for clusters from the first diagram (bear in mind that we create one \textit  {crunching function} per cluster)}}{19}}
-\newlabel{clusters}{{4.1}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Using the properties of \textit  {OPTICS ordering} to minimize the impact of the fitness deterioration on regions outside the clusters (instead of creating one crunching function per cluster like in figure 4.1 we extracted denser clusters from the \textit  {ordering} and created crunching function which degrade only the region occupied by the cluster)}}{19}}
+\newlabel{clusterDensity}{{4.2}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Crunching functions}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Extraction of clusters with different densities from a random data set. OPITCS ordering parameters: $\epsilon =1.0$ $minPts=30$. Cavities in the plot depict 5 clusters which might be extracted by using a suitably low value of $\epsilon '$ (in our example $\epsilon '=0.15$)}}{20}}
+\newlabel{clusters}{{4.3}{20}}
+\citation{kernel}
 \citation{covariance}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Basic Scheme}{20}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Weighted Scheme}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The coefficient $\alpha _i$ is inversely proportional to the (a power of) distance from the center of cluster $C_i$ to the $x$. $\alpha _i$ may be seen as the impact $C_i$ has on $x$}}{21}}
-\newlabel{weightedScheme}{{4.2}{21}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Crunching Function Adjustment}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Basic Scheme}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The coefficient $\alpha _i$ is inversely proportional to the (a power of) distance from the center of cluster $C_i$ to the $x$. $\alpha _i$ may be seen as the impact $C_i$ has on $x$}}{22}}
+\newlabel{weightedScheme}{{4.4}{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Weighted Scheme}{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Crunching Function Adjustment}{22}}
 \citation{covariance}
 \citation{covariance}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Results}{22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The result of basic deterioration scheme with CFA applied to unimodal function: $f(X) = 2e^{-(x^2 +y^2)}$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=1}}{23}}
-\newlabel{det1}{{4.3}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The result of basic deterioration scheme with CFA applied to bimodal function: $f(X) = e^{-(x^2 + y^2)}+1.4e^{-((x-1.7)^2 + (y-1.7)^2)}$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2}}{24}}
-\newlabel{det2}{{4.4}{24}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces The result of basic deterioration scheme without CFA applied to unimodal function from $4.1$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2. We may see that the overall landscape decreases only by $30$ percent, while using CFA gives us $85$ percent of decline.}}{25}}
-\newlabel{det3}{{4.5}{25}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces The result of basic deterioration scheme without CFA applied to bimodal function from $4.2$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2. We see $25$ percent of deterioration, while CFA gives us $78$ percent when applied to the same case.}}{25}}
-\newlabel{det3}{{4.6}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Results}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces The result of basic deterioration scheme with CFA applied to unimodal function: $f(X) = 2e^{-(x^2 +y^2)}$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=1}}{24}}
+\newlabel{det1}{{4.5}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces The result of basic deterioration scheme with CFA applied to bimodal function: $f(X) = e^{-(x^2 + y^2)}+1.4e^{-((x-1.7)^2 + (y-1.7)^2)}$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2}}{25}}
+\newlabel{det2}{{4.6}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces The result of basic deterioration scheme without CFA applied to unimodal function from $4.1$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2. We may see that the overall landscape decreases only by $30$ percent, while using CFA gives us $85$ percent of decline.}}{26}}
+\newlabel{det3}{{4.7}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces The result of basic deterioration scheme without CFA applied to bimodal function from $4.2$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2. We see $25$ percent of deterioration, while CFA gives us $78$ percent when applied to the same case.}}{26}}
+\newlabel{det3}{{4.8}{26}}
 \@setckpt{FitnessDeterioration}{
-\setcounter{page}{26}
+\setcounter{page}{27}
 \setcounter{equation}{11}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}
@@ -47,7 +51,7 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{6}
+\setcounter{figure}{8}
 \setcounter{table}{0}
 \setcounter{lofdepth}{1}
 \setcounter{lotdepth}{1}
@@ -59,5 +63,6 @@
 \setcounter{ALC@depth}{0}
 \setcounter{parentequation}{0}
 \setcounter{lstnumber}{1}
+\setcounter{definition}{8}
 \setcounter{lstlisting}{0}
 }

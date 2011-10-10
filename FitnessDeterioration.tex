@@ -132,30 +132,29 @@ To increase the accuracy of the fitness deterioration process
 we want to use the maximum amount of information provided by the clustering
 algorithm. As we mentioned earlier (see the definition of \textit{Fitness
 deterioration}) we crate one crunching function per cluster which, depending
-on the shape of the cluster may not be very accurate. To increase that accuracy
-we use the following property of the \textit{OPTICS ordering}:
+on the shape of the cluster, may not be very accurate or may even degrade areas
+of the fitness landscape which have not been explored yet and potentially
+contain valuable solutions. Figure 4.1 shows cases in which crunching functions
+created for extracted clusters strongly affect regions outside the clusters.
 
 \begin{figure}
   \centering
   \fbox{
-    \includegraphics[scale=0.4]{clusters/cluster1.png}
+    \includegraphics[scale=0.25]{clusterDensity/cluster1.pdf}
   }
   \fbox{
-    \includegraphics[scale=0.4]{clusters/cluster2.png}
+    \includegraphics[scale=0.25]{clusterDensity/cluster2.pdf}
   }
-  \fbox{
-    \includegraphics[scale=0.4]{clusters/cluster3.png}
-  }
-  \caption{The result of extracting clusters with different densities from a
-  random data set. OPITCS ordering parameters: $\epsilon=1.0$ $minPts=15$.
-  The values of density radius are: $\epsilon=0.5$, $\epsilon=0.25$,
-  $\epsilon=0.1$ respectively (the second picture in each plot shows extracted clusters).
-  Assuming that clusters are dense in basins of attraction, it would be very
-  inaccurate to create Gaussian \textit{crunching function} for clusters
-  from the first diagram (bear in mind that we create one \textit{crunching
-  function} per cluster)}
-  \label{clusters}
+  \caption{Example of two clusters returned by the \textit{OPTICS} algorithm
+  for and corresponding Gaussian \textit{crunching functions} which degrade
+  areas distant from clusters.}
+  \label{clusterDensity}
 \end{figure}
+ 
+ 
+
+To increase the accuracy of our algorithm
+we use the following property of the \textit{OPTICS ordering}:
 
 \begin{quotation}
 While creating the \textit{ordering} OPTICS constructs density-based clusters
@@ -164,25 +163,75 @@ actually contains the information about the intrinsic clustering structure of
 the input data set (up to the generating distance $\epsilon$) \cite{optics}.
 \end{quotation}
 
-Having the \textit{OPTICS ordering} of the population returned by the EA our
-method iteratively extract clusters with higher densities by decreasing 
-the \textit{neighborhood radius ($\epsilon$)} (see Figure 4.1), construct
-crunching functions for extracted clusters and check if the resulting crunching functions 
-is more accurate than the best found in previous iterations. 
+This might be shown for sample data (see Figure 4.3) by using its
+\textit{reachability plot}. Once we create \textit{OPTICS ordering}
+we may easily extract clusters with higher densities by decreasing
+$\epsilon$ and choose clusters for which MSE (Mean Squared Error) 
+between the actual fitness function and the crunching function in the 
+areas of clusters is minimal.
+
+\begin{figure}
+  \centering
+  \fbox{
+    \includegraphics[scale=0.25]{clusterDensity/cluster12.pdf}
+  }
+  \fbox{
+    \includegraphics[scale=0.25]{clusterDensity/cluster22.pdf}
+  }
+  \caption{Using the properties of \textit{OPTICS ordering} to minimize
+  the impact of the fitness deterioration on regions outside the clusters 
+  (instead of creating one crunching function per cluster like in figure 4.1
+  we extracted denser clusters from the \textit{ordering} and created
+  crunching function which degrade only the region occupied by the cluster)}
+  \label{clusterDensity}
+\end{figure}
+
+ 
+The algorithm works as follows: having the \textit{OPTICS ordering} of the
+population returned by the EA our method iteratively extract clusters with higher densities by decreasing 
+the \textit{neighborhood radius ($\epsilon$)} (see Figure 4.3), and
+then by constructing crunching functions for extracted clusters and checking if
+the resulting crunching functions is more accurate than the best found in previous iterations (MSE comparison).
 
 \begin{algorithmic}[1]
 \STATE {$\epsilon'=\epsilon$}
 \WHILE{$\epsilon' > treshold$}
 	\STATE {$clusters=optics.extractDBSCANClustering(\epsilon')$}
 	\STATE {$crunchingFunctions=crateCrunchingFunctions(clusters)$}
-	\STATE {$distance = getDistance(crunchingFunctions, currentFitness,
-	population)$}
-	\IF{$distance < minDistance$}
-		\STATE {$saveBestCrunching(distance, crunchingFunctions)$}
+	\STATE {$mse = getMSE(crunchingFunctions, currentFitness, clusters)$}
+	\IF{$mse < minMse$}
+		\STATE {$saveBestCrunching(mse, crunchingFunctions)$}
 	\ENDIF
 	\STATE {$\epsilon'= \epsilon' * 0.75$}
 \ENDWHILE
 \end{algorithmic}
+
+The above algorithm effectively prevents the deterioration process
+from destroying the fitness landscape in regions not yet explored by
+the \textit{sequential niching} algorithm.
+
+\begin{figure}
+  \centering
+  \fbox{
+    \includegraphics[scale=0.4]{clusterExtraction/reachabilityPlot.png}
+  }
+  \fbox{
+    \includegraphics[scale=0.3]{clusterExtraction/dataSet.png}
+  }
+  \fbox{
+    \includegraphics[scale=0.4]{clusterExtraction/reachabilityPlot1.png}
+  }
+  \fbox{
+    \includegraphics[scale=0.3]{clusterExtraction/clusters.png}
+  }
+  \caption{Extraction of clusters with different densities from a
+  random data set. OPITCS ordering parameters: $\epsilon=1.0$ $minPts=30$.
+  Cavities in the plot depict 5 clusters which might be extracted by using 
+  a suitably low value of $\epsilon'$ (in our example $\epsilon'=0.15$)}
+  \label{clusters}
+\end{figure}
+ 
+
 
 \subsection{Crunching functions}
 When degenerating a single basin of attraction represented by a cluster of

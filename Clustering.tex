@@ -7,7 +7,7 @@ a subset share common features like, for example, spatial proximity.
 Clustering is used as a stand-alone tool to get insight into the distribution
 of a data set or as a preprocessing step for other algorithms operating on the
 detected clusters. The former can be used to determine stop
-criteria (see section 3.2) and the latter usecase is used in our deterioration
+criteria (see section 3.2) and the latter is used in our deterioration
 schema (see chapter 4).
 
 \section{Cluster Extension}
@@ -41,7 +41,7 @@ of cluster extensions.
 The termination criterion in classic evolutionary algorithms is hard to define
 and very often problem dependent, as we do not have any global information about 
 the fitness landscape and therefore we can only compare one solution to another
-previously founded. 
+previously found. 
 Some of the common termination criteria such as: 
 \begin{itemize}
   \item maximum computation time
@@ -55,9 +55,9 @@ on the other hand may give us some clues about the global
 characteristics of the fitness landscape i.e. when the clustering algorithm performed 
 on the final population finds nothing it is very likely that in previous
 iterations we have deteriorated the fitness landscape in places where 
-the most desirable solutions reside. 
-This is considered to be true because we are looking for robust 
-solutions which are resistant to noise and lie in basins of attraction 
+the most desirable solutions reside and there is no use in continuing the
+searching process. This is considered to be true because we are looking for
+robust solutions which are resistant to noise and lie in basins of attraction 
 which are significantly wide and deep. The population of EA is likely 
 to converge to such solutions, so having found no clusters of individuals after
 performing the EA in a given iteration shows that the population does not converge 
@@ -86,7 +86,8 @@ main priniple is that we always have to select an object which is
 density-reachable with respect to the lowest $\epsilon$ value to guarantee that
 clusters with higher density are finished first) and the information which would
 be used by \textit{DBSCAN} algorithm to assing cluster memberships. This
-information consists of only two values for each object:
+information consists of only two values for each object: \textit{core-distance}
+and \textit{reachability-distance}.
 
 
 \begin{definition}\label{def:core-distance} 
@@ -118,7 +119,11 @@ possible values for which we always can see the clustering structure of a data
 set when looking at the corresponding \textit{reachability-plot}. Figure 3.1
 shows the result of \textit{OPTICS} clustering for a sample set of points.
 Figure 3.2 shows reachablity plot for various \textit{generating distances} -
-$\epsilon$.
+$\epsilon$. 
+
+The next chapter describes how \textit{OPTICS ordering} properties are used
+to prevent degradation of areas which have not been explored during the course
+of the algorithm. 
 
 \begin{figure}
   \centering
@@ -151,8 +156,8 @@ $\epsilon$.
   paramters (minPts, $\epsilon$) are: (20, 1.5), (20, 1.0), (20, 0.5)
   respectively. The two cavities which are visible in each plot depict the two
   of the clusters on figure 3.1. This proves that there is a large range of
-  values for $\epsilon$ for which the appearance of the reachability plot will
-  not change significantly. (the flat shape of function from the last plot
+  values for $\epsilon$ (\textit{generating distance}) for which the appearance
+  of the reachability plot will not change significantly. (the flat shape of function from the last plot
   results from the fact that we truncate the reachability-distance to the 
   generating distance $\epsilon$, when the former is greater than the latter)}
   \label{reach}

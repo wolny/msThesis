@@ -32,6 +32,13 @@ same results as \texit{Weighted crunching functions}. The latter are more
 accurate only for problems with many local solutions but even for such problems it is reasonable to use \textit{Basic scheme}
 because it outperforms \textit{Weighted scheme} in terms of efficiency. 
 
+The algorithm (see section 4.1) we used to prevent degradation of regions
+unexplored by the algorithm and to increase the fitness deterioration accuracy
+should perform well for cases when the cluster is not convex, provided that
+individuals inside the cluster are non-uniformly distributed,
+otherwise the extraction of denser clusters would not prevent the deterioration
+process from loosing information contained in regions not visited
+by the \textit{sequential niching} yet.
 
 The most valuable outcomes of this work are:
 \begin{itemize}
@@ -40,7 +47,8 @@ The most valuable outcomes of this work are:
   \item applying clustering algorithms as a reasonable stop criterion for
   real-valued evolutionary algorithms
   \item using properties of \textit{OPTICS ordering} \cite{optics} to improve
-  the deterioration process
+  the deterioration process (see section 4.1) so it affects only regions
+  directly occupied by population of individuals
   \item definition and implementation of two variants of the fitness
   deterioration algorithm which might be used in different scenarios depending
   on the expected speed and accuracy of the global optimization

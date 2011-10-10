@@ -4,6 +4,9 @@
 In this chapter we present some of the results performed for simple
 real-valued genetic algorithms which were tuned for benchmark
 functions (see next section).
+As an embedded EA we have used a genetic
+algorithm with real-encoding, proportionate selection and genetic operators 
+based on normal distribution.
 
 \section{Benchmark functions}
 Tests were performed for simple, multimodal, two dimensional functions:
@@ -51,7 +54,8 @@ Tests were performed for simple, multimodal, two dimensional functions:
   niching algorithm applied for function
   $f(X) = 2e^{-((x+1.1)^2 + (y+1.1)^2)} + 1.5e^{-((x-1)^2 + y^2)} +
   4e^{-3((x+1.5)^2 + (y-1.5)^2)}$. The resulted fitness function is visualized 
-  as a color map (\textit{pm3d})}
+  as a color map (\textit{pm3d}). We have found all solutions and achieved
+  $80\%$ of the overall fitness landscape decline}
   \label{seqNichingPop}
 \end{figure}
 
@@ -69,14 +73,11 @@ Tests were performed for simple, multimodal, two dimensional functions:
   \caption{Visualization of the fitness deterioration outcomes in subsequent
   iterations. Test function: $f(X) = 2e^{-((x+1.1)^2 + (y+1.1)^2)} + 1.5e^{-((x-1)^2 + y^2)} +
   4e^{-3((x+1.5)^2 + (y-1.5)^2)}$. Deterioration algorithm: \textit{Basic
-  scheme} }
+  scheme}. We have found all solutions and achieved $85\%$ of the overall
+  fitness landscape decline}
   \label{seqNichingPop}
 \end{figure}
 
-
-
-\subsection{Accuracy measures}
-how many optimas have been found, diagrams
 
 
 
