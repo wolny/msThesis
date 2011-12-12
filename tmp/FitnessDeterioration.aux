@@ -1,44 +1,52 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Fitness Deterioration}{16}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Fitness Deterioration}{21}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{FitnessDeterioration}{{4}{16}}
-\newlabel{def:fitness-deterioration}{{5}{16}}
-\newlabel{def:crunching-function}{{6}{16}}
-\citation{globalOpt}
-\newlabel{completeness}{{7}{17}}
-\newlabel{premature-convergence}{{8}{17}}
+\newlabel{ch:fitnessDet}{{4}{21}}
+\newlabel{eqn:fitDet}{{4.1}{21}}
+\newlabel{completeness}{{9}{21}}
+\citation{PardalosRomeijn2002}
+\citation{WierzbaSemczukKolodziejSchaefer2003}
+\newlabel{premature-convergence}{{10}{22}}
 \citation{optics}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of two clusters returned by the \textit  {OPTICS} algorithm for and corresponding Gaussian \textit  {crunching functions} which degrade areas distant from clusters.}}{18}}
-\newlabel{clusterDensity}{{4.1}{18}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Fitness deterioration and clustering}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Using the properties of \textit  {OPTICS ordering} to minimize the impact of the fitness deterioration on regions outside the clusters (instead of creating one crunching function per cluster like in figure 4.1 we extracted denser clusters from the \textit  {ordering} and created crunching function which degrade only the region occupied by the cluster)}}{19}}
-\newlabel{clusterDensity}{{4.2}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Crunching functions}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Extraction of clusters with different densities from a random data set. OPITCS ordering parameters: $\epsilon =1.0$ $minPts=30$. Cavities in the plot depict 5 clusters which might be extracted by using a suitably low value of $\epsilon '$ (in our example $\epsilon '=0.15$)}}{20}}
-\newlabel{clusters}{{4.3}{20}}
-\citation{kernel}
-\citation{covariance}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Basic Scheme}{21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The coefficient $\alpha _i$ is inversely proportional to the (a power of) distance from the center of cluster $C_i$ to the $x$. $\alpha _i$ may be seen as the impact $C_i$ has on $x$}}{22}}
-\newlabel{weightedScheme}{{4.4}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Weighted Scheme}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Crunching Function Adjustment}{22}}
-\citation{covariance}
-\citation{covariance}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Results}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces The result of basic deterioration scheme with CFA applied to unimodal function: $f(X) = 2e^{-(x^2 +y^2)}$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=1}}{24}}
-\newlabel{det1}{{4.5}{24}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces The result of basic deterioration scheme with CFA applied to bimodal function: $f(X) = e^{-(x^2 + y^2)}+1.4e^{-((x-1.7)^2 + (y-1.7)^2)}$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2}}{25}}
-\newlabel{det2}{{4.6}{25}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces The result of basic deterioration scheme without CFA applied to unimodal function from $4.1$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2. We may see that the overall landscape decreases only by $30$ percent, while using CFA gives us $85$ percent of decline.}}{26}}
-\newlabel{det3}{{4.7}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces The result of basic deterioration scheme without CFA applied to bimodal function from $4.2$. Optics paramters: $minPts=20, \epsilon =0.4$, algorithm: SGA, iterationCount=2. We see $25$ percent of deterioration, while CFA gives us $78$ percent when applied to the same case.}}{26}}
-\newlabel{det3}{{4.8}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of two clusters returned by the clustering algorithm and corresponding Gaussian \textit  {crunching functions} which degrade areas distant from clusters.}}{23}}
+\newlabel{fig:hardClusters1}{{4.1}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Fitness deterioration and clustering}{23}}
+\newlabel{sec:FitDetClust}{{4.1}{23}}
+\citation{SampleCovariance}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Improving fitness deterioration accuracy}}{24}}
+\newlabel{alg:IFDA}{{4}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces With \textit  {OPTICS ordering} we may extract cluster of higher densities and minimize the impact of the fitness deterioration on regions outside the clusters (instead of creating one crunching function per cluster like in figure 4.1\hbox {} we extract denser clusters from the \textit  {ordering} and create crunching function which degrade only the region occupied by the cluster)}}{24}}
+\newlabel{fig:hardClusters2}{{4.2}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Basic Scheme}{24}}
+\newlabel{sec:BasScheme}{{4.2}{24}}
+\newlabel{eqn:GF}{{4.3}{24}}
+\newlabel{eqn:Sigma}{{4.4}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Sample data set of 1500 points and the corresponding reachability plot of the ordered points (shows the reachability distance of each individual in the data set - horizontal axis corresponds to the individuals in the data set and the vertical axis shows the reachability distance of a given individual) OPITCS ordering parameters: $\epsilon =1.0$ $minPts=30$. Cavities in the plot depict 5 clusters which might be extracted from the data set by the DBSCAN algorithm using proper value of $\epsilon '$ values}}{25}}
+\newlabel{fig:opticsOrder1}{{4.3}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Extraction of clusters from the data set presented in Figure 4.3\hbox {} using DBSCAN algorithm with $\epsilon '=0.15$. The value of $\epsilon '$ is marked on the first plot which shows reachability distances and the "cut off" clusters}}{25}}
+\newlabel{fig:opticsOrder2}{{4.4}{25}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Weighted Scheme}{26}}
+\newlabel{sec:WeightScheme}{{4.3}{26}}
+\newlabel{eqn:WS1}{{4.5}{26}}
+\newlabel{eqn:alpha1}{{4.6}{26}}
+\newlabel{eqn:alpha2}{{4.7}{26}}
+\newlabel{eqn:fractures}{{4.8}{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Crunching Function Adjustment}{26}}
+\newlabel{sec:CrumchAdj}{{4.4}{26}}
+\citation{SampleCovariance}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces The coefficient $\alpha _i$ is inversely proportional to the distance from the center of cluster $C_i$ to the $x$. $\alpha _i$ may be seen as the impact $C_i$ has on $x$}}{27}}
+\newlabel{fig:weightedScheme}{{4.5}{27}}
+\newlabel{eqn:outliners}{{4.9}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Results}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces The result of basic deterioration scheme applied to unimodal function: $f(X) = 2e^{-(x^2 +y^2)}$ (the population was generated with normal distribution around the solution). Without CFA (up), with CFA (down). We may see that the overall landscape decreases only by $30$ percent, while using CFA gives us $85$ percent of decline.}}{28}}
+\newlabel{fig:det1}{{4.6}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces The result of basic deterioration scheme with CFA applied to bimodal function: $f(X) = e^{-(x^2 + y^2)}+1.4e^{-((x-1.7)^2 + (y-1.7)^2)}$. (the population was generated with normal distribution around the solution). Without CFA (up), with CFA (down). We see $25$ percent of deterioration, while CFA gives us $78$ percent when applied to the same case.}}{29}}
+\newlabel{fig:det2}{{4.7}{29}}
 \@setckpt{FitnessDeterioration}{
-\setcounter{page}{27}
-\setcounter{equation}{11}
-\setcounter{enumi}{2}
+\setcounter{page}{30}
+\setcounter{equation}{9}
+\setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
@@ -51,18 +59,18 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{8}
+\setcounter{figure}{7}
 \setcounter{table}{0}
 \setcounter{lofdepth}{1}
 \setcounter{lotdepth}{1}
 \setcounter{float@type}{16}
-\setcounter{algorithm}{0}
-\setcounter{ALC@unique}{23}
+\setcounter{algorithm}{4}
+\setcounter{ALC@unique}{48}
 \setcounter{ALC@line}{10}
 \setcounter{ALC@rem}{0}
 \setcounter{ALC@depth}{0}
 \setcounter{parentequation}{0}
 \setcounter{lstnumber}{1}
-\setcounter{definition}{8}
+\setcounter{definition}{10}
 \setcounter{lstlisting}{0}
 }

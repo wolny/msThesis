@@ -9,103 +9,339 @@
  ... a conclusion from No Free Lunch Theorem
 \end{flushright}
 
-\section{A statement of a problem}
-
-A Global Optimization Algorithm is defined as optimization algorithm
-that employs measures that prevent convergence to local optima
-and increase the probability of finding a global optimum. 
-
 Evolutionary algorithms are known as a generic population-based metaheuristics
 which often perform well approximating solutions to all
 types of problems because they ideally do not make any assumption about the underlying fitness landscape; 
-this generality is shown to be a great successes in many real-life problems. 
-Evolutionary algorithms have the tendency to lose diversity within their
-population of feasible solutions and to converge into a single solution.
-However, there are domains where the global solution may not suffice. 
-Such problems require the location and maintenance of multiple robust local
+this generality is shown to be a great successes in many real-life problems.
+Evolutionary algorithms have the tendency to lose diversity within
+their population of feasible solutions and to converge into a single solution.
+However, there are domains where the global solution may not suffice, such
+as a multi-modal optimization tasks. 
+Such problems require finding and maintenance of multiple robust local
 solutions, i.e. local solutions whose basins of attraction are properly wide and deep.
 
 The most common technique in evolutionary algorithm which is
-used to achieve this goal is to incorporate some sort of niching method
-like crowding or fitness sharing which promote diversity of population,
-which in turn delay premature convergence and likely enable the algorithm to
-find multiple optimal solutions in single population.
- 
-Standard niching methods are often ineffective and hard to introduce 
-in existing evolutionary algorithms. In this paper we adopt a
-different approach to multimodal function optimization. Instead of
-embedding a niching method in the evolutionary algorithm itself we
-use a hybrid approach in which we perform several runs of a evolutionary 
-algorithm and alter the fitness function in every subsequent
-run in a way that prevents exploration of basins of attraction which
-were found in previous runs of the algorithm.
+used to achieve this goal is to incorporate some sort of niching method.
+In \cite{Mahfound95niching} and \cite{Mahfoud95acomparison}, Mahfound 
+suggests a classification of niching methods based on the way multiple niches
+are found in a GA:
+\begin{itemize}
+  \item \textit{Parallel Niching methods}: Niching methods belonging to this
+  category finds and maintains multiple niches simultaneously in a single population. 
+  Examples of parallel niching methods are \textit{Crowding function} and
+  \textit{Sharing}
+  \item \textit{Sequential Niching methods}: These niching methods find multiple
+  niches iteratively
+\end{itemize}
+Sequential niching is one of the most promising evolutionary strategies
+for analyzing multi-modal global optimization problems in the continuous
+domains embedded in the vector metric spaces.
 
-In each iteration we run EA, then cluster received population and
-based on the assumption that clusters of individuals obtained from
-the clustering algorithm are located in basins of attraction we interpolate
- each basin by multidimensional Gaussian function. By combining
-these functions with current objective function in a proper way we
-create deteriorated fitness function which will discourages future runs
-from revisiting the same area.
+This work presents a new hybrid approach to
+sequential niching strategies called \textit{Cluster Supported Fitness
+Deterioration} (CSFD).
+In each iteration CSFD performs the clustering of the random sample 
+by OPTICS algorithm and then the deterioration of the fitness
+on areas occupied by clusters. The selection pressure pushes away
+the next-step sample (population) from the basins of attraction
+of minimizers already recognized, speeding up finding of new ones.
+The main advantages of CSFD are low memory an computational complexity
+even in case of large dimensional problems and high accuracy
+of deterioration obtained by the flexible cluster definition 
+delivered by OPTICS.
 
-This work tries to find an effective fitness deterioration technique in
-high-dimensional domain spaces. We have implemented a general-purpose framework which can be
-used to test our fitness deterioration techniques in conjunction with
-various evolutionary algorithms. While our algorithm may be used with many types
-of EAs it would be the most efficient when used with algorithms which are capable 
-of finding many local solutions in single run. This is why for tests
-we choose so called Hierarchical Genetic Strategy which performs efficient
-concurrent search in the optimization landscape by many small populations.
+\section{A statement of a problem}
+\label{sec:statementOfProblem}
 
-The quality of the deterioration process strongly depends on clustering results.
-We choose density-based algorithm called OPTICS as with this method we can extract clusters of
-different densities very efficiently and choose clusters which give the
-best accuracy of fitness deterioration process.
+We deal with the class of \textit{global optimization problems} (GOP)
+which are leading to find all global, or even all local minimizers 
+to the real-valued objective function defined on the set $\mathcal{D}$ 
+(called admissible set) embedded
+in a finite dimensional normed vector space $V \supset \mathcal{D}$, 
+$dim(V) = N < +\infty$, where the norm
+induces the complete metric (Banach space). The set $\mathcal{D}$
+is assumed to be continuous with respect to the metric and regular
+in some way, usually having the Lipshitz boundary.
+
+Typical difficulties appearing by solving GOPs are 
+the huge volume of $\mathcal{D}$, multi-modality of the objective
+and its weak regularity (sometimes only continuity, or even
+discontinuity on the subset of the zero measure).
+
+Stochastic, population-based heuristics (Evolutionary Algorithms, Simulated Annealing, Ant Colony, 
+Particle Swarm, etc.) are best suited to solve GOPs
+and they frequently outperform deterministic techniques
+(see e.g. \cite{PardalosRomeijn2002}).
+Because the remaininder of this paper utilizes only genetic techniques
+we will denote by 
+$F: \mathcal{D} \, (\text{or} \, \mathcal{D}_r, U) \rightarrow \mathbb{R}$ 
+the generic \textit{fitness function} that expresses the GOP objective.
+
+One of the well known disadvantages of some population-based, stochastic heuristics 
+(especially Genetic Algorithms) is the \textit{premature convergence} which
+consists in long-term stay of almost all individuals in the basin of attraction
+of the single local minimum. Premature convergence dramatically decreases 
+an ability of finding many local/global minima with the acceptable 
+computational cost assumed as the number of objective evaluations.
+
+
+The basin of attraction $\mathcal{B}_{x^+} \subset \mathcal{D}$ 
+of the local or global minimizer ${x^+} \in \mathcal{D}$ may be roughly described 
+as the connected part of maximum fitness level set that contains
+${x^+}$ and does not intersect with basins of attraction of other
+local minimizers.
+The precise mathematical definition of basin of attraction
+was introduced by \cite{RinnoyKanTimmer1987a}, \cite{DixonSzego1975}
+and may be found also in \cite{Schaefer2007}.
+
+As we mentioned before the \textit{Cluster Supported Fitness
+Deterioration} algorithm is an extension of  \textit{sequential niching}
+technique which works by forcing the single population or the group of
+populations to move from the basins of attraction of minima that have been 
+recognized during the course of the algorithm.
 
 \section{Related Work}
 
-As mentioned before this work focus on finding solutions for multi-modal
-optimization tasks. There are many publications which describes how to extend
-EAs to multi-modal optimization. Most of them focuses on 
-\textit{Niching methods} \cite{niching,sharing,dynsharing} which address this
-issue by maintaining a population of diverse solutions throughout the time and this way they allow
-parallel convergence into multiple good solutions in multimodal domains.
+\subsection{Fitness deterioration techniques}
+\label{sec:Fdt}
 
-Our solution works by running an evolutionary algorithm (here we may choose
-SGA, Evolution Strategy, etc.) multiple times and after each run it tries
-to detect basins of attraction where local extremum reside and 
-degenerates the fitness landscape. This process is what we call
-\textit{Sequential niching} algorithm. The rest of this paper describes 
-the \textit{Sequential niching} algorithm in a top-down manner, starting
-from the high-level description of the algorithm in chapter 2.   
 
-At this point it is worth mentioning some of the works of Prof. A. Obuchowicz 
-especially the publication \cite{esss} which is the only one I found which 
-use the term \textit{fitness deterioration} explicitly.
-In \cite{esss} he describes ESSS-DOF algorithm (Evolutionary Search with Soft
-Selection with Deterioration of Objective Function) as an extension to the ESSS
-method which maintaining population diversity by the following schema:
-\begin{quotation}
-When the population converges to local optimum we degenerate the objective 
-function which cause the rapid migration of individuals and enable the 
-population to escape for the local optimum.
-\end{quotation}
 
-The algorithm degenerate the objective function by composing it with Gaussian
-function which approximate the local optimum. Our deterioration algorithm
-described in detail in chapter 4 uses Gaussian functions as well
-(Gaussian function has got many useful properties which makes it well-suited
-to the fitness deterioration. We describe these characteristics in chapter 4).
+The behavior of individuals suitable for niching
+may be obtained by the proper
+fitness modification that leads to its leveling 
+on the central part of the basin of attraction of local minima already encountered.
+Selection removes individuals from such areas forcing them to find regions of
+larger fitness e.g. the basins of attraction of other minima not yet found.
+The fitness leveling mentioned above is sometimes called
+\textit{fitness deterioration} \cite{Obuchowicz1997} 
+or \textit{hill crunching} \cite{SchaeferAdamskaTelega2004}.
 
-Mentioned methods are incorporated directly into the basic cycle of evolutionary
-algorithm which differs from our \textit{Sequential niching} technique. 
-The sequential niching approach has several advantages:
+Sequential niching by fitness deterioration was introduced by 
+\cite{BeasleyBullMartin1993}.
+Exhaustive research in this direction was performed by
+Obuchowicz, Patan and Korbicz. They introduced the class
+of evolutionary algorithms called \textit{Evolutionary Search 
+with Soft Selection - Deterioration of the Objective Function}
+(ESSS-DOF). 
+The draft of this strategy
+is presented in Algorithm \ref{alg:ESSS-DOF}.
+\begin{algorithm}
+\caption{Draft of the ESSS-DOF strategy}
+\label{alg:ESSS-DOF}
+\begin{algorithmic}[1]
+\STATE Create initial population $P_0$;
+\STATE $t \leftarrow 0$; 
+\REPEAT
+\STATE Evaluate population $P_t$;
+\STATE Distinguish the best fit individual $x^*$ from $P_t$;
+\IF{($trap\_test$)}
+\STATE Memorize $x^*$;
+\STATE $F \leftarrow F - \hat{F}$;
+\ENDIF
+\STATE Perform selection with the fitness $F$;
+\STATE Perform genetic operations;
+\STATE $t \leftarrow t+1$;
+\UNTIL{($stop\_condition$)}
+\end{algorithmic}
+\end{algorithm}
+The fitness modification performed in the line 8 of Algorithm \ref{alg:ESSS-DOF}
+is based on the formula
+\begin{equation}
+\label{FitnessDeterioration_1}
+\hat{F}(x) = F_{min} \, \exp \left( - \sum_{i = 1}^N 
+\left( \frac{x_i - \bar{y}_i}{\sigma_i} \right)^2 \right)
+\end{equation}
+where $\bar{y}_i$ are coordinates of the expected centroid of phenotypes that 
+correspond to the population $P_t$ and $\sigma_i^2$
+stands for the variance of the individuals location in the $i^{\text{th}}$ 
+direction, while $F_{min} = F(x^*)$ is the maximum individual fitness that appears 
+in the population $P_t$. Finally $N$ is the dimension of the admissible domain
+$\mathcal{D}$.
+
+The logical variable $trap\_test$ is true if
+the mean fitness in the population increases less than $p\%$ during the last $n_{trap}$
+genetic epochs, or the standard deviation of the 
+phenotypes displacement is less than the mutation range during the last $n_{trap}$
+genetic epochs.
+The logical variable $stop\_condition$ is true if the proper stopping rule for the whole strategy is satisfied. The simplest possible stopping rule may be limit the number of genetic epochs after the last fitness modification during which no trap was found.
+
+Test results of this effective approach to the global search were presented in  \cite{Obuchowicz1999}, \cite{ObuchowiczPatan1997b} and \cite{ObuchowiczKorbicz1999}.
+\cite{Arabas2001} delivered another formula for fitness modification that leads to
+population niching.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Using clustering in fitness deteriorartion}
+\label{sec:CGS}
+
+
+
+Telega, Schaefer and Adamska (see \cite{Telega1999}, \cite{SchaeferAdamskaTelega2004})
+introduced the clustering techniques applied to the random sample (population)
+obtained by the genetic algorithm (GA) in order to make the fitness deterioration
+more accurate and effective.
+The resulted strategy was called \textit{Clustered Genetic Search} (CGS).
+
+The basic idea of CGS is to recognize the clusters of individuals contained by
+multiset of individuals being the current population or the sum of current
+populations obtained from the multi-deme model or being the cumulated population
+(e.g. the sum of all populations from the prescribed number of last genetic epochs).
+Clusters should be sufficiently dense and well separated one from each other.
+
+Next the \textit{cluster extensions} being the regular subsets of $\mathcal{D}$
+with the positive measure containing the cluster points are constructed.
+Pseudocode of the proposed strategy is depicted in the Algorithm \ref{alg:CGS}.
+\begin{algorithm}
+\caption{Draft of the CGS strategy}
+\label{alg:CGS}
+\begin{algorithmic}[1]
+\STATE $CLE \leftarrow \emptyset$;
+\STATE Create initial population $P_0$;
+\REPEAT
+\STATE Evaluate fitness $F$ outside $CLE$;
+\STATE Modify fitness according to (\ref{eqn:FitnessDeterioration_6});
+\STATE Perform GA until the local stooping criterion is satisfied;
+\STATE Recognize new clusters;
+\STATE Construct new cluster extensions and update $CLE$;
+\UNTIL{(The whole domain $\mathcal{D}$ has been processed) {\bf or} 
+        (A satisfactory set of cluster extension has been found)}
+\end{algorithmic}
+\end{algorithm}
+
+The CGS strategy utilizes the following fitness modification
+\begin{equation}
+\label{eqn:FitnessDeterioration_6}
+\hat{F}(x) = \left\{
+\begin{array}{lll}
+F(x) & \; \; \text{if} & \; \; x \in {\cal D} \setminus CLE\\
+F_{max} & \; \; \text{if} & \; \; x \in CLE
+\end{array}
+\right.
+\end{equation}
+where $F_{max}$ is the maximum fitness value already encountered and 
+$CLE \subset {\cal D}$ stands for the union of cluster extensions already recognized. 
+
+The admissible domain $\mathcal{D}$ is divided into hypercubes
+that constitute a grid (raster) and the cluster extensions
+are unions of hypercubes. Every cluster extension can be recognized
+in one or many steps of the main loop. 
+After the GA is stopped (line 6 in Algorithm \ref{alg:CGS}), 
+new parts of cluster extensions can be detected by the analysis of the density
+of individuals in the hypercubes. The hypercube that contains the
+best individual is selected as the seed. Neighboring hypercubes with
+the density of individuals greater than an arbitrary threshold are
+attached to the cluster extension. A rough local optimization method
+is started in each new part of the cluster extension, and the result
+of this optimization is retained. If this local method ends in the
+already recognized cluster extension then this part is attached to it. 
+
+The local stopping criterion distinguishes two kinds of behavior
+of the GA utilized by CGS.
+The first one is that it finds new parts of cluster extensions after
+few generations, and the second is the chaotic behavior
+(individuals are uniformly distributed over $\mathcal{D} \setminus CLE$).
+The latter corresponds to the recognition of a plateau 
+(or areas where the fitness has small variability)
+outside of the already known cluster extensions. Other cases are treated
+as the situation when GA does not fit to the particular problem, and
+a refinement of SGA parameters is suggested.
+
+The CGS stopping strategy is to check stagnation of a sequence
+of some estimator of distribution of population individuals. If it does
+not change, then check if an arbitrary number of hypercubes has the
+density of individuals below the threshold. If so, then begin the clustering
+procedure; otherwise, check if individuals are uniformly distributed.
+
+Computations show that CGS constitutes a "filter" that eliminates local
+minima with small fitness variability and narrow basins of attraction.
+Such property can be useful in some cases. The CGS strategy should
+be especially convenient for functions with large areas of small variability
+(areas similar to plateaus) which can be difficult
+for other global and local optimization methods.
+
+The Simple Genetic Algorithm (SGA) (see e.g. \cite{Schaefer2007}) 
+was used in the CGS instance described above. 
+Another implementation utilized the multi-deme Hierarchic Genetic Search
+(see \cite{SchaeferKolodziej2003})
+and the FMM-EMM method for finding cluster extensions 
+(see \cite{SchaeferAdamska2004}).
+
+The CGS works well if the cluster extensions fall into 
+the basins of attraction of local and global minimizers and
+fill them sufficiently. The CGS correctness and the correctness
+of the proposed CGS stopping strategy can be partially verified
+for the case of SGA sampling (see \cite{Telega1999}, 
+\cite{SchaeferJablonski2001}, \cite{Schaefer2007}).
+
+Summing up, CGS may be classified as the sequential niching, even if the
+parallel HGS is applied as the sampling engine and if more than one
+cluster extension is encountered in its single step.
+
+
+
+
+
+
+
+
+
+
+
+\section{Critical remarks}
+\label{sec:CritRem}
+
+Deep analysis of the deterioration techniques presented in Sections
+\ref{sec:Fdt}, \ref{sec:CGS}
+exhibits their several serious disadvantages:
 
 \begin{itemize}
-  \item it is simple to incorporate in existing optimization methods
-  \item it efficiently finds many local solutions
-  \item it provides reasonable stop criterion which in this case is based on the
-  quality of clusters returned by the clustering algorithm
+\item
+Huge memory complexity of memorizing the cluster extensions
+which appears especially in case of CGS with a raster representation
+of cluster extensions and a large dimension $N$ 
+of the admissible domain $\mathcal{D}$.
+In the computational practice, the GOP with $N$ greater then 10
+may bring the memory problems.
+
+\item
+Unsatisfactory accuracy of fitness approximation on the area of cluster extensions
+that leads to the incorrect deterioration and finally may lead to removing
+individuals from unchecked areas or the multiple check of non-promising areas
+already browsed.
+
+\item
+For the case of both strategies described in Sections \ref{sec:Fdt}, \ref{sec:CGS}  
+the error has a different origin. In the case of ESS-DOF the approximation of fitness
+in area surrounding local minimum (see formula (\ref{FitnessDeterioration_1}))
+is very rough and might be unsatisfactory in case of elongated basins of attraction.
+No matter how CGS finds the area of fitness leveling quite good 
+as the cluster extensions, the fitness
+modification by the general constant (see formula (\ref{eqn:FitnessDeterioration_6})) 
+may result in artifacts (artificial minima) at the borders of cluster extensions.
+
+\item
+The strong dependency of deterioration technique from the evolutionary technique 
+used which can be specially observed in ESS-DOF. This feature 
+generally disables to use deterioration in the transparent way
+in case of complex, adaptive strategies with many genetic engines.
+Sometimes this dependency might be helpful by profiling deterioration
+according to the particular GA instance.
 \end{itemize}
 
+The above discussion clearly shows the way of necessary improvements.
+A deterioration technique that combines low memory complexity
+of the exponential fitness improvement $\hat{F}$ with the accuracy of
+clustering will be presented in following Sections.
 

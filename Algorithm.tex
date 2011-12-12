@@ -1,56 +1,265 @@
 
-\chapter{Sequential niching algorithm}
-\label{Sequential niching algorithm}
+\chapter{Cluster Supported Fitness Deterioration Algorithm}
+\label{ch:csfdAlgorithm}
 
-\begin{definition}\label{def:sequential-niching}
-\textbf{Sequential niching} - the process of iterative degradation of fitness
-landscape in the areas occupied by clusters of individuals which are assumed
-to agglomerate inside basins of attraction.
+We suggest another approach to sequential niching
+which exploits some of the ideas from \cite{Obuchowicz1997},
+\cite{SchaeferAdamskaTelega2004}, \cite{SchaeferAdamska2004} and which
+tries to overcome problems specified in Section \ref{sec:CritRem}.
+This strategy is called \textit{Cluster Supported
+Fitness Deterioration} (CSFD).
+
+\section{Cluster vs. cluster extension}
+\label{sec:ClystvsExt}
+
+Before we dive into the detailed description of the CSFD algorithm
+let us make a clear distinction between two important notions of the
+\textit{cluster extension} and the \textit{cluster} itself, which are
+necessary for further research.
+
+\vspace{5pt}
+\begin{definition}
+\label{def:cluster}
+We will call by \textit{cluster} $C$ a selected subset of the population $P$ 
+(the mulitset of individuals) returned by GA.
+We assume that each cluster will be disjoint with any other cluster from $P$. 
+(i.e. when $C_i, C_k$ are clusters, then
+$i \neq k \Longrightarrow C_i \cap C_k = \emptyset$). 
 \end{definition}
+\vspace{5pt}
 
-\section{Hybrid Approach}
-Our deterioration algorithm may be easily incorporated in existing optimization
-methods. This can be expressed as a general hybrid approach to global
-optimization in which we do not change the implementation of the used EA
-but treat it as an integral element of our \textit{sequential niching} process.
-The following pseudo code shows the general idea behind the \textit{sequential
-niching}:
+The individuals are assigned to the clusters using the method
+described in Chapter \ref{ch:Clustering}. 
+Generally, individuals that belong to a
+particular cluster $C$ have to be densely distributed and well separated from
+individuals from other clusters.
 
-\begin{algorithmic}[1]
-\WHILE{$i < getIterationCount()$}
-	\STATE {$execute(evolutionaryAlgorithm)$}
-	\STATE {$population=getPopulation(evolutionaryAlgorithm)$}
-	\STATE {$clusters=cluster(population)$}
-	\IF{$clusters.isEmpty()$}
-		\STATE {$break$}
-	\ENDIF
-	\STATE {$detFitness=performCrunching(clusters,currentFitness)$}
-	\STATE {$saveClusters(clusters)$}
-	\STATE {$updateFitness(detFitness)$}
-\ENDWHILE
-\STATE {$execute(evolutionaryAlgorithm)$}
-\STATE {$extractBestClusters()$}
-\end{algorithmic}
+\vspace{5pt}
+\begin{definition}
+\label{def:cluster_extension}
+The \textit{extension} $CE$ of the cluster $C$ is the connected and regular 
+subset of the admissible domain $\mathcal{D}$
+with the positive measure, containing the cluster points, i.e., 
+each element from $C$ belongs to $CE$.
+Regular set means here the set with the Lipshitz boundary 
+(see e.g. \cite{Zeidler1985}).
+\end{definition}
+\vspace{5pt}
+
+Cluster extensions may be obtained in many different ways.
+One of them is the raster procedure introduced by
+\cite{Telega1999} described in Section \ref{sec:CGS}.
+
+Here we will use the cluster extensions $CE$ being the ellypsoid
+whose middlepoint is located at the cluster $C$ centroid
+and the measures of diversity 
+of individuals inside $C$ (e.g. in the form of standard deviation)
+in order to determine the length and the direction of its axes
+(see Chapter \ref{ch:fitnessDet}).
+
+The CSFD strategy runs the GA and then distinguishes clusters from the resulting
+population and constructs their extensions in each iteration.
+The information contained in each cluster allows for 
+effective finding the good approximation of the 
+local minimizer $x^+$ contained in its extension
+(e.g. by running the accurate local method starting from the best fitted
+individual in the cluster).
+Another advantage is the ability to approximate the shape and the volume of
+basins of attraction $\mathcal{B}_{x^+}$ by cluster extensions.
+This information is utilized by the fitness deterioration
+technique (see Section \ref{sec:fitnessDet}). 
+It might be also helpful for the stability analysis of $x^+$.
 
 
-The condition in while statement should be treated as control statement rather
-than the real termination criterion. It may be useful in cases where the
-clustering algorithm is misconfigured and always returns some clusters in which
-case the condition would prevent our algorithm to run endlessly.
-Our actual stop criterion is based on the condition inside the loop (line 5): if the clustering algorithm did not find any group of similar individuals or the group has low quality measures it jumps out
-of the loop and then we perform the last invocation of the EA in order to
-increase the probability of finding the local optimum which has not been explored during iterations.
 
-Using this general scheme has one important advantage: we do not have to change
-existing implementation of a given EA in contrast to standard niching
-methods which must be incorporated directly in the evolutionary algorithm. But
-what is more important, it provides a reasonable stop criterion which in this case is based 
-on the quality of clusters returned by the clustering algorithm.
+It may happen that cluster extensions obtained from two or more clusters
+lie inside the same basin of attraction. This may happen when in one iteration
+we manage to deteriorate only a part of the basin of attraction and in the next
+iteration we obtain the cluster inside other part of the basin.  
+We will use the procedure suggested by \cite{Telega1999} in order to detect
+such situation starting a single local, cheep method from each new
+cluster extension.
+If the method converges inside one of existing cluster extensions $CE$,
+then $CE$ and $CE'$ are joined
+(which indicates the fact that both $CE'$ and $CE$ lie in
+the same basin).
+
+\section{CSFD algorithm description}
+\label{sec:algDesc}
+
+In principle the algorithm works like the CGS strategy  presented in 
+\cite{SchaeferAdamskaTelega2004}. It uses GA to obtain
+a random sample (population of individuals) from the domain $\mathcal{D}$.
+If the problem space contains some robust solution located inside broad
+basins of attraction, it is very likely that individuals returned from
+the GA are gathered inside one or more of such basins, so the next step of the
+algorithm is to apply the clustering algorithm to distinguish groups of
+individuals (clusters) from the population. Under the assumption that
+distribution of individuals inside a given cluster provides information
+about the topology of the basin in which the cluster resides,
+the algorithm approximate the basin using this information in order to 
+deteriorate the fitness over the basins area
+and thus to prevent convergence to the same solutions multiple times.
+
+\subsection{CSFD pseudo-code}
+\label{sec:CSFDalgorithm}
+
+
+The CSFD strategy takes a hybrid approach which uses an arbitrary 
+GA to obtain a random sample from which it tries 
+to extract as much information as possible in order to to find 
+approximations of basins of attraction. 
+The only need for the GA is to be well tuned to the GOP to be solved,
+i.e., the population has to concentrate in a basin of attraction
+of at least one local robust minimizer (see \cite{Schaefer2007}).
+Then the fitness deterioration is applied in localized 
+areas to prevent exploration of the
+same basins multiple times during the course of the search.
+Algorithm \ref{alg:CSFD} shows the general idea behind the 
+Cluster Supported Fitness Deterioration. 
+The algorithm components will be described in a top-down
+manner in next Sections, here we provide the general overview only.
  
-In the subsequent chapters we will describe components  of the
-\textit{sequential niching} algorithm in more details.
-In chapter 3 we will discuss the clustering method used in our algorithm and 
-how does it influence the deterioration process. Chapter 4 describes the
-deterioration algorithm in more detail and chapter 5 shows the results 
-of the algorithm applied to simple multimodal problems.
 
+\begin{algorithm}
+\caption{Draft of the CSFD strategy}
+\label{alg:CSFD}
+\begin{algorithmic}[1]
+\STATE {$CL \leftarrow \emptyset$}
+\WHILE{$i < maxGenerationNumber$}
+	\STATE {$execute(GA)$}
+	\STATE {$pop \leftarrow getPopulation(GA)$}
+	\STATE {$clusterStruct \leftarrow$ $extractClusterStruct(pop)$}
+	\IF{$noClusters(clusterStruct)$}
+		\RETURN
+	\ENDIF
+	\STATE {$detFitness \leftarrow$}\\
+	$performFitnessDet(clusterStruct,currentFitness)$
+	\IF{$quality(detFitness,currentFitness,pop)<th$}
+		\RETURN
+	\ENDIF
+	\STATE {$CL \leftarrow CL \cup clusters$}
+	\STATE {$updateFitness(detFitness)$}
+	\STATE {$popSize = popSize + indNum$}
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+The condition in "while" statement (line 2, Algorithm \ref{alg:CSFD})
+should be treated as a control statement rather than the real termination criterion. 
+The CSFD stopping criterion is based on the conditions checked inside the main loop 
+(line 6, Algorithm \ref{alg:CSFD}).
+If the clustering algorithm has found no group of similar individuals 
+or the deterioration has a low quality, CSFD is stopped and returns
+all clusters found.
+
+In each iteration we execute the   
+GA (line 3, Algorithm \ref{alg:CSFD}) which is
+treated as a black-box algorithm, i.e. we may do not need to modify or know the
+implementation of the GA used. Then we take the population returned by
+the GA and extract so called \textit{clustering structure} (described 
+with details in Section \ref{sec:OPTICS}) which contains the information about 
+clusters and their internal mean densities.
+Note that so far we have not clustered the population returned by
+the GA, instead we extract the information about the internal clustering structure
+for further processing.
+If the clustering structure contains promising clusters then we perform the
+\textit{fitness deterioration} -- the process of degradation of the fitness
+landscape in areas occupied by clusters of individuals which are assumed
+to agglomerate inside basins of attraction. 
+In the line 9, Algorithm \ref{alg:CSFD} we execute the complex
+procedure \textit{performFitnessDet} (described in details in Section
+\ref{sec:fitnessDetAndClustering}) which actually performs the
+\textit{clustering} and \textit{fitness deterioration}. Next in the line 10, 
+Algorithm \ref{alg:CSFD} we check if the new fitness 
+(returned by the procedure \textit{performFitnessDet}) fulfills the 
+quality requirements described in Section \ref{sec:fitnessDetAndClustering}. 
+Finally, we save the clusters returned by the deterioration process and update 
+the fitness function for further iterations (lines 13, 14, Algorithm \ref{alg:CSFD}).
+Exploratory capabilities can be increased during later iterations by
+increasing the population size of the GA (line 15, Algorithm \ref{alg:CSFD}). 
+The CSFD strongly depends on the clustering algorithm used as a way to find
+parts of basins of attraction and as a global termination criterion for 
+the CSFD algorithm (see Section \ref{sec:TermConditions}).
+
+
+
+\subsection{Termination conditions}
+\label{sec:TermConditions}
+
+
+
+Two types of stopping and termination criterions 
+are used by CSFD: 
+
+\begin{itemize}
+  
+  \item 
+  \textit{Local termination criterion} which is used as a stoppng criterion
+  for the GA inside the main loop of the CSFD.  
+  
+  \item 
+  \textit{Global stopping criterion} which is based on the result of the
+  clustering algorithm applied to the population returned by the GA 
+  and which finishes the whole CSFD stategy.
+
+\end{itemize}
+
+
+The termination criterion in classic evolutionary algorithms is hard to
+define and very often problem dependent, as we do not
+have any global information about the fitness landscape and therefore we can only 
+compare one solution to another previously found.
+For a \textit{local termination criterion} we may use some of the 
+standard well-known stopping criteria for evolutionary algorithms like: 
+
+\begin{itemize}
+  
+  \item 
+  \textit{Expected first hitting time (FHT)} (see e.g. \cite{PardalosRomeijn2002})
+  which tries to set meaningful upper bounds for the number of iterations 
+  required to reach the sufficiently small neighborhood of solution.
+  
+  \item 
+  \textit{Efficiency measures} (see e.g. \cite{Goldberg1989}) 
+  e.g. \textit{Running Mean}, the difference between the current 
+  best objective value found and the average of the best objective 
+	values of the last $t$ generations is equal or less than a given threshold
+	$\epsilon$. 
+	 
+\end{itemize}
+
+In terms of the \textit{global stopping criterion} we  
+focus on the distribution of individuals
+in the admissible domain $\mathcal{D}$. 
+We follow the idea introduced by \cite{Telega1999}
+and proved by \cite{SchaeferAdamska2004} 
+to be successful for multi-modal problems with robust solutions.
+
+
+The global stopping criterion for CSFD algorithm is based on the clustering analysis 
+and defined as follows:
+
+\vspace{5pt}
+\noindent
+\textit{The CSFD algorithm is being terminated if the clustering process applied to
+the population of individuals returned by the genetic algorithm
+returns no clusters or the quality measure of the fitness
+deterioration performed on found clusters is too low.}
+\vspace{5pt}
+
+The clustering, which is performed in every iteration of the CSFD algorithm,
+gives us some clues about the global characteristics of the fitness landscape 
+i.e. when the clustering  algorithm performed on the final population finds
+nothing it is very likely that in previous iterations we have deteriorated the fitness landscape in places where the most desirable solutions reside and there is no use in
+continuing the searching process.
+This is considered to be true because we are looking for robust solutions which are resistant to noise and lie in basins of attraction which are significantly wide and deep.
+The population of GA is likely to converge to such solutions, so
+having found no clusters of individuals after performing 
+the sufficient number of GA epochs  
+shows that the population would not converge to any robust solution.
+
+Such kind of condition may be precisely formulated in terms of the convergence
+of sampling measures and partially verified in case if the genetic engine
+is SGA with the focusing heuristic (see \cite{Telega1999},
+\cite{Schaefer2007}, \cite{SchaeferJablonski2001}).

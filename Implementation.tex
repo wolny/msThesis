@@ -1,12 +1,12 @@
 
 
 \chapter{Implementation}
-\label{Implementation}
+\label{ch:Implementation}
 To verify our algorithm we have created a simple, global optimization framework
 which enabled us to execute and test all of the algorithms described throughout
 this article.
 
-We decided to use Java \cite{java} as a programming language and runtime
+We decided to use Java as a programming language and runtime
 environment for this project. 
 
 Using the framework we can find optima of real, mulimodal, multidimensional and
@@ -22,6 +22,7 @@ For the detailed description of the classes and interfaces see subsection
 'Implementation in Java'.  
 
 \section{Architecture}
+\label{sec:architecture}
 
 The project consists of six main packages, which communicates with the
 others through clearly specified interfaces and together constitute a
@@ -44,88 +45,29 @@ optimization algorithms especially the evolutionary algorithms.
   phenotypes. Implementations of SGA and Evolution Strategy. 
   \item \textit{Printing Modul} - used to print populations and fitness
   landscape during the program execution
-  \item \textit{Statistics Utils} - based on JAMA \cite{jama}. This package
+  \item \textit{Statistics Utils} - based on JAMA. This package
   contains many useful statistical functions, e.g. CFA algorithm, covariance
   matrix estimation, multidimensional Gaussian function, fitness deterioration
   untilities.
 \end{itemize}
 
 \section{Implementation in Java}
+\label{sec:impl}
+
 The framework was written to be elegant and extensible. The system's 
 modules are loosely coupled and each of system's components has little knowledge of the definitions 
 of other separate components (see previous section). This allows for
 extensibility in further design. To implement the system we used Spring
-\cite{spring} as an application framework, Maven \cite{maven} for project
-management and build automation, JUnit \cite{junit} and Mockito \cite{mockito}
-for testing and Git \cite{git} as revision control system. 
+as an application framework, Maven for project
+management and build automation, JUnit and Mockito
+for testing and Git as revision control system. 
 The source code, configuration files and sample results may be found at 
-GitHub \cite{github}: https://github.com/wolny/Fitness-Deterioration
+GitHub: https://github.com/wolny/Fitness-Deterioration
 
 \subsection{Technologies}
 \begin{itemize}
-  \item Spring \cite{spring} - application framework
-  \item Maven \cite{maven} - project management and build automation
-  \item Mockito \cite{mockito} - testing framework 
-  \item JAMA \cite{jama} - linear algebra package
+  \item Spring - application framework
+  \item Maven - project management and build automation
+  \item Mockito - testing framework 
+  \item JAMA - linear algebra package
 \end{itemize}
-
-\subsection{Diagrams}
-
-Below you may find class diagrams for each of the module implemented in our
-framework. It shows a general overview of the structure of a system: used
-classes, their attributes, operations and the relationships between the classes.
-
-
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.5]{ClassDiagrams/algorithm.jpg}
-  }
-  \caption{Main algorithm package}
-  \label{alg}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.3, angle=90]{ClassDiagrams/EA.jpg}
-  }
-  \caption{Evolutionary algorithms package}
-  \label{ea}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.3, angle=90]{ClassDiagrams/clustering.jpg}
-  }
-  \caption{Clustering package}
-  \label{optics}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.3, angle=90]{ClassDiagrams/deterioration.jpg}
-  }
-  \caption{Fitness deterioration package}
-  \label{fitdet}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.3, angle=90]{ClassDiagrams/fitness.jpg}
-  }
-  \caption{Fitness and functors package}
-  \label{ea}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.3, angle=90]{ClassDiagrams/population.jpg}
-  }
-  \caption{Population package}
-  \label{ea}
-\end{figure}
