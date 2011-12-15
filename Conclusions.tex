@@ -42,22 +42,93 @@ by the \textit{sequential niching} yet.
 
 The most valuable outcomes of this work are:
 \begin{itemize}
-  \item definition and implementation of a hybrid metaheuristic called \textit{Sequential
-  niching} which may be used for solving multimodal optimization problems.
-  \item applying clustering algorithms as a reasonable stop criterion for
-  real-valued evolutionary algorithms
-  \item using properties of \textit{OPTICS ordering} \cite{optics} to improve
-  the deterioration process (see section 4.1) so it affects only regions
-  directly occupied by population of individuals
-  \item definition and implementation of two variants of the fitness
-  deterioration algorithm which might be used in different scenarios depending
-  on the expected speed and accuracy of the global optimization
-  \item definition and implementation of the \textit{Crunching function
-  adjustment} algorithm which improves the efficiency of the fitness
-  deterioration
-  \item creation of an extensible, lightweight framework which implements all of
-  the algorithms and ideas presented in this work and which can be used for
-  further research
+
+\item
+Sequential niching with fitness deterioration is one of the 
+most promising stochastic strategies
+for analyzing multi-modal global optimization problems in the continuous
+domains embedded in vector metric spaces.
+
+\item
+Existing instances of the strategy mentioned above
+exhibits several disadvantages: 
+huge memory complexity of memorizing deteriorated regions
+(e.g. CGS with raster clustering); 
+unsatisfactory accuracy of the fitness approximation 
+that lead to the incorrect deterioration and finally may lead to removing
+individuals from unchecked areas or the multiple check of non-promising areas
+already browsed; 
+dependency on the evolutionary technique used.
+
+\item
+The discussion presented in Sections \ref{sec:Fdt}, \ref{sec:CGS}, \ref{sec:CritRem}
+clearly shows the way of necessary improvements.
+The proposed deterioration strategy CSFD combines the low memory complexity
+of the exponential fitness improvement with the accuracy of
+clustering based techniques.
+
+\item
+The CSFD performs very well for 2D complex multi-modal functions like the ones
+used for testing (see Section \ref{sec:testFun}) being also well suited to detect
+the basins of attraction of the local and global extrema.
+Exhaustive testing for higher dimensional problems will be the subject
+of future research.
+
+\item
+Performed experiments show that we can expect satisfactory results 
+when the GA utilizes
+genetic operators based on the normal distribution. 
+Fitness proportionate selection causes satisfactory 
+convergence to local solutions 
+and the normal distribution based reproduction operators tends 
+to produce populations with useful information about fitness landscape.
+
+\item
+The Hierarchical Genetic Strategy (HGS)
+(see \cite{SchaeferKolodziej2003},
+\cite{SchaeferAdamskaTelega2004},
+\citep{WierzbaSemczukKolodziejSchaefer2003})
+would be very efficient 
+from the standpoint of the deterioration process.
+This strategy performs an efficient concurrent
+search in the optimization landscape by many small populations. Creation of
+these populations is governed by dependent genetic processes with low complexity.
+Moreover, HGS is likely to find many solutions in a
+single run of the algorithm and that the hierarchy of populations generated
+by the algorithm are rapidly convergent. 
+
+
+\item
+High accuracy of deterioration offered by the CSFD results from
+the positive synergy of two mechanisms:
+clusters obtained from the modified OPTICS (see Algorithm \ref{alg:IFDA})
+and improved by leading marks
+approximate well basins of attraction of local/global extrema;
+the form of the weighted deteriorartion function (\ref{eqn:WS1})
+and form of weights (see formulas (\ref{eqn:alpha1}), (\ref{eqn:alpha2}), 
+(\ref{eqn:fractures})) maximizes the effect of deterioration over the area of
+cluster extensions i.e. the area of basins of extrema already recognizes
+and prevent degradation of unexplored regions.
+
+
+
+\item
+Algorithm \ref{alg:IFDA} which increases 
+fitness deterioration accuracy performs well also in cases when 
+the clusters are not convex e.g. for Langermann function
+(see Figure \ref{fig:langermannTest}).
+
+
+\item
+Sequential niching obtained by CSFD preserves 
+the asymptotic guarantee of success.
+The probability of sampling is significantly
+decreased over the cluster extensions but still greater then zero, 
+so this regions are not excluded from future sampling, even in case
+of inaccurate deterioration.
+It seems to be the advantage over the sequential niching 
+based on "tabu" techniques.
+
 \end{itemize}
 
 
@@ -70,22 +141,21 @@ niching} algorithm described at the beginning of this paper (chapter 2), the mai
 direction of the future research should be to test this algorithm using many 
 different evolutionary algorithms and evolution strategy.
 The most promising algorithm to choose would be \textit{Hierarchical Genetic
-Strategy} (HGS) \cite{hgs}.
+Strategy} (HGS) \cite{WierzbaSemczukKolodziejSchaefer2003}.
 
 The Hierarchical Genetic Strategy (HGS) performs efficient concurrent
 search in the optimization landscape by many small populations. The creation of
 these populations is governed by dependent genetic processes with low complexity
-\cite{hgs}. HGS is an example of parallel genetic algorithms and it performs
-very well especially in case of problems with many local extrema.
+\cite{WierzbaSemczukKolodziejSchaefer2003}. HGS is an example of parallel
+genetic algorithms and it performs very well especially in case of problems with many local extrema.
 Taking into account the fact that HGS is likely to find many solutions in a
 single run of the algorithm and that the hierarchy of populations generated
 by the algorithm are rapidly convergent it would be very efficient 
 from the standpoint of the deterioration process.
 
-There are many aspects of the implementation of \textit{Sequential
-niching} algorithm, described in chapter 6, which can be improved as well. 
-The framework uses very simple concurrency model which may be further
-developed to improve the overall performance of the algorithm.
+There are many aspects of the implementation of \textit{CSFD} algorithm,
+described in chapter \ref{ch:Implementation}, which can be improved as well. The
+framework uses very simple concurrency model which may be further developed to improve the overall performance of the algorithm.
 The most costly stages of the algorithm include: fitness function computations
 during EA algorithm and creation of \textit{OPTICS ordering} \cite{optics}.
 The former problem might be solved by introducing some of the known

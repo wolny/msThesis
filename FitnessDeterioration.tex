@@ -431,9 +431,9 @@ for deterioration performed by Gauss functions and positively verified for
 2D benchmarks (see Section \ref{sec:testFun}) so its usefulness 
 in other cases in unknown.
 
-\subsection{Results}
+\subsection{CFA Results}
 
-The figures below shows the result of our sequential niching algorithm for two
+The figures below shows the result of our CSFD algorithm with CFA for two
 simple functions from $f:\mathbb{R}^2 \rightarrow \mathbb{R}$, specifically:
 \begin{itemize}
   \item $f(X) = 2e^{-(x^2 + y^2)}$, where $X \in \mathbb{R}^2$
@@ -441,40 +441,26 @@ simple functions from $f:\mathbb{R}^2 \rightarrow \mathbb{R}$, specifically:
   \mathbb{R}^2$
 \end{itemize}
 
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.5]{CMA/result1_noCMA.png}
-  }
-  \fbox{
-    \includegraphics[scale=0.5]{CMA/result1_CMA.png}
-  }
-  \caption{The result of basic deterioration scheme
-  applied to unimodal function: $f(X) = 2e^{-(x^2 +y^2)}$ (the population was
-  generated with normal distribution around the solution). Without CFA (up),
-  with CFA (down). We may see that the 
-  overall landscape decreases only by $30$ percent, while using CFA
-  gives us $85$ percent of decline.}
-  \label{fig:det1}
-\end{figure}
+\begin{table}[ht]
+    \caption{The results of basic deterioration scheme applied to functions 
+    $f(X) = 2e^{-(x^2 +y^2)}$ (up-left and down-left) and $f(X) = e^{-(x^2 +
+    y^2)}+1.4e^{-((x-1.7)^2 + (y-1.7)^2)}$ (up-right and down-right) with the
+    populations generated with normal distribution around the solutions. For
+    the fist function we may see that the 
+  	overall landscape decreases only by $30\%$ (down-left), while using
+  	CFA gives us $85\%$ of decline (up-left). For the second function we
+  	see $25\%$ of deterioration (down-right), while CFA gives us $78\%$
+  	(up-right)}
+    \centering
+    \begin{tabular}{cc}
+    \includegraphics[scale=0.3]{CMA/result1_CMA.png} &
+    \includegraphics[scale=0.3]{CMA/result2_CMA.png} \\
+    \newline
+    \includegraphics[scale=0.3]{CMA/result1_noCMA.png} &
+    \includegraphics[scale=0.3]{CMA/result2_noCMA.png} \\
+    \end{tabular}
+    \label{tab:cfa}
+\end{table}%
 
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.5]{CMA/result2_noCMA.png}
-  }
-  \fbox{
-    \includegraphics[scale=0.5]{CMA/result2_CMA.png}
-  }
-  \caption{The result of basic deterioration scheme with CFA 
-  applied to bimodal function: $f(X) = e^{-(x^2 + y^2)}+1.4e^{-((x-1.7)^2 +
-  (y-1.7)^2)}$. (the population was
-  generated with normal distribution around the solution). Without CFA (up),
-  with CFA (down). We see $25$ percent
-  of deterioration, while CFA gives us $78$ percent when applied to the same
-  case.}
-  \label{fig:det2}
-\end{figure}
-
-Figures \ref{fig:det1} and \ref{fig:det2} shows how much the algorithm benefit
+Table \ref{tab:cfa} shows how much the algorithm benefit
 from using the CFA algorithm.

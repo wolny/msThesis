@@ -1,84 +1,261 @@
 
 \chapter{Tested Algorithms}
-\label{TestedAlgorithms}
-In this chapter we present some of the results performed for simple
-real-valued genetic algorithms which were tuned for benchmark
-functions (see next section).
-As an embedded EA we have used a genetic
-algorithm with real-encoding, proportionate selection and genetic operators 
-based on normal distribution.
+\label{sec:testFun}
 
-\section{Benchmark functions}
-Tests were performed for simple, multimodal, two dimensional functions:
+\vspace{5pt}
+\begin{remark}
+\label{rem:plusminus}
+The whole consideration leading to define CSFD was performed for
+GOPs of finding local/global minimizers.
+It can be easily reformulated for GOPs of finding
+local/global maximizers for which the equivalent minimization problem
+can be established.
+In this case the landscape deterioration consists in "leveling hills" 
+instead of "filling valleys".
+The particular class of such maximization GOPs is associated with continuous
+objectives (fitnesses) $F$ defined on compacts in $\mathbb{R}^N$.
+In such cases we can set the new fitness as $- F$ plus the maximum value 
+of $F$ over the search domain
+in order to obtain the equivalent minimization problem.
+\end{remark}
+
+
+The aim of our experiments is to show the efficiency of the 
+\textit{Cluster Supported Fitness Deterioration} CSFD in finding 
+basins of attraction of local solutions.
+
+
+\section{Genetic Engine}
+\label{sec:genEng}
+The CSFD strategy uses the \textit{Simple Evolutionary Algorithm} (SEA).
+In contrast to the \textit{Simple Genetic Algorithm} (SGA), 
+SEA uses a real values as a parameters of the chromosome
+in populations without performing coding and encoding
+process before calculates the fitness values of individuals 
+(see e.g. \cite{Schaefer2007}).
+Namely, SEA is more straightforward, faster and more efficient than SGA.
+
+
+We use the standard genetic operators for real-valued representation:
 \begin{itemize}
-  \item $f(X) = 2e^{-((x+1.1)^2 + (y+1.1)^2)} + 1.5e^{-((x-1)^2 + y^2)} +
-  4e^{-3((x+1.5)^2 + (y-1.5)^2)}$, where $X \in \mathbb{R}^2$
-  \item $f(X) = e^{-(x^2 + y^2)}+1.4e^{-((x-1.7)^2 + (y-1.7)^2)}$, where $X \in
-  \mathbb{R}^2$
-\end{itemize} 
+  \item Crossover: $Y=x_1 + N(mean, \sigma_c)(x_2 - x_1)$, where $x_1, x_2$ are
+  individuals, $N(mean, \sigma_c)$ stands for the multivariate normal
+  distribution, $mean = \frac{x_1 + x_2}{2}$ is a $[x_1, x_2]$ centroid, 
+  $\sigma_c$ is the parameter used to control exploration 
+  and exploitation of the SEA.
+  \item Mutation: $y = x + N(0, \sigma_m)$, where $x$ is the individual to be
+  mutated, $\sigma_m$ the configurable mutation parameter.
+\end{itemize}
 
-\section{Tests}
+We want the genetic engine to be cheap and converge very quickly to local
+solutions, so we may efficiently deteriorate found basins of attraction in 
+subsequent iterations. To improve the convergence of the population maintained
+by SEA we use proportional selection 
+and we increase the
+exploitation capabilities of the SEA using proper parameters, usually:
+$\sigma_c \in [0.1, 0.3]$, $\sigma_m \in [0.4, 1.0]$, depending on the problem.
+
+
+\section{Test functions}
+\label{sec:testFun}
+In order to visualize the deterioration process we use 
+three 2D test functions:
+\begin{itemize}
+  \item Rastrigin: 
+  \begin{equation}
+  \label{eqn:Rastrigin}
+  \begin{array}{c}
+  F(x)= 20 + \sum_{i=1}^2 (\, x_i^2 - 10 cos(2 \pi x_i) \, )
+  \end{array}
+  \end{equation}
+  for $x_1, x_2 \in [-4, 4]$.
+  \item Langermann:
+  \begin{equation}
+  \label{eqn:Langermann}
+  \begin{array}{c}
+  F(x) = \sum_{j=1}^5 c_j \,
+  exp(\, - \, \frac{1}{\pi}
+  ( \, (x_1 - a_j)^2 + (x_2 - b_j)^2 \, ))\\ 
+  \\
+  cos(\, \pi \, ((x_1 - a_j)^2 + (x_2 - b_j)^2 \, )) + 5,\\ 
+  \\ 
+  a = (3,5,2,1,7), \, b = (5,2,1,4,9), \, c = (1,2,5,2,3)
+  \end{array}
+  \end{equation}
+  for $x_1 \in [0, 4], \, x_2 \in [-1, 3]$.
+  \item Griewangk:
+  \begin{equation}
+  \label{eqn:Gierwangk}
+  \begin{array}{c}
+  F(x)=\frac{1}{4000} \, \sum_{i=1}^2 \, x_i^2 \, - \, \Pi_{i=1}^2
+  \, cos \left( \frac{x_i}{\sqrt{i}} \right) + 1
+  \end{array}
+  \end{equation}
+  for $x_1, x_2 \in [-4, 4]$.
+\end{itemize}
+
+W decide to handle maximization GOPs associated with benchmarks
+(\ref{eqn:Rastrigin}), (\ref{eqn:Langermann}), (\ref{eqn:Gierwangk}) 
+because their results can be more
+expressively presented then the equivalent minimization ones. 
+The CSFD instance dedicated to maximization problems
+were utilized (see Remark \ref{rem:plusminus}).
+
+
+\section{CSFD initial parameters}
+\label{sec:InitPar}
+
+
+In each of the tests we use the same set of initial values for algorithm's
+parameters. The \textit{Cluster Supported Fitness Deterioration} needs the
+following parameters to be configured: 
+\begin{itemize}
+  
+  \item $popSize$ -- population size of the genetic engine used in CSFD;
+  it is advisable to use small population to minimize the fitness computation
+  costs; usually: $40 \, \leq \, popSize \, \leq \, 100$
+  
+  \item $\epsilon$ and $minPts$ -- OPTICS generating distance and minimum number
+  of points in $\epsilon$-neighborhood (see Section \ref{sec:OPTICS});
+  the values for the $\epsilon$ should be 'large enough' to allow the
+  the creation of proper \textit{ordering}, usually $\epsilon \in [0.5, 1.0]$
+  depending on the selection pressure. $minPts$ should be chosen as follows:
+  \begin{equation}
+  \label{eqn:minPts}
+  minPts = \left\{
+  \begin{array}{ccc}
+  \frac{popSize}{4} & \text{if} & 10 \leq \frac{popSize}{4} \leq  20\\
+  10 & \text{if} & \frac{popSize}{4} < 10\\
+  20 & \text{if} & 20 < \frac{popSize}{4}
+  \end{array}
+  \right.
+  \end{equation}
+  
+  \item $\sigma_c \; \text{and} \; \sigma_m$ -- standard
+  deviations used for the \textit{crossover} and \textit{mutation} respectively
+  (see Section \ref{sec:genEng})
+  
+  \item $mutationProb$ -- mutation probability (crossover is always performed)
+   
+\end{itemize}
+
+\section{Efficiency measures and CSFD results}
+\label{sec:Measures}
+We will use two simple measures in order to evaluate the deterioration
+quality. The first one was the number of recognized basins of
+attraction $NBA$.
+The basin of attraction of the local maximizer is considered as recognized
+by CSFD if the cluster of individuals was established and 
+the cluster extension is wholly included in the basin.
+
+
+The second measure, called the degree of deterioration $DoD$, is
+defined by the following formula:
+\begin{equation}
+\label{eq:dod}
+DoD = \frac{F_0^{max} - F_M^{max}}{F_0^{max} - F_0^{min}}
+\end{equation}
+where $M$ is the number of iterations performed by the CSFD strategy, 
+$F_0^{max}$ denotes the maximum value of the fitness at the beginning of the 
+algorithm ($0$-iteration), similarly $F_0^{min}$ is the minimum value of the
+fitness function at the beginning of the algorithm and $F_M^{max}$ is the 
+maximum value of the fitness in the last iteration of the algorithm.
+$DoD$ might be also expressed in percentage.
+
+CSFD was run several times for each of the objective 
+(\ref{eqn:Rastrigin}), (\ref{eqn:Langermann}), (\ref{eqn:Gierwangk}).
+The most typical behavior of this strategy in case of each objective
+are depicted in Figures 
+\ref{fig:rastriginTest}, \ref{fig:langermannTest}, \ref{fig:griewangkTest}.
+Moreover Table \ref{tab:resultsCsfd} gathers the metrics values for these
+computations.
+
+The best performance was obtained for the Griewangk benchmark for which
+all local maxima were encountered and for which the maximum degree 
+of fitness leveling $84\%$ was obtained.
+All local maxima were also recognized in the case of the Rastrigin function,
+but the degree of deterioration was only $64\%$. The Langermann benchmark
+became most difficult for CSFD, since the degree of deterioration was only
+$59\%$ and two basins of attraction (out of eighteen ones) remained unknown. 
+
+\begin{table}
+\begin{center}
+\caption{Results of experiments (CSFD algorithm)}
+\begin{tabular}{| l | c | r |}
+\hline
+\label{tab:resultsCsfd}
+\textit{Function} & \textit{NBA} & \textit{DoD} \\ \hline \hline
+Rastrigin & 64/64 & 0.64 \\ \hline
+Langermann & 16/18 & 0.59 \\ \hline
+Griewangk & 4/4 & 0.84 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
 \begin{figure}
   \centering
   \fbox{
-    \includegraphics[scale=0.2]{weighted_1_0/ofl1.png}
+    \includegraphics[scale=0.25]{csfdRastrigin/fitnessLand_iter000.jpg}
   }
   \fbox{
-    \includegraphics[scale=0.2]{weighted_1_0/iter11.png}
+    \includegraphics[scale=0.25]{csfdRastrigin/fitnessLand_iter033.jpg}
   }
   \fbox{
-    \includegraphics[scale=0.2]{weighted_1_0/iter12.png}
+    \includegraphics[scale=0.25]{csfdRastrigin/fitnessLand_iter045.jpg}
   }
   \fbox{
-    \includegraphics[scale=0.2]{weighted_1_0/iter13.png}
+    \includegraphics[scale=0.25]{csfdRastrigin/fitnessLand_iter064.jpg}
   }
-  \caption{The result of sequential niching algorithm applied for the function:
-  $f(X) = 2e^{-((x+1.1)^2 + (y+1.1)^2)} + 1.5e^{-((x-1)^2 + y^2)} +
-  4e^{-3((x+1.5)^2 + (y-1.5)^2)}$. OPTICS parameters: $\epsilon=0.5,
-  minPts=10$, deterioration algorithm: \textit{Weighted scheme}}
-  \label{seqNiching1}
+  \caption{Original (the first one) and deteriorated fitness landscape 
+  of the Rastrigin function seen in the 33th, 45th and 64th interation 
+  of the CSFD strategy respectively. 
+  Parameters: $\epsilon=0.7$, $minPts=12$, $popSize=50$,
+  $\sigma_c=0.1$, $\sigma_m=0.5$}
+  \label{fig:rastriginTest}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \fbox{
+    \includegraphics[scale=0.25]{csfdLangermann/fitnessLand_iter000.jpg}
+  }
+  \fbox{
+    \includegraphics[scale=0.25]{csfdLangermann/fitnessLand_iter001.jpg}
+  }
+  \fbox{
+    \includegraphics[scale=0.25]{csfdLangermann/fitnessLand_iter008.jpg}
+  }
+  \fbox{
+    \includegraphics[scale=0.25]{csfdLangermann/fitnessLand_iter016.jpg}
+  }
+  \caption{Original (the first one) and deteriorated fitness landscape 
+  of the Langermann function seen in the 1th, 8th and 16th interation 
+  of the CSFD strategy respectively. 
+  Parameters: $\epsilon=0.7$, $minPts=12$, $popSize=80$,
+  $\sigma_c=0.1$, $\sigma_m=0.5$}
+  \label{fig:langermannTest}
 \end{figure}
 
 \begin{figure}
   \centering
   \fbox{
-    \includegraphics[scale=0.3]{weighted_1_0/pop_pm3d11.png}
+    \includegraphics[scale=0.25]{csfdGriewangk/fitnessLand_iter000.jpg}
   }
   \fbox{
-    \includegraphics[scale=0.3]{weighted_1_0/pop_pm3d12.png}
+    \includegraphics[scale=0.25]{csfdGriewangk/fitnessLand_iter021.jpg}
   }
   \fbox{
-    \includegraphics[scale=0.3]{weighted_1_0/pop_pm3d13.png}
+    \includegraphics[scale=0.25]{csfdGriewangk/fitnessLand_iter051.jpg}
   }
-  \caption{Clusters returned in subsequent interations of sequential
-  niching algorithm applied for function
-  $f(X) = 2e^{-((x+1.1)^2 + (y+1.1)^2)} + 1.5e^{-((x-1)^2 + y^2)} +
-  4e^{-3((x+1.5)^2 + (y-1.5)^2)}$. The resulted fitness function is visualized 
-  as a color map (\textit{pm3d}). We have found all solutions and achieved
-  $80\%$ of the overall fitness landscape decline}
-  \label{seqNichingPop}
+  \fbox{
+    \includegraphics[scale=0.25]{csfdGriewangk/fitnessLand_iter069.jpg}
+  }
+  \caption{Original (the first one) and deteriorated fitness landscape 
+  of the Griewangk function seen in the 21th, 51th and 69th iteration 
+  of the CSFD strategy respectively. 
+  Parameters: $\epsilon=0.7$, $minPts=12$, $popSize=50$,
+  $\sigma_c=0.1$, $\sigma_m=0.5$}
+  \label{fig:griewangkTest}
 \end{figure}
-
-\begin{figure}
-  \centering
-  \fbox{
-    \includegraphics[scale=0.3]{simple1/pop_pm3d11.png}
-  }
-  \fbox{
-    \includegraphics[scale=0.3]{simple1/pop_pm3d12.png}
-  }
-  \fbox{
-    \includegraphics[scale=0.3]{simple1/pop_pm3d13.png}
-  }
-  \caption{Visualization of the fitness deterioration outcomes in subsequent
-  iterations. Test function: $f(X) = 2e^{-((x+1.1)^2 + (y+1.1)^2)} + 1.5e^{-((x-1)^2 + y^2)} +
-  4e^{-3((x+1.5)^2 + (y-1.5)^2)}$. Deterioration algorithm: \textit{Basic
-  scheme}. We have found all solutions and achieved $85\%$ of the overall
-  fitness landscape decline}
-  \label{seqNichingPop}
-\end{figure}
-
-
-
-
-
