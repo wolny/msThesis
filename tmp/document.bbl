@@ -1,0 +1,136 @@
+\begin{thebibliography}{WSKS03}
+
+\bibitem[ABKS99]{optics}
+M.~Ankerst, M.M. Breunig, H.P. Kriegel, and J.~Sander.
+\newblock Optics: Ordering points to identify the clustering structure.
+\newblock In {\em Proc. ACM SIGMOD 1999 Int. Conf. on Management of Data},
+  1999.
+
+\bibitem[Ara01]{Arabas2001}
+J.~Arabas.
+\newblock {\em Lectures in Evolutionary Algorithms}.
+\newblock WNT, Warsaw, Poland, 2001.
+
+\bibitem[BBM93]{BeasleyBullMartin1993}
+D.~Beasley, D.R. Bull, and R.R. Martin.
+\newblock A sequential niche for multimodal function optimization.
+\newblock {\em Evolutionary Computation}, 1(2):101--125, 1993.
+
+\bibitem[DS75]{DixonSzego1975}
+L.C.W. Dixon and G.P. Szeg\"{o}, editors.
+\newblock {\em Toward Global Optimization}.
+\newblock North Holland, 1975.
+
+\bibitem[EKSX96]{dbscan}
+M.~Ester, H.P. Kriegel, J.~Sander, and Xiaowei Xu.
+\newblock A density-based algorithm for discovering clusters in large spatial
+  databases with noise.
+\newblock 1996.
+
+\bibitem[Gol89]{Goldberg1989}
+D.~Goldberg.
+\newblock {\em Genetic Algorithms and their Applications}.
+\newblock Addison--Wesley, 1989.
+
+\bibitem[HL96]{SampleCovariance}
+J.P. Hoffbeck and D.A. Landgrebe.
+\newblock Covariance matrix estimation and classification with limited training
+  data.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  1996.
+
+\bibitem[KT87]{RinnoyKanTimmer1987a}
+A.H.G.~Rinnoy Kan and G.T. Timmer.
+\newblock Stochastic global optimization methods.
+\newblock {\em Mathematical Programming}, 39, 1987.
+
+\bibitem[Mah95]{Mahfound95niching}
+S.W. Mahfound.
+\newblock Niching methods for genetic algorithms.
+\newblock {\em IlliGAL Report}, 1995.
+
+\bibitem[MM95]{Mahfoud95acomparison}
+Samir~W. Mahfoud and Samir~W. Mahfoud.
+\newblock A comparison of parallel and sequential niching methods.
+\newblock In {\em In Proceedings of the Sixth International Conference on
+  Genetic Algorithms}, pages 136--143. Morgan Kaufmann, 1995.
+
+\bibitem[Obu97a]{Obuchowicz1999}
+A.~Obuchowicz.
+\newblock Adoption of the time--varying landscape using an evolutionary search
+  with soft selection algorithm.
+\newblock In {\em Proc. of the 3-rd KAGiOG Conf.}, pages 245--251, Potok
+  Z{\l}oty, Poland, 1997.
+
+\bibitem[Obu97b]{Obuchowicz1997}
+A.~Obuchowicz.
+\newblock The evolutionary search with soft selection and deterioration of the
+  objective function.
+\newblock In {\em Proc. of 6-th Symp. Intelligent Information Systems and
+  Artificial Intelligence IIS'97}, pages 288--295, Zakopane, Poland, 1997.
+
+\bibitem[OK99]{ObuchowiczKorbicz1999}
+A.~Obuchowicz and J.~Korbicz.
+\newblock Evolutionary search with soft selection algorithms in parameter
+  optimization.
+\newblock In {\em Proc. of the PPAM'99 Conf.}, pages 578--586, Kazimierz Dolny,
+  Poland, 1999.
+
+\bibitem[OP97]{ObuchowiczPatan1997b}
+A.~Obuchowicz and K.~Patan.
+\newblock About some evolutionary algorithm cases.
+\newblock In {\em Proc. of the 2-nd KAGiOG Conf.}, pages 193--200, Rytro,
+  Poland, 1997.
+
+\bibitem[PR02]{PardalosRomeijn2002}
+M.P. Pardalos and H.E. Romeijn.
+\newblock {\em Handbook Global Optimization}, volume~2.
+\newblock Kluwer, 2002.
+
+\bibitem[SA04]{SchaeferAdamska2004}
+R.~Schaefer and K.~Adamska.
+\newblock Well-tuned genetic algorithm and its advantage in detecting basins of
+  attraction.
+\newblock In {\em Proc. of the 7-th KAEiOG Conf.}, pages 149--154, Kazimierz,
+  Poland, 2004.
+
+\bibitem[SAT04]{SchaeferAdamskaTelega2004}
+R.~Schaefer, K.~Adamska, and H.~Telega.
+\newblock Genetic clustering in continuous landscape exploration.
+\newblock {\em Engineering Applications of Artificial Intelligence EAAI},
+  17:407--416, 2004.
+
+\bibitem[Sch07]{Schaefer2007}
+R.~Schaefer.
+\newblock {\em Foundation of Glabal Genetic Optimization}.
+\newblock Springer, 2007.
+
+\bibitem[SJ01]{SchaeferJablonski2001}
+R.~Schaefer and Z.J. Jab{\l}o\'{n}ski.
+\newblock On the convergence of sampling measures in global genetic search.
+\newblock {\em LNCS}, 2328:593--600, 2001.
+
+\bibitem[SK03]{SchaeferKolodziej2003}
+R.~Schaefer and J.~Ko{\l}odziej.
+\newblock Genetic search reinforced by the population hierarchy.
+\newblock In K.A.~De Jong, R.~Poli, and J.E. Rowe, editors, {\em Foundations of
+  Genetic Algorithms 7}, pages 383--399. Morgan Kaufman, 2003.
+
+\bibitem[Tel99]{Telega1999}
+H.~Telega.
+\newblock {\em Parallel Algorithms for Solving Selected Inverse Problems}.
+\newblock PhD Thesis, AGH University of Science and Technology, Krak\'{o}w,
+  Poland, 1999.
+
+\bibitem[WSKS03]{WierzbaSemczukKolodziejSchaefer2003}
+B.~Wierzba, A.~Semczuk, J.~Ko{\l}odziej, and R.~Schaefer.
+\newblock Hierarchical genetic strategy with real number encoding.
+\newblock In {\em Proc. of 6-th KAEiOG Conf.}, pages 231--237, {\L}ag\'{o}w
+  Lubuski, Poland, 2003.
+
+\bibitem[Zei85]{Zeidler1985}
+E.~Zeidler.
+\newblock {\em Nonlinear Functional Analysis and its Application}.
+\newblock Springer, 1985.
+
+\end{thebibliography}
