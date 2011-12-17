@@ -1,5 +1,5 @@
 
-\chapter{Tested Algorithms}
+\chapter{Experiments and results}
 \label{sec:testFun}
 
 \vspace{5pt}
@@ -97,7 +97,7 @@ three 2D test functions:
 W decide to handle maximization GOPs associated with benchmarks
 (\ref{eqn:Rastrigin}), (\ref{eqn:Langermann}), (\ref{eqn:Gierwangk}) 
 because their results can be more
-expressively presented then the equivalent minimization ones. 
+expressively presented than the equivalent minimization ones. 
 The CSFD instance dedicated to maximization problems
 were utilized (see Remark \ref{rem:plusminus}).
 
@@ -117,7 +117,7 @@ following parameters to be configured:
   
   \item $\epsilon$ and $minPts$ -- OPTICS generating distance and minimum number
   of points in $\epsilon$-neighborhood (see Section \ref{sec:OPTICS});
-  the values for the $\epsilon$ should be 'large enough' to allow the
+  the values for the $\epsilon$ should be 'large enough' to allow
   the creation of proper \textit{ordering}, usually $\epsilon \in [0.5, 1.0]$
   depending on the selection pressure. $minPts$ should be chosen as follows:
   \begin{equation}
@@ -146,7 +146,7 @@ quality. The first one was the number of recognized basins of
 attraction $NBA$.
 The basin of attraction of the local maximizer is considered as recognized
 by CSFD if the cluster of individuals was established and 
-the cluster extension is wholly included in the basin.
+the cluster extension is fully included in the basin.
 
 
 The second measure, called the degree of deterioration $DoD$, is
@@ -176,7 +176,7 @@ of fitness leveling $84\%$ was obtained.
 All local maxima were also recognized in the case of the Rastrigin function,
 but the degree of deterioration was only $64\%$. The Langermann benchmark
 became most difficult for CSFD, since the degree of deterioration was only
-$59\%$ and two basins of attraction (out of eighteen ones) remained unknown. 
+$59\%$ and two basins of attraction (out of eighteen) remained unknown. 
 
 \begin{table}
 \begin{center}

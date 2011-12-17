@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {4.3}Weighted Scheme}{26}
 \contentsline {section}{\numberline {4.4}Crunching Function Adjustment}{26}
 \contentsline {subsection}{\numberline {4.4.1}CFA Results}{27}
-\contentsline {chapter}{\numberline {5}Tested Algorithms}{29}
+\contentsline {chapter}{\numberline {5}Experiments and results}{29}
 \contentsline {section}{\numberline {5.1}Genetic Engine}{29}
 \contentsline {section}{\numberline {5.2}Test functions}{30}
 \contentsline {section}{\numberline {5.3}CSFD initial parameters}{30}
@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {6.2.1}Technologies}{35}
 \contentsline {chapter}{\numberline {7}Conclusions}{36}
 \contentsline {section}{\numberline {7.1}Summary}{36}
-\contentsline {section}{\numberline {7.2}Future Research}{38}
+\contentsline {section}{\numberline {7.2}Future Research}{37}
 \contentsline {chapter}{\numberline {A}Installation and Program Results}{39}
 \contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{39}
 \contentsline {section}{\numberline {A.2}Program Results}{39}

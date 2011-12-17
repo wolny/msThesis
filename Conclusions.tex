@@ -1,21 +1,17 @@
 
 \chapter{Conclusions}
-\label{Conclusions}
+\label{ch:Conclusions}
 
 \section{Summary}
 The aim of my Master Thesis was to find an effective fitness deterioration
-algorithm as defined in chapter 4, which minimizes the chance of multiple
-exploration of the same solution during the course of the \textit{Sequential
-niching} algorithm. Taking into account the results of tests described in
-chapter 5 we may come to the conclusion that the goal was reached. However,
-tests was performed only for simple
-multimodal problems in which the obtained clusters were convex and provides 
-a lot of information about underlying basins of attraction. Applying the
-algorithm for more demanding functions should be the next step in the further
-development of the algorithm.  
+algorithm as defined in chapter \ref{ch:csfdAlgorithm}, which minimizes the
+chance of multiple exploration of the same solution during the course of the \textit{Cluster Supported Fitness
+Deterioration} algorithm. Taking into account the results of tests described in
+chapter \ref{sec:testFun} we may come to the conclusion that the goal was
+reached for highly multimodal functions.
 
-The assumption that distribution of individuals inside a cluster provides
-information about its shape oversimplifies the real nature of the evolutionary
+However the assumption that distribution of individuals inside a cluster
+provides information about its shape oversimplifies the real nature of the evolutionary
 algorithms, where the population distribution inside basins of attraction is 
 very hard to predict and depends on many factors, including recombination versus
 mutation rate, selection algorithm, definition of genetic operators such as
@@ -25,21 +21,16 @@ distribution. \textit{Fitness Proportionate Selection} usually causes faster
 convergence to local solutions and normal distribution based reproduction operators tends 
 to produce populations with useful information about fitness landscape.
 
-Based on the results from chapter 5 we recommend to use \textit{Basic scheme}
-(section 4.2) of the fitness deterioration, cause it is a great deal cheaper
-than \textit{Weighted scheme} (section 4.3) and yields practically the
-same results as \texit{Weighted crunching functions}. The latter are more
-accurate only for problems with many local solutions but even for such problems it is reasonable to use \textit{Basic scheme}
+Based on the results from chapter \ref{sec:testFun} we recommend to use
+\textit{Basic scheme} (section \ref{sec:BasScheme}) of the fitness
+deterioration, cause it is a great deal cheaper than \textit{Weighted scheme}
+(section \ref{sec:WeightScheme}) and yields practically the same results as
+\texit{Weighted crunching functions}. The latter are more accurate only for problems with many local solutions but even for such problems it is reasonable to use \textit{Basic scheme}
 because it outperforms \textit{Weighted scheme} in terms of efficiency. 
 
-The algorithm (see section 4.1) we used to prevent degradation of regions
-unexplored by the algorithm and to increase the fitness deterioration accuracy
-should perform well for cases when the cluster is not convex, provided that
-individuals inside the cluster are non-uniformly distributed,
-otherwise the extraction of denser clusters would not prevent the deterioration
-process from loosing information contained in regions not visited
-by the \textit{sequential niching} yet.
-
+The algorithm \ref{alg:IFDA} we used to prevent degradation of
+regions unexplored by the algorithm and to increase the fitness deterioration accuracy
+performs well for cases when the cluster is not convex.
 The most valuable outcomes of this work are:
 \begin{itemize}
 
@@ -78,8 +69,7 @@ of future research.
 Performed experiments show that we can expect satisfactory results 
 when the GA utilizes
 genetic operators based on the normal distribution. 
-Fitness proportionate selection causes satisfactory 
-convergence to local solutions 
+Fitness proportionate selection causes convergence to local solutions 
 and the normal distribution based reproduction operators tends 
 to produce populations with useful information about fitness landscape.
 
@@ -134,19 +124,16 @@ based on "tabu" techniques.
 
 \section{Future Research}
 
-This work focuses mainly on the \textit{Fitness Deterioration} algorithm and
-shows the result of Basic and Weighted variants of the algorithm applied to
-simple multimodal functions (see chapter 4). Given the \textit{Sequential
-niching} algorithm described at the beginning of this paper (chapter 2), the main
+This work focuses mainly on sequential niching which uses \textit{Fitness
+Deterioration} and shows the result of Basic and Weighted variants of the algorithm applied to
+simple multimodal functions. Given the \textit{Sequential
+niching} algorithm described in chapter \ref{ch:csfdAlgorithm}, the main
 direction of the future research should be to test this algorithm using many 
 different evolutionary algorithms and evolution strategy.
 The most promising algorithm to choose would be \textit{Hierarchical Genetic
 Strategy} (HGS) \cite{WierzbaSemczukKolodziejSchaefer2003}.
 
-The Hierarchical Genetic Strategy (HGS) performs efficient concurrent
-search in the optimization landscape by many small populations. The creation of
-these populations is governed by dependent genetic processes with low complexity
-\cite{WierzbaSemczukKolodziejSchaefer2003}. HGS is an example of parallel
+HGS is an example of parallel
 genetic algorithms and it performs very well especially in case of problems with many local extrema.
 Taking into account the fact that HGS is likely to find many solutions in a
 single run of the algorithm and that the hierarchy of populations generated
