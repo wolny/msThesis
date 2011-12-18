@@ -31,14 +31,16 @@ are found in a GA:
   Examples of parallel niching methods are \textit{Crowding function} and
   \textit{Sharing}
   \item \textit{Sequential Niching methods}: These niching methods find multiple
-  niches iteratively
+  niches iteratively. They work by iterating simple GA, and maintaining the
+  best solution of each run off-line. To avoid converging to the same area of the
+  search space multiple times, whenever the algorithm locates a solution, it
+  depresses the fitness landscape at all points within some radius of that
+  solution.
 \end{itemize}
-Sequential niching is one of the most promising evolutionary strategies
+Sequential niching methods are one of the most promising evolutionary strategies
 for analyzing multi-modal global optimization problems in the continuous
-domains embedded in the vector metric spaces.
-
-This work presents a new hybrid approach to
-sequential niching strategies called \textit{Cluster Supported Fitness
+domains embedded in the vector metric spaces. This work presents a new hybrid
+approach to sequential niching strategies called \textit{Cluster Supported Fitness
 Deterioration} (CSFD).
 In each iteration CSFD performs the clustering of the random sample 
 by OPTICS algorithm and then the deterioration of the fitness

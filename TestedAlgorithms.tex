@@ -49,9 +49,9 @@ We use the standard genetic operators for real-valued representation:
 
 We want the genetic engine to be cheap and converge very quickly to local
 solutions, so we may efficiently deteriorate found basins of attraction in 
-subsequent iterations. To improve the convergence of the population maintained
-by SEA we use proportional selection 
-and we increase the
+subsequent iterations. It is advisable to use smaller populations, since the
+goal during each run of the SEA is to locate only one peak. Also to improve the
+convergence of the population maintained by SEA we use proportional selection and we increase the
 exploitation capabilities of the SEA using proper parameters, usually:
 $\sigma_c \in [0.1, 0.3]$, $\sigma_m \in [0.4, 1.0]$, depending on the problem.
 
@@ -61,6 +61,15 @@ $\sigma_c \in [0.1, 0.3]$, $\sigma_m \in [0.4, 1.0]$, depending on the problem.
 In order to visualize the deterioration process we use 
 three 2D test functions:
 \begin{itemize}
+  \item Simple trimodal:
+  \begin{equation}
+  \label{eqn:trimodal}
+  \begin{array}{c}
+  F(x)=2e^{-((x_1+1)^2+(x_2+1)^2)} + 1.5e^{-((x_1-1.1)^2+x_2^2)} +
+  4e^{-3((x_1+1.5)^2+(x_2-1.5)^2)}
+  \end{array}
+  \end{equation}
+  for $x_1, x_2 \in [-4, 4]$.
   \item Rastrigin: 
   \begin{equation}
   \label{eqn:Rastrigin}
@@ -95,8 +104,8 @@ three 2D test functions:
 \end{itemize}
 
 W decide to handle maximization GOPs associated with benchmarks
-(\ref{eqn:Rastrigin}), (\ref{eqn:Langermann}), (\ref{eqn:Gierwangk}) 
-because their results can be more
+(\ref{eqn:trimodal}), (\ref{eqn:Rastrigin}), (\ref{eqn:Langermann}),
+(\ref{eqn:Gierwangk}) because their results can be more
 expressively presented than the equivalent minimization ones. 
 The CSFD instance dedicated to maximization problems
 were utilized (see Remark \ref{rem:plusminus}).
@@ -162,21 +171,49 @@ fitness function at the beginning of the algorithm and $F_M^{max}$ is the
 maximum value of the fitness in the last iteration of the algorithm.
 $DoD$ might be also expressed in percentage.
 
-CSFD was run several times for each of the objective 
+CSFD was run several times for each of the objective (\ref{eqn:trimodal}),
 (\ref{eqn:Rastrigin}), (\ref{eqn:Langermann}), (\ref{eqn:Gierwangk}).
 The most typical behavior of this strategy in case of each objective
-are depicted in Figures 
+are depicted in Figures \ref{fig:3modTest},
 \ref{fig:rastriginTest}, \ref{fig:langermannTest}, \ref{fig:griewangkTest}.
 Moreover Table \ref{tab:resultsCsfd} gathers the metrics values for these
 computations.
 
-The best performance was obtained for the Griewangk benchmark for which
-all local maxima were encountered and for which the maximum degree 
-of fitness leveling $84\%$ was obtained.
+The best performance was obtained for the Trimodal and Griewangk
+benchmark for which all local maxima were encountered and for which the maximum degree 
+of fitness leveling was obtained: $98\%$ and $84\%$ respectively.
 All local maxima were also recognized in the case of the Rastrigin function,
 but the degree of deterioration was only $64\%$. The Langermann benchmark
 became most difficult for CSFD, since the degree of deterioration was only
 $59\%$ and two basins of attraction (out of eighteen) remained unknown. 
+
+Judging by the results of benchamrks (\ref{eqn:trimodal}),
+(\ref{eqn:Rastrigin}), (\ref{eqn:Langermann}), (\ref{eqn:Gierwangk})
+we see that our variant of sequential niching strategy called CSFD
+is very efficient especially for highly multimodal problems with 
+narrow basins of attraction (like the Rastrigin's function). This can
+be attributed to the fact that solutions are found very quickly by the GA with
+small, fast-converges populations and narrow basins of attraction are well
+approximated by the crunching functions. We found all 64 solutions of the
+Rastrigin's function in less than 70 iterations. However, what is an
+advantage to one GOP is often a drawback to others which is
+yet another conclusion from the \textit{No Free Lunch Theorem}.
+For problems with small number of local solutions with broad basins of
+attraction (like Griewangk's function) the CSFD performs way to many 
+iterations before the global stop condition is fulfilled (see section
+\ref{sec:TermConditions}) (69 iterations in case of Griewangk's function).
+This happens because fast-convergence and small populations give very dense 
+clusters and very 'narrow Gaussian bells' which depress only a part of the basin
+and as a result the algorithm deteriorates one basin of attraction many times.
+It can be very costly in high-dimensional domains where linear combination of 
+many crunching functions may be computionally intensive.
+The obvious solution to this problem would be to merge cluster extensions
+belonging to the same basin of attraction once every $k$ iteration of the 
+CSFD. $k$ should be explicitly given in the configuration of the
+algorithm. However this method should be used very carefully as it may
+destroy unexplored regions of the problem's domain.
+
+
 
 \begin{table}
 \begin{center}
@@ -185,6 +222,7 @@ $59\%$ and two basins of attraction (out of eighteen) remained unknown.
 \hline
 \label{tab:resultsCsfd}
 \textit{Function} & \textit{NBA} & \textit{DoD} \\ \hline \hline
+Trimodal & 3/3 & 0.98 \\ \hline
 Rastrigin & 64/64 & 0.64 \\ \hline
 Langermann & 16/18 & 0.59 \\ \hline
 Griewangk & 4/4 & 0.84 \\ \hline
@@ -192,6 +230,27 @@ Griewangk & 4/4 & 0.84 \\ \hline
 \end{center}
 \end{table}
 
+\begin{figure}
+  \centering
+  \fbox{
+    \includegraphics[scale=0.25]{csfd3mod/fitnessLand_iter000.jpg}
+  }
+  \fbox{
+    \includegraphics[scale=0.25]{csfd3mod/fitnessLand_iter001.jpg}
+  }
+  \fbox{
+    \includegraphics[scale=0.25]{csfd3mod/fitnessLand_iter005.jpg}
+  }
+  \fbox{
+    \includegraphics[scale=0.25]{csfd3mod/fitnessLand_iter020.jpg}
+  }
+  \caption{Original (left-up) and deteriorated fitness landscape 
+  of the trimodal problem (function \ref{eqn:trimodal}) seen in the
+  1th, 5th and 20th interation of the CSFD strategy respectively. 
+  Parameters: $\epsilon=0.7$, $minPts=12$, $popSize=50$,
+  $\sigma_c=0.1$, $\sigma_m=0.5$}
+  \label{fig:3modTest}
+\end{figure}
 
 \begin{figure}
   \centering
@@ -207,9 +266,9 @@ Griewangk & 4/4 & 0.84 \\ \hline
   \fbox{
     \includegraphics[scale=0.25]{csfdRastrigin/fitnessLand_iter064.jpg}
   }
-  \caption{Original (the first one) and deteriorated fitness landscape 
-  of the Rastrigin function seen in the 33th, 45th and 64th interation 
-  of the CSFD strategy respectively. 
+  \caption{Original (left-up) and deteriorated fitness landscape 
+  of the Rastrigin function (function \ref{eqn:Rastrigin}) seen in the 33th,
+  45th and 64th interation of the CSFD strategy respectively. 
   Parameters: $\epsilon=0.7$, $minPts=12$, $popSize=50$,
   $\sigma_c=0.1$, $\sigma_m=0.5$}
   \label{fig:rastriginTest}
@@ -230,9 +289,9 @@ Griewangk & 4/4 & 0.84 \\ \hline
   \fbox{
     \includegraphics[scale=0.25]{csfdLangermann/fitnessLand_iter016.jpg}
   }
-  \caption{Original (the first one) and deteriorated fitness landscape 
-  of the Langermann function seen in the 1th, 8th and 16th interation 
-  of the CSFD strategy respectively. 
+  \caption{Original (left-up) and deteriorated fitness landscape 
+  of the Langermann function (function \ref{eqn:Langermann}) seen in the 1th,
+  8th and 16th interation of the CSFD strategy respectively. 
   Parameters: $\epsilon=0.7$, $minPts=12$, $popSize=80$,
   $\sigma_c=0.1$, $\sigma_m=0.5$}
   \label{fig:langermannTest}
@@ -252,9 +311,9 @@ Griewangk & 4/4 & 0.84 \\ \hline
   \fbox{
     \includegraphics[scale=0.25]{csfdGriewangk/fitnessLand_iter069.jpg}
   }
-  \caption{Original (the first one) and deteriorated fitness landscape 
-  of the Griewangk function seen in the 21th, 51th and 69th iteration 
-  of the CSFD strategy respectively. 
+  \caption{Original (left-up) and deteriorated fitness landscape 
+  of the Griewangk function (function \ref{eqn:Gierwangk}) seen in the 21th,
+  51th and 69th iteration of the CSFD strategy respectively. 
   Parameters: $\epsilon=0.7$, $minPts=12$, $popSize=50$,
   $\sigma_c=0.1$, $\sigma_m=0.5$}
   \label{fig:griewangkTest}

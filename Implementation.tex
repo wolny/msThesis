@@ -18,8 +18,8 @@ Our API provides interfaces for evolutionary algorithms, fitness assignment
 and fitness deterioration, genetic operators like selection and reproduction,
 phenotype, clustering algorithms and many more. This makes it compact,
 extensible and easy to introduce new implementations.
-For the detailed description of the classes and interfaces see subsection
-'Implementation in Java'.  
+For the detailed description of the classes and interfaces see section
+\ref{sec:impl}.
 
 \section{Architecture}
 \label{sec:architecture}
@@ -30,8 +30,8 @@ complete, lightweight framework for testing and execution of the global
 optimization algorithms especially the evolutionary algorithms.
 \begin{itemize}
   \item \textit{Algorithm module} - central module of the framework. Contains
-  implementation of the \textit{Sequential Niching} algorithm as described in
-  chapter 2. The main class in the module
+  implementation of the \textit{Cluster Supported Fitness Deterioration}
+  algorithm described in chapter \ref{ch:csfdAlgorithm}. The main class in the module
   \textit{ki.edu.agh.algorithm.SequentialNichingWithOpticsClustering} is
   responsible for creation of the Spring context and execution of the algorithm. 
   \item \textit{Clustering module} - contains interfaces for clustering
@@ -55,9 +55,9 @@ optimization algorithms especially the evolutionary algorithms.
 \label{sec:impl}
 
 The framework was written to be elegant and extensible. The system's 
-modules are loosely coupled and each of system's components has little knowledge of the definitions 
-of other separate components (see previous section). This allows for
-extensibility in further design. To implement the system we used Spring
+modules are loosely coupled and each of its components has little knowledge of
+the definitions of the others (see previous section). This
+allows for extensibility in further design. To implement the system we used Spring
 as an application framework, Maven for project
 management and build automation, JUnit and Mockito
 for testing and Git as revision control system. 

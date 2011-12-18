@@ -22,15 +22,15 @@
 \contentsline {section}{\numberline {5.2}Test functions}{30}
 \contentsline {section}{\numberline {5.3}CSFD initial parameters}{30}
 \contentsline {section}{\numberline {5.4}Efficiency measures and CSFD results}{31}
-\contentsline {chapter}{\numberline {6}Implementation}{34}
-\contentsline {section}{\numberline {6.1}Architecture}{34}
-\contentsline {section}{\numberline {6.2}Implementation in Java}{35}
-\contentsline {subsection}{\numberline {6.2.1}Technologies}{35}
-\contentsline {chapter}{\numberline {7}Conclusions}{36}
-\contentsline {section}{\numberline {7.1}Summary}{36}
-\contentsline {section}{\numberline {7.2}Future Research}{37}
-\contentsline {chapter}{\numberline {A}Installation and Program Results}{39}
-\contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{39}
-\contentsline {section}{\numberline {A.2}Program Results}{39}
-\contentsline {chapter}{\numberline {B}Spring Configuration}{40}
-\contentsline {section}{\numberline {B.1}Sample Spring configuration}{40}
+\contentsline {chapter}{\numberline {6}Implementation}{35}
+\contentsline {section}{\numberline {6.1}Architecture}{35}
+\contentsline {section}{\numberline {6.2}Implementation in Java}{36}
+\contentsline {subsection}{\numberline {6.2.1}Technologies}{36}
+\contentsline {chapter}{\numberline {7}Conclusions}{37}
+\contentsline {section}{\numberline {7.1}Summary}{37}
+\contentsline {section}{\numberline {7.2}Future Research}{38}
+\contentsline {chapter}{\numberline {A}Installation and Program Results}{40}
+\contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{40}
+\contentsline {section}{\numberline {A.2}Program Results}{40}
+\contentsline {chapter}{\numberline {B}Spring Configuration}{41}
+\contentsline {section}{\numberline {B.1}Sample Spring configuration}{41}

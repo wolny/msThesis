@@ -17,8 +17,8 @@ the fitness in subsets of problem domain occupied by clusters.
 Let $F_k$ be the fitness function in $k$-th iteration of CSFD
 (i.e. in the $k$-th execution of the main loop of the Algorithm \ref{alg:CSFD})
 and $C_1, \ldots, C_{M_k}$ be
-$M_k$ clusters found in $k$-th iteration of our sequential niching algorithm 
-described in Section \ref{sec:algDesc}.
+$M_k$ clusters found in $k$-th iteration of our new sequential niching algorithm 
+(algorithm \ref{alg:CSFD} described in Section \ref{sec:algDesc}).
 For each cluster $C_i$ we create the \textit{crunching function} $g_i$ and then
 we construct deteriorated fitness $F_{k+1}$ (which will be used in the
 $(k+1)$-th iteration) as follows:
@@ -54,7 +54,8 @@ The answer is probably the most important reason why we have chosen fitness
 deterioration for this task. 
 We can not prevent individuals to explore
 neighborhood of solutions found in previous iterations because such
-approach would cause our meta-heuristic to loose \textit{completeness}. 
+approach would cause our meta-heuristic to loose \textit{completeness} (see
+\cite{PardalosRomeijn2002}).
 
 \begin{definition}\label{completeness}
 A set $Op$ of search operations searchOp is \textit{complete}
@@ -236,10 +237,10 @@ Figures \ref{fig:opticsOrder1} and \ref{fig:opticsOrder2}.
 \begin{figure}
   \centering
   \fbox{
-    \includegraphics[scale=0.4]{clusterExtraction/reachabilityPlot.png}
+    \includegraphics[scale=0.3]{clusterExtraction/extDataSet.png}
   }
   \fbox{
-    \includegraphics[scale=0.3]{clusterExtraction/extDataSet.png}
+    \includegraphics[scale=0.4]{clusterExtraction/reachabilityPlot.png}
   }
   \caption{Sample data set of 1500 points and the corresponding reachability plot
   of the ordered points (shows the reachability distance of each individual in the

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.17)  17 DEC 2011 16:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.17)  19 DEC 2011 00:11
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -693,17 +693,17 @@ Chapter 1.
 
 
 ]
-Underfull \hbox (badness 2050) in paragraph at lines 71--79
+Underfull \hbox (badness 2050) in paragraph at lines 73--81
 [][]\T1/ptm/m/n/10.95 Stochastic, population-based heuris-tics (Evo-lu-tion-ary
  Al-go-rithms, Sim-u-lated An-neal-ing, Ant
  []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 105.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.150 \begin{equation}
+l.152 \begin{equation}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -714,7 +714,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.150 \begin{equation}
+l.152 \begin{equation}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -726,7 +726,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.203 N
+l.205 N
        ext the \textit{cluster extensions} being the regular subsets of $\ma...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -737,7 +737,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.203 N
+l.205 N
        ext the \textit{cluster extensions} being the regular subsets of $\ma...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -749,7 +749,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.273 
+l.275 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -760,7 +760,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.273 
+l.275 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -796,27 +796,15 @@ and I'll forget about whatever was undefined.
 
  (./Algorithm.tex
 Chapter 2.
-
-LaTeX Warning: Reference `sec:fitnessDet' on page 12 undefined on input line 70
-.
-
 [12
 
 
 
 ]
-
-LaTeX Warning: Reference `sec:fitnessDetAndClustering' on page 13 undefined on 
-input line 172.
-
-
-LaTeX Warning: Reference `sec:fitnessDetAndClustering' on page 13 undefined on 
-input line 176.
-
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.184 
+l.185 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -827,7 +815,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.184 
+l.185 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -842,7 +830,7 @@ Underfull \vbox (badness 1259) has occurred while \output is active []
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.215 
+l.216 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -853,7 +841,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.215 
+l.216 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1048,7 +1036,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 ...ry point $g_1$ in the search space \mathbb
+l.62 ...ry point $g_1$ in the search space \mathbb
                                                   {G}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1061,7 +1049,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.137 ...ion{Fitness deterioration and clustering}
+l.138 ...ion{Fitness deterioration and clustering}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1072,7 +1060,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.137 ...ion{Fitness deterioration and clustering}
+l.138 ...ion{Fitness deterioration and clustering}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1112,7 +1100,7 @@ File: ./img/clusterDensity/hardcluster22.pdf Graphic file (type pdf)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.232 \end{figure}
+l.233 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1123,7 +1111,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.232 \end{figure}
+l.233 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1132,15 +1120,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [23 <./img/clusterDensity/hardcluster1.pdf> <./img/clusterDensity/hardcluster2.
-pdf>]
-<./img/clusterExtraction/reachabilityPlot.png, id=136, 481.8pt x 361.35pt>
-File: ./img/clusterExtraction/reachabilityPlot.png Graphic file (type png)
-
-<use ./img/clusterExtraction/reachabilityPlot.png>
-<./img/clusterExtraction/extDataSet.png, id=138, 642.4pt x 481.8pt>
+pdf>] <./img/clusterExtraction/extDataSet.png, id=136, 642.4pt x 481.8pt>
 File: ./img/clusterExtraction/extDataSet.png Graphic file (type png)
 
 <use ./img/clusterExtraction/extDataSet.png>
+<./img/clusterExtraction/reachabilityPlot.png, id=137, 481.8pt x 361.35pt>
+File: ./img/clusterExtraction/reachabilityPlot.png Graphic file (type png)
+
+<use ./img/clusterExtraction/reachabilityPlot.png>
 <./img/clusterExtraction/reachabilityPlot1.png, id=139, 481.8pt x 361.35pt>
 File: ./img/clusterExtraction/reachabilityPlot1.png Graphic file (type png)
 
@@ -1152,7 +1139,7 @@ File: ./img/clusterExtraction/extClusters.png Graphic file (type png)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.298 
+l.299 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1163,7 +1150,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.298 
+l.299 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1176,7 +1163,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.298 
+l.299 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1187,7 +1174,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.298 
+l.299 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1195,8 +1182,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[25 <./img/clusterExtraction/reachabilityPlot.png> <./img/clusterExtraction/ext
-DataSet.png (PNG copy)> <./img/clusterExtraction/reachabilityPlot1.png> <./img/
+[25 <./img/clusterExtraction/extDataSet.png (PNG copy)> <./img/clusterExtractio
+n/reachabilityPlot.png> <./img/clusterExtraction/reachabilityPlot1.png> <./img/
 clusterExtraction/extClusters.png (PNG copy)>]
 <./img/AdaptiveScheme.png, id=202, 383.93437pt x 211.54031pt>
 File: ./img/AdaptiveScheme.png Graphic file (type png)
@@ -1205,7 +1192,7 @@ File: ./img/AdaptiveScheme.png Graphic file (type png)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.394 
+l.395 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1216,7 +1203,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.394 
+l.395 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1228,7 +1215,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.442 \end{itemize}
+l.443 \end{itemize}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1239,7 +1226,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.442 \end{itemize}
+l.443 \end{itemize}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1319,10 +1306,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-Underfull \vbox (badness 1762) has occurred while \output is active []
-
- [29
+[29
 
 
 
@@ -1330,7 +1314,30 @@ Underfull \vbox (badness 1762) has occurred while \output is active []
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.150 
+l.147   \item $
+               mutationProb$ -- mutation probability (crossover is always pe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.147   \item $
+               mutationProb$ -- mutation probability (crossover is always pe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[30]
+! Undefined control sequence.
+\f@ncyolf ->\small \@shortauthor 
+                                 \quad \textit {\@shorttitlePL }\strut 
+l.215 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1341,7 +1348,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.150 
+l.215 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1349,51 +1356,67 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[30] <./img/csfdRastrigin/fitnessLand_iter000.jpg, id=226, 642.4pt x 481.8pt>
+[31] <./img/csfd3mod/fitnessLand_iter000.jpg, id=229, 642.4pt x 481.8pt>
+File: ./img/csfd3mod/fitnessLand_iter000.jpg Graphic file (type jpg)
+
+<use ./img/csfd3mod/fitnessLand_iter000.jpg>
+<./img/csfd3mod/fitnessLand_iter001.jpg, id=230, 642.4pt x 481.8pt>
+File: ./img/csfd3mod/fitnessLand_iter001.jpg Graphic file (type jpg)
+
+<use ./img/csfd3mod/fitnessLand_iter001.jpg>
+<./img/csfd3mod/fitnessLand_iter005.jpg, id=231, 642.4pt x 481.8pt>
+File: ./img/csfd3mod/fitnessLand_iter005.jpg Graphic file (type jpg)
+
+<use ./img/csfd3mod/fitnessLand_iter005.jpg>
+<./img/csfd3mod/fitnessLand_iter020.jpg, id=232, 642.4pt x 481.8pt>
+File: ./img/csfd3mod/fitnessLand_iter020.jpg Graphic file (type jpg)
+
+<use ./img/csfd3mod/fitnessLand_iter020.jpg>
+<./img/csfdRastrigin/fitnessLand_iter000.jpg, id=233, 642.4pt x 481.8pt>
 File: ./img/csfdRastrigin/fitnessLand_iter000.jpg Graphic file (type jpg)
 
 <use ./img/csfdRastrigin/fitnessLand_iter000.jpg>
-<./img/csfdRastrigin/fitnessLand_iter033.jpg, id=227, 642.4pt x 481.8pt>
+<./img/csfdRastrigin/fitnessLand_iter033.jpg, id=234, 642.4pt x 481.8pt>
 File: ./img/csfdRastrigin/fitnessLand_iter033.jpg Graphic file (type jpg)
 
 <use ./img/csfdRastrigin/fitnessLand_iter033.jpg>
-<./img/csfdRastrigin/fitnessLand_iter045.jpg, id=228, 642.4pt x 481.8pt>
+<./img/csfdRastrigin/fitnessLand_iter045.jpg, id=235, 642.4pt x 481.8pt>
 File: ./img/csfdRastrigin/fitnessLand_iter045.jpg Graphic file (type jpg)
 
 <use ./img/csfdRastrigin/fitnessLand_iter045.jpg>
-<./img/csfdRastrigin/fitnessLand_iter064.jpg, id=229, 642.4pt x 481.8pt>
+<./img/csfdRastrigin/fitnessLand_iter064.jpg, id=236, 642.4pt x 481.8pt>
 File: ./img/csfdRastrigin/fitnessLand_iter064.jpg Graphic file (type jpg)
 
 <use ./img/csfdRastrigin/fitnessLand_iter064.jpg>
-<./img/csfdLangermann/fitnessLand_iter000.jpg, id=230, 642.4pt x 481.8pt>
+<./img/csfdLangermann/fitnessLand_iter000.jpg, id=237, 642.4pt x 481.8pt>
 File: ./img/csfdLangermann/fitnessLand_iter000.jpg Graphic file (type jpg)
 
 <use ./img/csfdLangermann/fitnessLand_iter000.jpg>
-<./img/csfdLangermann/fitnessLand_iter001.jpg, id=231, 642.4pt x 481.8pt>
+<./img/csfdLangermann/fitnessLand_iter001.jpg, id=238, 642.4pt x 481.8pt>
 File: ./img/csfdLangermann/fitnessLand_iter001.jpg Graphic file (type jpg)
 
 <use ./img/csfdLangermann/fitnessLand_iter001.jpg>
-<./img/csfdLangermann/fitnessLand_iter008.jpg, id=232, 642.4pt x 481.8pt>
+<./img/csfdLangermann/fitnessLand_iter008.jpg, id=239, 642.4pt x 481.8pt>
 File: ./img/csfdLangermann/fitnessLand_iter008.jpg Graphic file (type jpg)
 
 <use ./img/csfdLangermann/fitnessLand_iter008.jpg>
-<./img/csfdLangermann/fitnessLand_iter016.jpg, id=233, 642.4pt x 481.8pt>
+<./img/csfdLangermann/fitnessLand_iter016.jpg, id=240, 642.4pt x 481.8pt>
 File: ./img/csfdLangermann/fitnessLand_iter016.jpg Graphic file (type jpg)
 
 <use ./img/csfdLangermann/fitnessLand_iter016.jpg>
-<./img/csfdGriewangk/fitnessLand_iter000.jpg, id=234, 642.4pt x 481.8pt>
+<./img/csfdGriewangk/fitnessLand_iter000.jpg, id=241, 642.4pt x 481.8pt>
 File: ./img/csfdGriewangk/fitnessLand_iter000.jpg Graphic file (type jpg)
 
 <use ./img/csfdGriewangk/fitnessLand_iter000.jpg>
-<./img/csfdGriewangk/fitnessLand_iter021.jpg, id=235, 642.4pt x 481.8pt>
+<./img/csfdGriewangk/fitnessLand_iter021.jpg, id=242, 642.4pt x 481.8pt>
 File: ./img/csfdGriewangk/fitnessLand_iter021.jpg Graphic file (type jpg)
 
 <use ./img/csfdGriewangk/fitnessLand_iter021.jpg>
-<./img/csfdGriewangk/fitnessLand_iter051.jpg, id=236, 642.4pt x 481.8pt>
+<./img/csfdGriewangk/fitnessLand_iter051.jpg, id=243, 642.4pt x 481.8pt>
 File: ./img/csfdGriewangk/fitnessLand_iter051.jpg Graphic file (type jpg)
 
 <use ./img/csfdGriewangk/fitnessLand_iter051.jpg>
-<./img/csfdGriewangk/fitnessLand_iter069.jpg, id=237, 642.4pt x 481.8pt>
+<./img/csfdGriewangk/fitnessLand_iter069.jpg, id=244, 642.4pt x 481.8pt>
 File: ./img/csfdGriewangk/fitnessLand_iter069.jpg Graphic file (type jpg)
 
 <use ./img/csfdGriewangk/fitnessLand_iter069.jpg>)
@@ -1419,7 +1442,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[31]
+[32 <./img/csfd3mod/fitnessLand_iter000.jpg> <./img/csfd3mod/fitnessLand_iter00
+1.jpg> <./img/csfd3mod/fitnessLand_iter005.jpg> <./img/csfd3mod/fitnessLand_ite
+r020.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1442,7 +1467,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[32 <./img/csfdRastrigin/fitnessLand_iter000.jpg> <./img/csfdRastrigin/fitnessL
+[33 <./img/csfdRastrigin/fitnessLand_iter000.jpg> <./img/csfdRastrigin/fitnessL
 and_iter033.jpg> <./img/csfdRastrigin/fitnessLand_iter045.jpg> <./img/csfdRastr
 igin/fitnessLand_iter064.jpg> <./img/csfdLangermann/fitnessLand_iter000.jpg> <.
 /img/csfdLangermann/fitnessLand_iter001.jpg> <./img/csfdLangermann/fitnessLand_
@@ -1469,19 +1494,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[33 <./img/csfdGriewangk/fitnessLand_iter000.jpg> <./img/csfdGriewangk/fitnessL
+[34 <./img/csfdGriewangk/fitnessLand_iter000.jpg> <./img/csfdGriewangk/fitnessL
 and_iter021.jpg> <./img/csfdGriewangk/fitnessLand_iter051.jpg> <./img/csfdGriew
 angk/fitnessLand_iter069.jpg>]
 \openout2 = `Implementation.aux'.
 
  (./Implementation.tex
 Chapter 6.
-
-Underfull \hbox (badness 2726) in paragraph at lines 32--37
-\T1/ptm/m/it/10.95 quen-tial Nich-ing \T1/ptm/m/n/10.95 al-go-rithm as de-scrib
-ed in chap-ter 2. The main class in the mod-ule
- []
-
 
 Underfull \hbox (badness 6284) in paragraph at lines 39--43
 [][]\T1/ptm/m/it/10.95 Fitness de-te-ri-o-ra-tion mod-ule \T1/ptm/m/n/10.95 - c
@@ -1495,7 +1514,7 @@ Underfull \hbox (badness 2818) in paragraph at lines 39--43
 erioration.SimpleGaussianFitnessDeterioration \T1/ptm/m/n/10.95 and
  []
 
-[34
+[35
 
 
 
@@ -1522,7 +1541,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[35]
+[36]
 \openout2 = `Conclusions.aux'.
 
  (./Conclusions.tex
@@ -1536,31 +1555,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[36
+
+Underfull \vbox (badness 3482) has occurred while \output is active []
+
+ [37
 
 
 
 ]
 ! Undefined control sequence.
-l.80 \citep
-           {WierzbaSemczukKolodziejSchaefer2003})
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--89
-[][]\T1/ptm/m/n/10.95 The Hi-er-ar-chi-cal Ge-netic Strat-egy (HGS) (see [[]], 
-[[]], WierzbaSem-
- []
-
-! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.142 
-      
+l.137 T
+       here are many aspects of the implementation of \textit{CSFD} algorithm,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1570,15 +1577,15 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.142 
-      
+l.137 T
+       here are many aspects of the implementation of \textit{CSFD} algorithm,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[37])
+[38])
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
@@ -1601,7 +1608,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[38]
+[39]
 \openout2 = `Installation.aux'.
 
  (./Installation.tex
@@ -1619,7 +1626,7 @@ tering \T1/ptm/m/n/10.95 (see \T1/ptm/m/it/10.95 pom.xml \T1/ptm/m/n/10.95 for
 more
  []
 
-) [39
+) [40
 
 
 
@@ -1643,7 +1650,7 @@ Overfull \hbox (11.22966pt too wide) in paragraph at lines 14--15
 [][][][][][][][][][][][][][][] 
  []
 
-[40
+[41
 
 
 
@@ -1683,7 +1690,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[41]
+[42]
 Overfull \hbox (57.22003pt too wide) in paragraph at lines 70--71
 [][][][][][][][][][][][][][][][][] 
  []
@@ -1711,7 +1718,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[42] (./document.bbl [43
+[43] (./document.bbl [44
 
 
 ])
@@ -1737,21 +1744,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[44] (./document.aux (./Introduction.aux) (./Algorithm.aux) (./Clustering.aux)
+[45] (./document.aux (./Introduction.aux) (./Algorithm.aux) (./Clustering.aux)
 (./FitnessDeterioration.aux) (./TestedAlgorithms.aux) (./Implementation.aux)
 (./Conclusions.aux) (./Installation.aux) (./Configuration.aux))
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5919 strings out of 493848
- 79015 string characters out of 1152822
- 160864 words of memory out of 3000000
- 8959 multiletter control sequences out of 15000+50000
+ 5939 strings out of 493848
+ 79760 string characters out of 1152822
+ 160886 words of memory out of 3000000
+ 8975 multiletter control sequences out of 15000+50000
  90158 words of font info for 81 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  36i,13n,45p,755b,1652s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1769,9 +1773,9 @@ ts/symbols/msbm10.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a
 texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (42 pages, 1034885 bytes).
+Output written on document.pdf (43 pages, 1152027 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
+ 343 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

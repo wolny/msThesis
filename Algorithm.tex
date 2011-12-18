@@ -67,7 +67,7 @@ individual in the cluster).
 Another advantage is the ability to approximate the shape and the volume of
 basins of attraction $\mathcal{B}_{x^+}$ by cluster extensions.
 This information is utilized by the fitness deterioration
-technique (see Section \ref{sec:fitnessDet}). 
+technique (see Chapter \ref{ch:fitnessDet}). 
 It might be also helpful for the stability analysis of $x^+$.
 
 
@@ -99,7 +99,8 @@ distribution of individuals inside a given cluster provides information
 about the topology of the basin in which the cluster resides,
 the algorithm approximate the basin using this information in order to 
 deteriorate the fitness over the basins area
-and thus to prevent convergence to the same solutions multiple times.
+and thus to minimize the probability of convergence to the same solutions
+multiple times.
 
 \subsection{CSFD pseudo-code}
 \label{sec:CSFDalgorithm}
@@ -169,11 +170,11 @@ landscape in areas occupied by clusters of individuals which are assumed
 to agglomerate inside basins of attraction. 
 In the line 9, Algorithm \ref{alg:CSFD} we execute the complex
 procedure \textit{performFitnessDet} (described in details in Section
-\ref{sec:fitnessDetAndClustering}) which actually performs the
+\ref{sec:FitDetClust}) which actually performs the
 \textit{clustering} and \textit{fitness deterioration}. Next in the line 10, 
 Algorithm \ref{alg:CSFD} we check if the new fitness 
 (returned by the procedure \textit{performFitnessDet}) fulfills the 
-quality requirements described in Section \ref{sec:fitnessDetAndClustering}. 
+quality requirements described in Section \ref{sec:FitDetClust}. 
 Finally, we save the clusters returned by the deterioration process and update 
 the fitness function for further iterations (lines 13, 14, Algorithm \ref{alg:CSFD}).
 Exploratory capabilities can be increased during later iterations by
