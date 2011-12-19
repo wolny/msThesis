@@ -11,51 +11,52 @@ A level-1 auxiliary file: Installation.aux
 A level-1 auxiliary file: Configuration.aux
 The style file: alpha.bst
 Database file #1: fitness-deterioration.bib
-You're missing a field name---line 295 of file fitness-deterioration.bib
+You're missing a field name---line 303 of file fitness-deterioration.bib
  : 
  : % title={Practical Genetic Algorithms},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty journal in dbscan
-You've used 23 entries,
+Warning--there's a number but no volume in SchaeferWolny2011
+You've used 24 entries,
             2543 wiz_defined-function locations,
-            717 strings with 8346 characters,
-and the built_in function-call counts, 9429 in all, are:
-= -- 951
-> -- 409
+            723 strings with 8528 characters,
+and the built_in function-call counts, 9761 in all, are:
+= -- 984
+> -- 428
 < -- 17
-+ -- 138
-- -- 133
-* -- 592
-:= -- 1502
-add.period$ -- 71
-call.type$ -- 23
-change.case$ -- 131
-chr.to.int$ -- 22
-cite$ -- 24
-duplicate$ -- 433
-empty$ -- 718
-format.name$ -- 164
-if$ -- 1996
++ -- 144
+- -- 139
+* -- 616
+:= -- 1561
+add.period$ -- 74
+call.type$ -- 24
+change.case$ -- 137
+chr.to.int$ -- 23
+cite$ -- 26
+duplicate$ -- 446
+empty$ -- 739
+format.name$ -- 171
+if$ -- 2061
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 118
-num.names$ -- 72
-pop$ -- 167
+missing$ -- 30
+newline$ -- 123
+num.names$ -- 75
+pop$ -- 171
 preamble$ -- 1
-purify$ -- 161
+purify$ -- 168
 quote$ -- 0
-skip$ -- 362
+skip$ -- 374
 stack$ -- 0
-substring$ -- 496
-swap$ -- 98
+substring$ -- 503
+swap$ -- 99
 text.length$ -- 17
 text.prefix$ -- 8
 top$ -- 0
-type$ -- 156
-warning$ -- 1
-while$ -- 92
-width$ -- 25
-write$ -- 300
+type$ -- 164
+warning$ -- 2
+while$ -- 95
+width$ -- 26
+write$ -- 313
 (There was 1 error message)

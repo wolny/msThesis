@@ -24,6 +24,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{listings}
+\usepackage[toc,page]{appendix}
 
 \graphicspath{{./img/}}
 
@@ -77,6 +78,8 @@ for his invaluable support and motivation throughout the duration of my work}
 
 \clearpage
 
+
+
 \include{Introduction}
 
 \include{Algorithm}
@@ -91,12 +94,16 @@ for his invaluable support and motivation throughout the duration of my work}
 
 \include{Conclusions}
 
+
+
 \appendix
+\appendixpage
+%%\addappheadtotoc
+
 
 \include{Installation}
 
 \include{Configuration}
-
 
 \bibliographystyle{alpha}
 \bibliography{fitness-deterioration}

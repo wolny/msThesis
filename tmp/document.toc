@@ -29,8 +29,8 @@
 \contentsline {chapter}{\numberline {7}Conclusions}{37}
 \contentsline {section}{\numberline {7.1}Summary}{37}
 \contentsline {section}{\numberline {7.2}Future Research}{38}
-\contentsline {chapter}{\numberline {A}Installation and Program Results}{40}
-\contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{40}
-\contentsline {section}{\numberline {A.2}Program Results}{40}
-\contentsline {chapter}{\numberline {B}Spring Configuration}{41}
-\contentsline {section}{\numberline {B.1}Sample Spring configuration}{41}
+\contentsline {chapter}{Appendices}{40}
+\contentsline {chapter}{\numberline {A}Installation and Program Results}{41}
+\contentsline {section}{\numberline {A.1}Installation and Execution Instructions}{41}
+\contentsline {section}{\numberline {A.2}Program Results}{41}
+\contentsline {chapter}{\numberline {B}Spring Configuration}{42}

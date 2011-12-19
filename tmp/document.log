@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.17)  19 DEC 2011 00:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.17)  19 DEC 2011 11:41
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -531,7 +531,14 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
-\c@definition=\count120
+
+(/usr/share/texmf-texlive/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count120
+\c@@ppsavesec=\count121
+\c@@ppsaveapp=\count122
+)
+\c@definition=\count123
 
 
 LaTeX Warning: Unused global option(s):
@@ -546,33 +553,33 @@ LaTeX Warning: Label `sec:testFun' multiply defined.
 (./Configuration.aux))
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 73.
  (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
+\scratchcounter=\count124
 \scratchdimen=\dimen129
 \scratchbox=\box33
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count124
+\MPscratchCnt=\count127
 \MPscratchDim=\dimen130
-\MPnumerator=\count125
+\MPnumerator=\count128
 \everyMPtoPDFconversion=\toks37
 )
 *geometry auto-detecting driver*
@@ -616,29 +623,29 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-\c@lstlisting=\count126
-LaTeX Font Info:    Try loading font information for T1+phv on input line 74.
+\c@lstlisting=\count129
+LaTeX Font Info:    Try loading font information for T1+phv on input line 75.
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 74.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 74.
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 75.
 
 <./img/agh.pdf, id=1, 63.30652pt x 122.89915pt>
 File: ./img/agh.pdf Graphic file (type pdf)
  <use ./img/agh.pdf>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 74.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 74.
-LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -648,9 +655,9 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 77.
  (./document.toc
 Underfull \vbox (badness 1205) has occurred while \output is active []
 
@@ -664,7 +671,7 @@ Underfull \vbox (badness 1205) has occurred while \output is active []
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.78 \clearpage
+l.79 \clearpage
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -675,7 +682,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.78 \clearpage
+l.79 \clearpage
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -772,7 +779,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.80 \include{Introduction}
+l.83 \include{Introduction}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -783,7 +790,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.80 \include{Introduction}
+l.83 \include{Introduction}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -853,7 +860,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.82 \include{Algorithm}
+l.85 \include{Algorithm}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -864,7 +871,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.82 \include{Algorithm}
+l.85 \include{Algorithm}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -957,7 +964,7 @@ LaTeX Warning: Float too large for page by 12.81744pt on input line 225.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.84 \include{Clustering}
+l.87 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -968,7 +975,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.84 \include{Clustering}
+l.87 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -980,7 +987,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.84 \include{Clustering}
+l.87 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -991,7 +998,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.84 \include{Clustering}
+l.87 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1003,7 +1010,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.84 \include{Clustering}
+l.87 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1014,7 +1021,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.84 \include{Clustering}
+l.87 \include{Clustering}
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1254,7 +1261,7 @@ File: ./img/CMA/result2_noCMA.png Graphic file (type png)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.86 \include{FitnessDeterioration}
+l.89 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1265,7 +1272,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.86 \include{FitnessDeterioration}
+l.89 \include{FitnessDeterioration}
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1423,7 +1430,7 @@ File: ./img/csfdGriewangk/fitnessLand_iter069.jpg Graphic file (type jpg)
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.88 \include{TestedAlgorithms}
+l.91 \include{TestedAlgorithms}
                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1434,7 +1441,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.88 \include{TestedAlgorithms}
+l.91 \include{TestedAlgorithms}
                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1448,7 +1455,7 @@ r020.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.88 \include{TestedAlgorithms}
+l.91 \include{TestedAlgorithms}
                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1459,7 +1466,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.88 \include{TestedAlgorithms}
+l.91 \include{TestedAlgorithms}
                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1475,7 +1482,7 @@ iter008.jpg> <./img/csfdLangermann/fitnessLand_iter016.jpg>]
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.88 \include{TestedAlgorithms}
+l.91 \include{TestedAlgorithms}
                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1486,7 +1493,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.88 \include{TestedAlgorithms}
+l.91 \include{TestedAlgorithms}
                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1522,7 +1529,7 @@ erioration.SimpleGaussianFitnessDeterioration \T1/ptm/m/n/10.95 and
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.90 \include{Implementation}
+l.93 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1533,7 +1540,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.90 \include{Implementation}
+l.93 \include{Implementation}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1589,7 +1596,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.92 \include{Conclusions}
+l.95 \include{Conclusions}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1600,7 +1607,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.92 \include{Conclusions}
+l.95 \include{Conclusions}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1609,25 +1616,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [39]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 100.
+ [40
+
+
+]
 \openout2 = `Installation.aux'.
 
  (./Installation.tex
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--17
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
 [][]\T1/ptm/m/n/10.95 Program ex-e-cu-tion: \T1/ptm/m/it/10.95 mvn exec:java \T
 1/ptm/m/n/10.95 By de-fault the main class of the project is:
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 13--17
+Underfull \hbox (badness 2368) in paragraph at lines 14--18
 \T1/ptm/m/it/10.95 ki.edu.agh.algorithm.SequentialDeteriorationEAWithOpticsClus
 tering \T1/ptm/m/n/10.95 (see \T1/ptm/m/it/10.95 pom.xml \T1/ptm/m/n/10.95 for 
 more
  []
 
-) [40
-
+) [41
 
 
 ]
@@ -1650,7 +1662,7 @@ Overfull \hbox (11.22966pt too wide) in paragraph at lines 14--15
 [][][][][][][][][][][][][][][] 
  []
 
-[41
+[42
 
 
 
@@ -1671,8 +1683,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.68     <p
-           roperty name="fitnessDeterioration">
+l.70         class=
+                   "ki.edu.agh.deterioration.SimpleGaussianFitnessDeteriorat...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1682,15 +1694,15 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.68     <p
-           roperty name="fitnessDeterioration">
+l.70         class=
+                   "ki.edu.agh.deterioration.SimpleGaussianFitnessDeteriorat...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[42]
+[43]
 Overfull \hbox (57.22003pt too wide) in paragraph at lines 70--71
 [][][][][][][][][][][][][][][][][] 
  []
@@ -1699,8 +1711,8 @@ Overfull \hbox (57.22003pt too wide) in paragraph at lines 70--71
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.98 \include{Configuration}
-                            
+l.106 \include{Configuration}
+                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1710,22 +1722,22 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.98 \include{Configuration}
-                            
+l.106 \include{Configuration}
+                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[43] (./document.bbl [44
+[44] (./document.bbl [45
 
 
 ])
 ! Undefined control sequence.
 \f@ncyolf ->\small \@shortauthor 
                                  \quad \textit {\@shorttitlePL }\strut 
-l.104 \end{document}
+l.111 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1736,7 +1748,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.104 \end{document}
+l.111 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1744,7 +1756,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[45] (./document.aux (./Introduction.aux) (./Algorithm.aux) (./Clustering.aux)
+[46] (./document.aux (./Introduction.aux) (./Algorithm.aux) (./Clustering.aux)
 (./FitnessDeterioration.aux) (./TestedAlgorithms.aux) (./Implementation.aux)
 (./Conclusions.aux) (./Installation.aux) (./Configuration.aux))
 
@@ -1752,11 +1764,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5939 strings out of 493848
- 79760 string characters out of 1152822
- 160886 words of memory out of 3000000
- 8975 multiletter control sequences out of 15000+50000
- 90158 words of font info for 81 fonts, out of 3000000 for 9000
+ 6040 strings out of 493848
+ 81196 string characters out of 1152822
+ 162717 words of memory out of 3000000
+ 9072 multiletter control sequences out of 15000+50000
+ 94605 words of font info for 84 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  36i,13n,45p,755b,1652s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
@@ -1773,9 +1785,9 @@ ts/symbols/msbm10.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a
 texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (43 pages, 1152027 bytes).
+Output written on document.pdf (44 pages, 1152579 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
+ 346 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

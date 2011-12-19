@@ -122,6 +122,12 @@ H.~Telega.
 \newblock PhD Thesis, AGH University of Science and Technology, Krak\'{o}w,
   Poland, 1999.
 
+\bibitem[WS11]{SchaeferWolny2011}
+A.~Wolny and R.~Schaefer.
+\newblock Improving population-based algorithms with fitness deterioration.
+\newblock {\em Journal of Telecommunications and Information Technology}, (4),
+  2011.
+
 \bibitem[WSKS03]{WierzbaSemczukKolodziejSchaefer2003}
 B.~Wierzba, A.~Semczuk, J.~Ko{\l}odziej, and R.~Schaefer.
 \newblock Hierarchical genetic strategy with real number encoding.
